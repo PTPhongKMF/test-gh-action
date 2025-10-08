@@ -2,26 +2,26 @@ import { createRequire } from "node:module";
 import process$1 from "node:process";
 
 //#region rolldown:runtime
-var __create = Object.create;
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __create$1 = Object.create;
+var __defProp$8 = Object.defineProperty;
+var __getOwnPropDesc$8 = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames$8 = Object.getOwnPropertyNames;
+var __getProtoOf$1 = Object.getPrototypeOf;
+var __hasOwnProp$8 = Object.prototype.hasOwnProperty;
 var __commonJS = (cb, mod) => function() {
-	return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+	return mod || (0, cb[__getOwnPropNames$8(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
-var __copyProps = (to, from, except, desc) => {
-	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
+var __copyProps$8 = (to, from, except, desc) => {
+	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames$8(from), i = 0, n = keys.length, key; i < n; i++) {
 		key = keys[i];
-		if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+		if (!__hasOwnProp$8.call(to, key) && key !== except) __defProp$8(to, key, {
 			get: ((k) => from[k]).bind(null, key),
-			enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+			enumerable: !(desc = __getOwnPropDesc$8(from, key)) || desc.enumerable
 		});
 	}
 	return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
+var __toESM$1 = (mod, isNodeMode, target) => (target = mod != null ? __create$1(__getProtoOf$1(mod)) : {}, __copyProps$8(isNodeMode || !mod || !mod.__esModule ? __defProp$8(target, "default", {
 	value: mod,
 	enumerable: true
 }) : target, mod));
@@ -29,7 +29,7 @@ var __require = /* @__PURE__ */ createRequire(import.meta.url);
 
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/utils.js
-var require_utils$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/utils.js": ((exports) => {
+var require_utils$3 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/utils.js": ((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
 	* Sanitizes an input into a string so it can be passed into issueCommand safely
@@ -64,7 +64,7 @@ var require_utils$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/command.js
 var require_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/command.js": ((exports) => {
-	var __createBinding$9 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$12 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		var desc = Object.getOwnPropertyDescriptor(m, k);
 		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -78,7 +78,7 @@ var require_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$9 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$12 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -86,18 +86,18 @@ var require_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$9 = exports && exports.__importStar || function(mod) {
+	var __importStar$12 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$9(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$12(result, mod, k);
 		}
-		__setModuleDefault$9(result, mod);
+		__setModuleDefault$12(result, mod);
 		return result;
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const os$3 = __importStar$9(__require("os"));
-	const utils_1$3 = require_utils$1();
+	const os$3 = __importStar$12(__require("os"));
+	const utils_1$4 = require_utils$3();
 	/**
 	* Commands
 	*
@@ -144,17 +144,17 @@ var require_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		}
 	};
 	function escapeData(s) {
-		return (0, utils_1$3.toCommandValue)(s).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
+		return (0, utils_1$4.toCommandValue)(s).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
 	}
 	function escapeProperty(s) {
-		return (0, utils_1$3.toCommandValue)(s).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A").replace(/:/g, "%3A").replace(/,/g, "%2C");
+		return (0, utils_1$4.toCommandValue)(s).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A").replace(/:/g, "%3A").replace(/,/g, "%2C");
 	}
 }) });
 
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/file-command.js
 var require_file_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/file-command.js": ((exports) => {
-	var __createBinding$8 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$11 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		var desc = Object.getOwnPropertyDescriptor(m, k);
 		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -168,7 +168,7 @@ var require_file_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@act
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$8 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$11 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -176,30 +176,30 @@ var require_file_command = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@act
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$8 = exports && exports.__importStar || function(mod) {
+	var __importStar$11 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$8(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$11(result, mod, k);
 		}
-		__setModuleDefault$8(result, mod);
+		__setModuleDefault$11(result, mod);
 		return result;
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const crypto$3 = __importStar$8(__require("crypto"));
-	const fs$1 = __importStar$8(__require("fs"));
-	const os$2 = __importStar$8(__require("os"));
-	const utils_1$2 = require_utils$1();
+	const crypto$3 = __importStar$11(__require("crypto"));
+	const fs$1 = __importStar$11(__require("fs"));
+	const os$2 = __importStar$11(__require("os"));
+	const utils_1$3 = require_utils$3();
 	function issueFileCommand(command, message) {
 		const filePath = process.env[`GITHUB_${command}`];
 		if (!filePath) throw new Error(`Unable to find environment variable for file command ${command}`);
 		if (!fs$1.existsSync(filePath)) throw new Error(`Missing file at path: ${filePath}`);
-		fs$1.appendFileSync(filePath, `${(0, utils_1$2.toCommandValue)(message)}${os$2.EOL}`, { encoding: "utf8" });
+		fs$1.appendFileSync(filePath, `${(0, utils_1$3.toCommandValue)(message)}${os$2.EOL}`, { encoding: "utf8" });
 	}
 	exports.issueFileCommand = issueFileCommand;
 	function prepareKeyValueMessage(key, value) {
 		const delimiter = `ghadelimiter_${crypto$3.randomUUID()}`;
-		const convertedValue = (0, utils_1$2.toCommandValue)(value);
+		const convertedValue = (0, utils_1$3.toCommandValue)(value);
 		if (key.includes(delimiter)) throw new Error(`Unexpected input: name should not contain the delimiter "${delimiter}"`);
 		if (convertedValue.includes(delimiter)) throw new Error(`Unexpected input: value should not contain the delimiter "${delimiter}"`);
 		return `${key}<<${delimiter}${os$2.EOL}${convertedValue}${os$2.EOL}${delimiter}`;
@@ -1021,17 +1021,17 @@ var require_util$6 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 	function isBuffer(buffer) {
 		return buffer instanceof Uint8Array || Buffer.isBuffer(buffer);
 	}
-	function validateHandler(handler, method, upgrade$1) {
-		if (!handler || typeof handler !== "object") throw new InvalidArgumentError$21("handler must be an object");
-		if (typeof handler.onConnect !== "function") throw new InvalidArgumentError$21("invalid onConnect method");
-		if (typeof handler.onError !== "function") throw new InvalidArgumentError$21("invalid onError method");
-		if (typeof handler.onBodySent !== "function" && handler.onBodySent !== void 0) throw new InvalidArgumentError$21("invalid onBodySent method");
+	function validateHandler(handler$1, method, upgrade$1) {
+		if (!handler$1 || typeof handler$1 !== "object") throw new InvalidArgumentError$21("handler must be an object");
+		if (typeof handler$1.onConnect !== "function") throw new InvalidArgumentError$21("invalid onConnect method");
+		if (typeof handler$1.onError !== "function") throw new InvalidArgumentError$21("invalid onError method");
+		if (typeof handler$1.onBodySent !== "function" && handler$1.onBodySent !== void 0) throw new InvalidArgumentError$21("invalid onBodySent method");
 		if (upgrade$1 || method === "CONNECT") {
-			if (typeof handler.onUpgrade !== "function") throw new InvalidArgumentError$21("invalid onUpgrade method");
+			if (typeof handler$1.onUpgrade !== "function") throw new InvalidArgumentError$21("invalid onUpgrade method");
 		} else {
-			if (typeof handler.onHeaders !== "function") throw new InvalidArgumentError$21("invalid onHeaders method");
-			if (typeof handler.onData !== "function") throw new InvalidArgumentError$21("invalid onData method");
-			if (typeof handler.onComplete !== "function") throw new InvalidArgumentError$21("invalid onComplete method");
+			if (typeof handler$1.onHeaders !== "function") throw new InvalidArgumentError$21("invalid onHeaders method");
+			if (typeof handler$1.onData !== "function") throw new InvalidArgumentError$21("invalid onData method");
+			if (typeof handler$1.onComplete !== "function") throw new InvalidArgumentError$21("invalid onComplete method");
 		}
 	}
 	function isDisturbed$2(body) {
@@ -1062,13 +1062,13 @@ var require_util$6 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 	function ReadableStreamFrom$3(iterable) {
 		if (!ReadableStream$5) ReadableStream$5 = __require("stream/web").ReadableStream;
 		if (ReadableStream$5.from) return ReadableStream$5.from(convertIterableToBuffer(iterable));
-		let iterator;
+		let iterator$1;
 		return new ReadableStream$5({
 			async start() {
-				iterator = iterable[Symbol.asyncIterator]();
+				iterator$1 = iterable[Symbol.asyncIterator]();
 			},
 			async pull(controller) {
-				const { done, value } = await iterator.next();
+				const { done, value } = await iterator$1.next();
 				if (done) queueMicrotask(() => {
 					controller.close();
 				});
@@ -1079,7 +1079,7 @@ var require_util$6 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				return controller.desiredSize > 0;
 			},
 			async cancel(reason) {
-				await iterator.return();
+				await iterator$1.return();
 			}
 		}, 0);
 	}
@@ -3202,11 +3202,11 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		return location;
 	}
 	/** @returns {URL} */
-	function requestCurrentURL$1(request$1) {
-		return request$1.urlList[request$1.urlList.length - 1];
+	function requestCurrentURL$1(request$2) {
+		return request$2.urlList[request$2.urlList.length - 1];
 	}
-	function requestBadPort$1(request$1) {
-		const url = requestCurrentURL$1(request$1);
+	function requestBadPort$1(request$2) {
+		const url = requestCurrentURL$1(request$2);
 		if (urlIsHttpHttpsScheme$2(url) && badPortsSet.has(url.port)) return "blocked";
 		return "allowed";
 	}
@@ -3270,7 +3270,7 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		if (potentialValue.includes("\0") || potentialValue.includes("\r") || potentialValue.includes("\n")) return false;
 		return true;
 	}
-	function setRequestReferrerPolicyOnRedirect$1(request$1, actualResponse) {
+	function setRequestReferrerPolicyOnRedirect$1(request$2, actualResponse) {
 		const { headersList } = actualResponse;
 		const policyHeader = (headersList.get("referrer-policy") ?? "").split(",");
 		let policy = "";
@@ -3281,7 +3281,7 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				break;
 			}
 		}
-		if (policy !== "") request$1.referrerPolicy = policy;
+		if (policy !== "") request$2.referrerPolicy = policy;
 	}
 	function crossOriginResourcePolicyCheck$1() {
 		return "allowed";
@@ -3297,26 +3297,26 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		header = httpRequest.mode;
 		httpRequest.headersList.set("sec-fetch-mode", header);
 	}
-	function appendRequestOriginHeader$1(request$1) {
-		let serializedOrigin = request$1.origin;
-		if (request$1.responseTainting === "cors" || request$1.mode === "websocket") {
-			if (serializedOrigin) request$1.headersList.append("origin", serializedOrigin);
-		} else if (request$1.method !== "GET" && request$1.method !== "HEAD") {
-			switch (request$1.referrerPolicy) {
+	function appendRequestOriginHeader$1(request$2) {
+		let serializedOrigin = request$2.origin;
+		if (request$2.responseTainting === "cors" || request$2.mode === "websocket") {
+			if (serializedOrigin) request$2.headersList.append("origin", serializedOrigin);
+		} else if (request$2.method !== "GET" && request$2.method !== "HEAD") {
+			switch (request$2.referrerPolicy) {
 				case "no-referrer":
 					serializedOrigin = null;
 					break;
 				case "no-referrer-when-downgrade":
 				case "strict-origin":
 				case "strict-origin-when-cross-origin":
-					if (request$1.origin && urlHasHttpsScheme$1(request$1.origin) && !urlHasHttpsScheme$1(requestCurrentURL$1(request$1))) serializedOrigin = null;
+					if (request$2.origin && urlHasHttpsScheme$1(request$2.origin) && !urlHasHttpsScheme$1(requestCurrentURL$1(request$2))) serializedOrigin = null;
 					break;
 				case "same-origin":
-					if (!sameOrigin$2(request$1, requestCurrentURL$1(request$1))) serializedOrigin = null;
+					if (!sameOrigin$2(request$2, requestCurrentURL$1(request$2))) serializedOrigin = null;
 					break;
 				default:
 			}
-			if (serializedOrigin) request$1.headersList.append("origin", serializedOrigin);
+			if (serializedOrigin) request$2.headersList.append("origin", serializedOrigin);
 		}
 	}
 	function coarsenedSharedCurrentTime$1(crossOriginIsolatedCapability) {
@@ -3343,27 +3343,27 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 	function clonePolicyContainer$1(policyContainer) {
 		return { referrerPolicy: policyContainer.referrerPolicy };
 	}
-	function determineRequestsReferrer$1(request$1) {
-		const policy = request$1.referrerPolicy;
+	function determineRequestsReferrer$1(request$2) {
+		const policy = request$2.referrerPolicy;
 		assert$18(policy);
 		let referrerSource = null;
-		if (request$1.referrer === "client") {
+		if (request$2.referrer === "client") {
 			const globalOrigin$1 = getGlobalOrigin$3();
 			if (!globalOrigin$1 || globalOrigin$1.origin === "null") return "no-referrer";
 			referrerSource = new URL(globalOrigin$1);
-		} else if (request$1.referrer instanceof URL) referrerSource = request$1.referrer;
+		} else if (request$2.referrer instanceof URL) referrerSource = request$2.referrer;
 		let referrerURL = stripURLForReferrer(referrerSource);
 		const referrerOrigin = stripURLForReferrer(referrerSource, true);
 		if (referrerURL.toString().length > 4096) referrerURL = referrerOrigin;
-		const areSameOrigin = sameOrigin$2(request$1, referrerURL);
-		const isNonPotentiallyTrustWorthy = isURLPotentiallyTrustworthy(referrerURL) && !isURLPotentiallyTrustworthy(request$1.url);
+		const areSameOrigin = sameOrigin$2(request$2, referrerURL);
+		const isNonPotentiallyTrustWorthy = isURLPotentiallyTrustworthy(referrerURL) && !isURLPotentiallyTrustworthy(request$2.url);
 		switch (policy) {
 			case "origin": return referrerOrigin != null ? referrerOrigin : stripURLForReferrer(referrerSource, true);
 			case "unsafe-url": return referrerURL;
 			case "same-origin": return areSameOrigin ? referrerOrigin : "no-referrer";
 			case "origin-when-cross-origin": return areSameOrigin ? referrerURL : referrerOrigin;
 			case "strict-origin-when-cross-origin": {
-				const currentURL = requestCurrentURL$1(request$1);
+				const currentURL = requestCurrentURL$1(request$2);
 				if (sameOrigin$2(referrerURL, currentURL)) return referrerURL;
 				if (isURLPotentiallyTrustworthy(referrerURL) && !isURLPotentiallyTrustworthy(currentURL)) return "no-referrer";
 				return referrerOrigin;
@@ -3485,7 +3485,7 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		}
 		return true;
 	}
-	function tryUpgradeRequestToAPotentiallyTrustworthyURL$1(request$1) {}
+	function tryUpgradeRequestToAPotentiallyTrustworthyURL$1(request$2) {}
 	/**
 	* @link {https://html.spec.whatwg.org/multipage/origin.html#same-origin}
 	* @param {URL} A
@@ -3549,11 +3549,11 @@ var require_util$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 	* @param {string} name name of the instance
 	* @param {'key'|'value'|'key+value'} kind
 	*/
-	function makeIterator$2(iterator, name, kind) {
+	function makeIterator$2(iterator$1, name, kind) {
 		const object = {
 			index: 0,
 			kind,
-			target: iterator
+			target: iterator$1
 		};
 		const i = {
 			next() {
@@ -4682,13 +4682,13 @@ Content-Type: ${value.type || "application/octet-stream"}\r\n\r\n`);
 		}
 		if (typeof source === "string" || util$16.isBuffer(source)) length = Buffer.byteLength(source);
 		if (action != null) {
-			let iterator;
+			let iterator$1;
 			stream$2 = new ReadableStream$2({
 				async start() {
-					iterator = action(object)[Symbol.asyncIterator]();
+					iterator$1 = action(object)[Symbol.asyncIterator]();
 				},
 				async pull(controller) {
-					const { value, done } = await iterator.next();
+					const { value, done } = await iterator$1.next();
 					if (done) queueMicrotask(() => {
 						controller.close();
 					});
@@ -4696,7 +4696,7 @@ Content-Type: ${value.type || "application/octet-stream"}\r\n\r\n`);
 					return controller.desiredSize > 0;
 				},
 				async cancel(reason) {
-					await iterator.return();
+					await iterator$1.return();
 				},
 				type: void 0
 			});
@@ -4948,7 +4948,7 @@ var require_request$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@
 		channels$3.error = { hasSubscribers: false };
 	}
 	var Request$4 = class Request$4 {
-		constructor(origin, { path: path$5, method, body, headers, query, idempotent, blocking, upgrade: upgrade$1, headersTimeout, bodyTimeout, reset, throwOnError, expectContinue }, handler) {
+		constructor(origin, { path: path$5, method, body, headers, query, idempotent, blocking, upgrade: upgrade$1, headersTimeout, bodyTimeout, reset, throwOnError, expectContinue }, handler$1) {
 			if (typeof path$5 !== "string") throw new InvalidArgumentError$20("path must be a string");
 			else if (path$5[0] !== "/" && !(path$5.startsWith("http://") || path$5.startsWith("https://")) && method !== "CONNECT") throw new InvalidArgumentError$20("path must be an absolute URL or start with a slash");
 			else if (invalidPathRegex.exec(path$5) !== null) throw new InvalidArgumentError$20("invalid request path");
@@ -5022,9 +5022,9 @@ var require_request$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@
 				this.contentType = body.type;
 				this.headers += `content-type: ${body.type}\r\n`;
 			}
-			util$15.validateHandler(handler, method, upgrade$1);
+			util$15.validateHandler(handler$1, method, upgrade$1);
 			this.servername = util$15.getServerName(this.host);
-			this[kHandler] = handler;
+			this[kHandler] = handler$1;
 			if (channels$3.create.hasSubscribers) channels$3.create.publish({ request: this });
 		}
 		onBodySent(chunk) {
@@ -5121,28 +5121,28 @@ var require_request$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@
 			processHeader(this, key, value);
 			return this;
 		}
-		static [kHTTP1BuildRequest$1](origin, opts, handler) {
-			return new Request$4(origin, opts, handler);
+		static [kHTTP1BuildRequest$1](origin, opts, handler$1) {
+			return new Request$4(origin, opts, handler$1);
 		}
-		static [kHTTP2BuildRequest$1](origin, opts, handler) {
+		static [kHTTP2BuildRequest$1](origin, opts, handler$1) {
 			const headers = opts.headers;
 			opts = {
 				...opts,
 				headers: null
 			};
-			const request$1 = new Request$4(origin, opts, handler);
-			request$1.headers = {};
+			const request$2 = new Request$4(origin, opts, handler$1);
+			request$2.headers = {};
 			if (Array.isArray(headers)) {
 				if (headers.length % 2 !== 0) throw new InvalidArgumentError$20("headers array must be even");
-				for (let i = 0; i < headers.length; i += 2) processHeader(request$1, headers[i], headers[i + 1], true);
+				for (let i = 0; i < headers.length; i += 2) processHeader(request$2, headers[i], headers[i + 1], true);
 			} else if (headers && typeof headers === "object") {
 				const keys = Object.keys(headers);
 				for (let i = 0; i < keys.length; i++) {
 					const key = keys[i];
-					processHeader(request$1, key, headers[key], true);
+					processHeader(request$2, key, headers[key], true);
 				}
 			} else if (headers != null) throw new InvalidArgumentError$20("headers must be an object or an array");
-			return request$1;
+			return request$2;
 		}
 		static [kHTTP2CopyHeaders$1](raw) {
 			const rawHeaders = raw.split("\r\n");
@@ -5162,33 +5162,33 @@ var require_request$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@
 		if (headerCharRegex.exec(val) !== null) throw new InvalidArgumentError$20(`invalid ${key} header`);
 		return skipAppend ? val : `${key}: ${val}\r\n`;
 	}
-	function processHeader(request$1, key, val, skipAppend = false) {
+	function processHeader(request$2, key, val, skipAppend = false) {
 		if (val && typeof val === "object" && !Array.isArray(val)) throw new InvalidArgumentError$20(`invalid ${key} header`);
 		else if (val === void 0) return;
-		if (request$1.host === null && key.length === 4 && key.toLowerCase() === "host") {
+		if (request$2.host === null && key.length === 4 && key.toLowerCase() === "host") {
 			if (headerCharRegex.exec(val) !== null) throw new InvalidArgumentError$20(`invalid ${key} header`);
-			request$1.host = val;
-		} else if (request$1.contentLength === null && key.length === 14 && key.toLowerCase() === "content-length") {
-			request$1.contentLength = parseInt(val, 10);
-			if (!Number.isFinite(request$1.contentLength)) throw new InvalidArgumentError$20("invalid content-length header");
-		} else if (request$1.contentType === null && key.length === 12 && key.toLowerCase() === "content-type") {
-			request$1.contentType = val;
-			if (skipAppend) request$1.headers[key] = processHeaderValue(key, val, skipAppend);
-			else request$1.headers += processHeaderValue(key, val);
+			request$2.host = val;
+		} else if (request$2.contentLength === null && key.length === 14 && key.toLowerCase() === "content-length") {
+			request$2.contentLength = parseInt(val, 10);
+			if (!Number.isFinite(request$2.contentLength)) throw new InvalidArgumentError$20("invalid content-length header");
+		} else if (request$2.contentType === null && key.length === 12 && key.toLowerCase() === "content-type") {
+			request$2.contentType = val;
+			if (skipAppend) request$2.headers[key] = processHeaderValue(key, val, skipAppend);
+			else request$2.headers += processHeaderValue(key, val);
 		} else if (key.length === 17 && key.toLowerCase() === "transfer-encoding") throw new InvalidArgumentError$20("invalid transfer-encoding header");
 		else if (key.length === 10 && key.toLowerCase() === "connection") {
 			const value = typeof val === "string" ? val.toLowerCase() : null;
 			if (value !== "close" && value !== "keep-alive") throw new InvalidArgumentError$20("invalid connection header");
-			else if (value === "close") request$1.reset = true;
+			else if (value === "close") request$2.reset = true;
 		} else if (key.length === 10 && key.toLowerCase() === "keep-alive") throw new InvalidArgumentError$20("invalid keep-alive header");
 		else if (key.length === 7 && key.toLowerCase() === "upgrade") throw new InvalidArgumentError$20("invalid upgrade header");
 		else if (key.length === 6 && key.toLowerCase() === "expect") throw new NotSupportedError$1("expect header not supported");
 		else if (tokenRegExp.exec(key) === null) throw new InvalidArgumentError$20("invalid header key");
-		else if (Array.isArray(val)) for (let i = 0; i < val.length; i++) if (skipAppend) if (request$1.headers[key]) request$1.headers[key] += `,${processHeaderValue(key, val[i], skipAppend)}`;
-		else request$1.headers[key] = processHeaderValue(key, val[i], skipAppend);
-		else request$1.headers += processHeaderValue(key, val[i]);
-		else if (skipAppend) request$1.headers[key] = processHeaderValue(key, val, skipAppend);
-		else request$1.headers += processHeaderValue(key, val);
+		else if (Array.isArray(val)) for (let i = 0; i < val.length; i++) if (skipAppend) if (request$2.headers[key]) request$2.headers[key] += `,${processHeaderValue(key, val[i], skipAppend)}`;
+		else request$2.headers[key] = processHeaderValue(key, val[i], skipAppend);
+		else request$2.headers += processHeaderValue(key, val[i]);
+		else if (skipAppend) request$2.headers[key] = processHeaderValue(key, val, skipAppend);
+		else request$2.headers += processHeaderValue(key, val);
 	}
 	module.exports = Request$4;
 }) });
@@ -5301,26 +5301,26 @@ var require_dispatcher_base = /* @__PURE__ */ __commonJS({ "node_modules/.deno/u
 				queueMicrotask(onDestroyed);
 			});
 		}
-		[kInterceptedDispatch](opts, handler) {
+		[kInterceptedDispatch](opts, handler$1) {
 			if (!this[kInterceptors$5] || this[kInterceptors$5].length === 0) {
 				this[kInterceptedDispatch] = this[kDispatch$3];
-				return this[kDispatch$3](opts, handler);
+				return this[kDispatch$3](opts, handler$1);
 			}
 			let dispatch = this[kDispatch$3].bind(this);
 			for (let i = this[kInterceptors$5].length - 1; i >= 0; i--) dispatch = this[kInterceptors$5][i](dispatch);
 			this[kInterceptedDispatch] = dispatch;
-			return dispatch(opts, handler);
+			return dispatch(opts, handler$1);
 		}
-		dispatch(opts, handler) {
-			if (!handler || typeof handler !== "object") throw new InvalidArgumentError$19("handler must be an object");
+		dispatch(opts, handler$1) {
+			if (!handler$1 || typeof handler$1 !== "object") throw new InvalidArgumentError$19("handler must be an object");
 			try {
 				if (!opts || typeof opts !== "object") throw new InvalidArgumentError$19("opts must be an object.");
 				if (this[kDestroyed] || this[kOnDestroyed]) throw new ClientDestroyedError$1();
 				if (this[kClosed]) throw new ClientClosedError();
-				return this[kInterceptedDispatch](opts, handler);
+				return this[kInterceptedDispatch](opts, handler$1);
 			} catch (err) {
-				if (typeof handler.onError !== "function") throw new InvalidArgumentError$19("invalid onError method");
-				handler.onError(err);
+				if (typeof handler$1.onError !== "function") throw new InvalidArgumentError$19("invalid onError method");
+				handler$1.onError(err);
 				return false;
 			}
 		}
@@ -5462,7 +5462,7 @@ var require_connect = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 
 //#endregion
 //#region node_modules/.deno/undici@5.29.0/node_modules/undici/lib/llhttp/utils.js
-var require_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29.0/node_modules/undici/lib/llhttp/utils.js": ((exports) => {
+var require_utils$2 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29.0/node_modules/undici/lib/llhttp/utils.js": ((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	function enumToMap(obj) {
 		const res = {};
@@ -5480,7 +5480,7 @@ var require_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 var require_constants$2 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29.0/node_modules/undici/lib/llhttp/constants.js": ((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.SPECIAL_HEADERS = exports.HEADER_STATE = exports.MINOR = exports.MAJOR = exports.CONNECTION_TOKEN_CHARS = exports.HEADER_CHARS = exports.TOKEN = exports.STRICT_TOKEN = exports.HEX = exports.URL_CHAR = exports.STRICT_URL_CHAR = exports.USERINFO_CHARS = exports.MARK = exports.ALPHANUM = exports.NUM = exports.HEX_MAP = exports.NUM_MAP = exports.ALPHA = exports.FINISH = exports.H_METHOD_MAP = exports.METHOD_MAP = exports.METHODS_RTSP = exports.METHODS_ICE = exports.METHODS_HTTP = exports.METHODS = exports.LENIENT_FLAGS = exports.FLAGS = exports.TYPE = exports.ERROR = void 0;
-	const utils_1$1 = require_utils();
+	const utils_1$2 = require_utils$2();
 	(function(ERROR) {
 		ERROR[ERROR["OK"] = 0] = "OK";
 		ERROR[ERROR["INTERNAL"] = 1] = "INTERNAL";
@@ -5632,7 +5632,7 @@ var require_constants$2 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undic
 		METHODS.GET,
 		METHODS.POST
 	];
-	exports.METHOD_MAP = utils_1$1.enumToMap(METHODS);
+	exports.METHOD_MAP = utils_1$2.enumToMap(METHODS);
 	exports.H_METHOD_MAP = {};
 	Object.keys(exports.METHOD_MAP).forEach((key) => {
 		if (/^H/.test(key)) exports.H_METHOD_MAP[key] = exports.METHOD_MAP[key];
@@ -5838,9 +5838,9 @@ var require_RedirectHandler = /* @__PURE__ */ __commonJS({ "node_modules/.deno/u
 		}
 	};
 	var RedirectHandler$2 = class {
-		constructor(dispatch, maxRedirections, opts, handler) {
+		constructor(dispatch, maxRedirections, opts, handler$1) {
 			if (maxRedirections != null && (!Number.isInteger(maxRedirections) || maxRedirections < 0)) throw new InvalidArgumentError$17("maxRedirections must be a positive number");
-			util$13.validateHandler(handler, opts.method, opts.upgrade);
+			util$13.validateHandler(handler$1, opts.method, opts.upgrade);
 			this.dispatch = dispatch;
 			this.location = null;
 			this.abort = null;
@@ -5849,7 +5849,7 @@ var require_RedirectHandler = /* @__PURE__ */ __commonJS({ "node_modules/.deno/u
 				maxRedirections: 0
 			};
 			this.maxRedirections = maxRedirections;
-			this.handler = handler;
+			this.handler = handler$1;
 			this.history = [];
 			if (util$13.isStream(this.opts.body)) {
 				if (util$13.bodyLength(this.opts.body) === 0) this.opts.body.on("data", function() {
@@ -5935,10 +5935,10 @@ var require_redirectInterceptor = /* @__PURE__ */ __commonJS({ "node_modules/.de
 	const RedirectHandler$1 = require_RedirectHandler();
 	function createRedirectInterceptor$3({ maxRedirections: defaultMaxRedirections }) {
 		return (dispatch) => {
-			return function Intercept(opts, handler) {
+			return function Intercept(opts, handler$1) {
 				const { maxRedirections = defaultMaxRedirections } = opts;
-				if (!maxRedirections) return dispatch(opts, handler);
-				const redirectHandler = new RedirectHandler$1(dispatch, maxRedirections, opts, handler);
+				if (!maxRedirections) return dispatch(opts, handler$1);
+				const redirectHandler = new RedirectHandler$1(dispatch, maxRedirections, opts, handler$1);
 				opts = {
 					...opts,
 					maxRedirections: 0
@@ -6105,11 +6105,11 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			connect$1(this);
 			this.once("connect", cb);
 		}
-		[kDispatch$2](opts, handler) {
+		[kDispatch$2](opts, handler$1) {
 			const origin = opts.origin || this[kUrl$3].origin;
-			const request$1 = this[kHTTPConnVersion] === "h2" ? Request$3[kHTTP2BuildRequest](origin, opts, handler) : Request$3[kHTTP1BuildRequest](origin, opts, handler);
-			this[kQueue$1].push(request$1);
-			if (this[kResuming]) {} else if (util$12.bodyLength(request$1.body) == null && util$12.isIterable(request$1.body)) {
+			const request$2 = this[kHTTPConnVersion] === "h2" ? Request$3[kHTTP2BuildRequest](origin, opts, handler$1) : Request$3[kHTTP1BuildRequest](origin, opts, handler$1);
+			this[kQueue$1].push(request$2);
+			if (this[kResuming]) {} else if (util$12.bodyLength(request$2.body) == null && util$12.isIterable(request$2.body)) {
 				this[kResuming] = 1;
 				process.nextTick(resume, this);
 			} else resume(this, true);
@@ -6126,8 +6126,8 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			return new Promise((resolve) => {
 				const requests = this[kQueue$1].splice(this[kPendingIdx]);
 				for (let i = 0; i < requests.length; i++) {
-					const request$1 = requests[i];
-					errorRequest(this, request$1, err);
+					const request$2 = requests[i];
+					errorRequest(this, request$2, err);
 				}
 				const callback = () => {
 					if (this[kClosedResolve$1]) {
@@ -6172,13 +6172,13 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			assert$12(this[kPending$2] === 0);
 			const requests = client[kQueue$1].splice(client[kRunningIdx]);
 			for (let i = 0; i < requests.length; i++) {
-				const request$1 = requests[i];
-				errorRequest(this, request$1, err);
+				const request$2 = requests[i];
+				errorRequest(this, request$2, err);
 			}
 		} else if (client[kRunning$3] > 0) {
-			const request$1 = client[kQueue$1][client[kRunningIdx]];
+			const request$2 = client[kQueue$1][client[kRunningIdx]];
 			client[kQueue$1][client[kRunningIdx]++] = null;
-			errorRequest(client, request$1, err);
+			errorRequest(client, request$2, err);
 		}
 		client[kPendingIdx] = client[kRunningIdx];
 		assert$12(client[kRunning$3] === 0);
@@ -6395,12 +6395,12 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		onUpgrade(head) {
 			const { upgrade: upgrade$1, client, socket, headers, statusCode } = this;
 			assert$12(upgrade$1);
-			const request$1 = client[kQueue$1][client[kRunningIdx]];
-			assert$12(request$1);
+			const request$2 = client[kQueue$1][client[kRunningIdx]];
+			assert$12(request$2);
 			assert$12(!socket.destroyed);
 			assert$12(socket === client[kSocket]);
 			assert$12(!this.paused);
-			assert$12(request$1.upgrade || request$1.method === "CONNECT");
+			assert$12(request$2.upgrade || request$2.method === "CONNECT");
 			this.statusCode = null;
 			this.statusText = "";
 			this.shouldKeepAlive = null;
@@ -6417,7 +6417,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			client[kQueue$1][client[kRunningIdx]++] = null;
 			client.emit("disconnect", client[kUrl$3], [client], new InformationalError("upgrade"));
 			try {
-				request$1.onUpgrade(statusCode, headers, socket);
+				request$2.onUpgrade(statusCode, headers, socket);
 			} catch (err) {
 				util$12.destroy(socket, err);
 			}
@@ -6427,30 +6427,30 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			const { client, socket, headers, statusText } = this;
 			/* istanbul ignore next: difficult to make a test case for */
 			if (socket.destroyed) return -1;
-			const request$1 = client[kQueue$1][client[kRunningIdx]];
+			const request$2 = client[kQueue$1][client[kRunningIdx]];
 			/* istanbul ignore next: difficult to make a test case for */
-			if (!request$1) return -1;
+			if (!request$2) return -1;
 			assert$12(!this.upgrade);
 			assert$12(this.statusCode < 200);
 			if (statusCode === 100) {
 				util$12.destroy(socket, new SocketError$2("bad response", util$12.getSocketInfo(socket)));
 				return -1;
 			}
-			if (upgrade$1 && !request$1.upgrade) {
+			if (upgrade$1 && !request$2.upgrade) {
 				util$12.destroy(socket, new SocketError$2("bad upgrade", util$12.getSocketInfo(socket)));
 				return -1;
 			}
 			assert$12.strictEqual(this.timeoutType, TIMEOUT_HEADERS);
 			this.statusCode = statusCode;
-			this.shouldKeepAlive = shouldKeepAlive || request$1.method === "HEAD" && !socket[kReset] && this.connection.toLowerCase() === "keep-alive";
+			this.shouldKeepAlive = shouldKeepAlive || request$2.method === "HEAD" && !socket[kReset] && this.connection.toLowerCase() === "keep-alive";
 			if (this.statusCode >= 200) {
-				const bodyTimeout = request$1.bodyTimeout != null ? request$1.bodyTimeout : client[kBodyTimeout];
+				const bodyTimeout = request$2.bodyTimeout != null ? request$2.bodyTimeout : client[kBodyTimeout];
 				this.setTimeout(bodyTimeout, TIMEOUT_BODY);
 			} else if (this.timeout) {
 				// istanbul ignore else: only for jest
 				if (this.timeout.refresh) this.timeout.refresh();
 			}
-			if (request$1.method === "CONNECT") {
+			if (request$2.method === "CONNECT") {
 				assert$12(client[kRunning$3] === 1);
 				this.upgrade = true;
 				return 2;
@@ -6471,9 +6471,9 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 					else client[kKeepAliveTimeoutValue] = timeout;
 				} else client[kKeepAliveTimeoutValue] = client[kKeepAliveDefaultTimeout];
 			} else socket[kReset] = true;
-			const pause = request$1.onHeaders(statusCode, headers, this.resume, statusText) === false;
-			if (request$1.aborted) return -1;
-			if (request$1.method === "HEAD") return 1;
+			const pause = request$2.onHeaders(statusCode, headers, this.resume, statusText) === false;
+			if (request$2.aborted) return -1;
+			if (request$2.method === "HEAD") return 1;
 			if (statusCode < 200) return 1;
 			if (socket[kBlocking]) {
 				socket[kBlocking] = false;
@@ -6484,8 +6484,8 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		onBody(buf) {
 			const { client, socket, statusCode, maxResponseSize } = this;
 			if (socket.destroyed) return -1;
-			const request$1 = client[kQueue$1][client[kRunningIdx]];
-			assert$12(request$1);
+			const request$2 = client[kQueue$1][client[kRunningIdx]];
+			assert$12(request$2);
 			assert$12.strictEqual(this.timeoutType, TIMEOUT_BODY);
 			if (this.timeout) {
 				// istanbul ignore else: only for jest
@@ -6497,14 +6497,14 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				return -1;
 			}
 			this.bytesRead += buf.length;
-			if (request$1.onData(buf) === false) return constants.ERROR.PAUSED;
+			if (request$2.onData(buf) === false) return constants.ERROR.PAUSED;
 		}
 		onMessageComplete() {
 			const { client, socket, statusCode, upgrade: upgrade$1, headers, contentLength, bytesRead, shouldKeepAlive } = this;
 			if (socket.destroyed && (!statusCode || shouldKeepAlive)) return -1;
 			if (upgrade$1) return;
-			const request$1 = client[kQueue$1][client[kRunningIdx]];
-			assert$12(request$1);
+			const request$2 = client[kQueue$1][client[kRunningIdx]];
+			assert$12(request$2);
 			assert$12(statusCode >= 100);
 			this.statusCode = null;
 			this.statusText = "";
@@ -6517,11 +6517,11 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			this.headersSize = 0;
 			if (statusCode < 200) return;
 			/* istanbul ignore next: should be handled by llhttp? */
-			if (request$1.method !== "HEAD" && contentLength && bytesRead !== parseInt(contentLength, 10)) {
+			if (request$2.method !== "HEAD" && contentLength && bytesRead !== parseInt(contentLength, 10)) {
 				util$12.destroy(socket, new ResponseContentLengthMismatchError());
 				return -1;
 			}
-			request$1.onComplete(headers);
+			request$2.onComplete(headers);
 			client[kQueue$1][client[kRunningIdx]++] = null;
 			if (socket[kWriting]) {
 				assert$12.strictEqual(client[kRunning$3], 0);
@@ -6573,8 +6573,8 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			assert$12(client[kPendingIdx] === client[kRunningIdx]);
 			const requests = client[kQueue$1].splice(client[kRunningIdx]);
 			for (let i = 0; i < requests.length; i++) {
-				const request$1 = requests[i];
-				errorRequest(client, request$1, err);
+				const request$2 = requests[i];
+				errorRequest(client, request$2, err);
 			}
 			assert$12(client[kSize$4] === 0);
 		}
@@ -6602,13 +6602,13 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			assert$12(client[kPending$2] === 0);
 			const requests = client[kQueue$1].splice(client[kRunningIdx]);
 			for (let i = 0; i < requests.length; i++) {
-				const request$1 = requests[i];
-				errorRequest(client, request$1, err);
+				const request$2 = requests[i];
+				errorRequest(client, request$2, err);
 			}
 		} else if (client[kRunning$3] > 0 && err.code !== "UND_ERR_INFO") {
-			const request$1 = client[kQueue$1][client[kRunningIdx]];
+			const request$2 = client[kQueue$1][client[kRunningIdx]];
 			client[kQueue$1][client[kRunningIdx]++] = null;
-			errorRequest(client, request$1, err);
+			errorRequest(client, request$2, err);
 		}
 		client[kPendingIdx] = client[kRunningIdx];
 		assert$12(client[kRunning$3] === 0);
@@ -6726,8 +6726,8 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			if (err.code === "ERR_TLS_CERT_ALTNAME_INVALID") {
 				assert$12(client[kRunning$3] === 0);
 				while (client[kPending$2] > 0 && client[kQueue$1][client[kPendingIdx]].servername === client[kServerName]) {
-					const request$1 = client[kQueue$1][client[kPendingIdx]++];
-					errorRequest(client, request$1, err);
+					const request$2 = client[kQueue$1][client[kPendingIdx]++];
+					errorRequest(client, request$2, err);
 				}
 			} else onError(client, err);
 			client.emit("connectionError", client[kUrl$3], [client], err);
@@ -6775,8 +6775,8 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 					if (socket[kParser].timeoutType !== TIMEOUT_IDLE) socket[kParser].setTimeout(client[kKeepAliveTimeoutValue], TIMEOUT_IDLE);
 				} else if (client[kRunning$3] > 0 && socket[kParser].statusCode < 200) {
 					if (socket[kParser].timeoutType !== TIMEOUT_HEADERS) {
-						const request$2 = client[kQueue$1][client[kRunningIdx]];
-						const headersTimeout = request$2.headersTimeout != null ? request$2.headersTimeout : client[kHeadersTimeout];
+						const request$3 = client[kQueue$1][client[kRunningIdx]];
+						const headersTimeout = request$3.headersTimeout != null ? request$3.headersTimeout : client[kHeadersTimeout];
 						socket[kParser].setTimeout(headersTimeout, TIMEOUT_HEADERS);
 					}
 				}
@@ -6791,11 +6791,11 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			}
 			if (client[kPending$2] === 0) return;
 			if (client[kRunning$3] >= (client[kPipelining] || 1)) return;
-			const request$1 = client[kQueue$1][client[kPendingIdx]];
-			if (client[kUrl$3].protocol === "https:" && client[kServerName] !== request$1.servername) {
+			const request$2 = client[kQueue$1][client[kPendingIdx]];
+			if (client[kUrl$3].protocol === "https:" && client[kServerName] !== request$2.servername) {
 				if (client[kRunning$3] > 0) return;
-				client[kServerName] = request$1.servername;
-				if (socket && socket.servername !== request$1.servername) {
+				client[kServerName] = request$2.servername;
+				if (socket && socket.servername !== request$2.servername) {
 					util$12.destroy(socket, new InformationalError("servername changed"));
 					return;
 				}
@@ -6806,46 +6806,46 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				return;
 			}
 			if (socket.destroyed || socket[kWriting] || socket[kReset] || socket[kBlocking]) return;
-			if (client[kRunning$3] > 0 && !request$1.idempotent) return;
-			if (client[kRunning$3] > 0 && (request$1.upgrade || request$1.method === "CONNECT")) return;
-			if (client[kRunning$3] > 0 && util$12.bodyLength(request$1.body) !== 0 && (util$12.isStream(request$1.body) || util$12.isAsyncIterable(request$1.body))) return;
-			if (!request$1.aborted && write(client, request$1)) client[kPendingIdx]++;
+			if (client[kRunning$3] > 0 && !request$2.idempotent) return;
+			if (client[kRunning$3] > 0 && (request$2.upgrade || request$2.method === "CONNECT")) return;
+			if (client[kRunning$3] > 0 && util$12.bodyLength(request$2.body) !== 0 && (util$12.isStream(request$2.body) || util$12.isAsyncIterable(request$2.body))) return;
+			if (!request$2.aborted && write(client, request$2)) client[kPendingIdx]++;
 			else client[kQueue$1].splice(client[kPendingIdx], 1);
 		}
 	}
 	function shouldSendContentLength(method) {
 		return method !== "GET" && method !== "HEAD" && method !== "OPTIONS" && method !== "TRACE" && method !== "CONNECT";
 	}
-	function write(client, request$1) {
+	function write(client, request$2) {
 		if (client[kHTTPConnVersion] === "h2") {
-			writeH2(client, client[kHTTP2Session], request$1);
+			writeH2(client, client[kHTTP2Session], request$2);
 			return;
 		}
-		const { body, method, path: path$5, host, upgrade: upgrade$1, headers, blocking, reset } = request$1;
+		const { body, method, path: path$5, host, upgrade: upgrade$1, headers, blocking, reset } = request$2;
 		const expectsPayload = method === "PUT" || method === "POST" || method === "PATCH";
 		if (body && typeof body.read === "function") body.read(0);
 		const bodyLength$1 = util$12.bodyLength(body);
 		let contentLength = bodyLength$1;
-		if (contentLength === null) contentLength = request$1.contentLength;
+		if (contentLength === null) contentLength = request$2.contentLength;
 		if (contentLength === 0 && !expectsPayload) contentLength = null;
-		if (shouldSendContentLength(method) && contentLength > 0 && request$1.contentLength !== null && request$1.contentLength !== contentLength) {
+		if (shouldSendContentLength(method) && contentLength > 0 && request$2.contentLength !== null && request$2.contentLength !== contentLength) {
 			if (client[kStrictContentLength]) {
-				errorRequest(client, request$1, new RequestContentLengthMismatchError());
+				errorRequest(client, request$2, new RequestContentLengthMismatchError());
 				return false;
 			}
 			process.emitWarning(new RequestContentLengthMismatchError());
 		}
 		const socket = client[kSocket];
 		try {
-			request$1.onConnect((err) => {
-				if (request$1.aborted || request$1.completed) return;
-				errorRequest(client, request$1, err || new RequestAbortedError$8());
+			request$2.onConnect((err) => {
+				if (request$2.aborted || request$2.completed) return;
+				errorRequest(client, request$2, err || new RequestAbortedError$8());
 				util$12.destroy(socket, new InformationalError("aborted"));
 			});
 		} catch (err) {
-			errorRequest(client, request$1, err);
+			errorRequest(client, request$2, err);
 		}
-		if (request$1.aborted) return false;
+		if (request$2.aborted) return false;
 		if (method === "HEAD") socket[kReset] = true;
 		if (upgrade$1 || method === "CONNECT") socket[kReset] = true;
 		if (reset != null) socket[kReset] = reset;
@@ -6859,7 +6859,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		else header += "connection: close\r\n";
 		if (headers) header += headers;
 		if (channels$2.sendHeaders.hasSubscribers) channels$2.sendHeaders.publish({
-			request: request$1,
+			request: request$2,
 			headers: header,
 			socket
 		});
@@ -6870,20 +6870,20 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				assert$12(contentLength === null, "no body must not have content length");
 				socket.write(`${header}\r\n`, "latin1");
 			}
-			request$1.onRequestSent();
+			request$2.onRequestSent();
 		} else if (util$12.isBuffer(body)) {
 			assert$12(contentLength === body.byteLength, "buffer body must have content length");
 			socket.cork();
 			socket.write(`${header}content-length: ${contentLength}\r\n\r\n`, "latin1");
 			socket.write(body);
 			socket.uncork();
-			request$1.onBodySent(body);
-			request$1.onRequestSent();
+			request$2.onBodySent(body);
+			request$2.onRequestSent();
 			if (!expectsPayload) socket[kReset] = true;
 		} else if (util$12.isBlobLike(body)) if (typeof body.stream === "function") writeIterable({
 			body: body.stream(),
 			client,
-			request: request$1,
+			request: request$2,
 			socket,
 			contentLength,
 			header,
@@ -6892,7 +6892,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		else writeBlob({
 			body,
 			client,
-			request: request$1,
+			request: request$2,
 			socket,
 			contentLength,
 			header,
@@ -6901,7 +6901,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		else if (util$12.isStream(body)) writeStream({
 			body,
 			client,
-			request: request$1,
+			request: request$2,
 			socket,
 			contentLength,
 			header,
@@ -6910,7 +6910,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		else if (util$12.isIterable(body)) writeIterable({
 			body,
 			client,
-			request: request$1,
+			request: request$2,
 			socket,
 			contentLength,
 			header,
@@ -6919,24 +6919,24 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		else assert$12(false);
 		return true;
 	}
-	function writeH2(client, session, request$1) {
-		const { body, method, path: path$5, host, upgrade: upgrade$1, expectContinue, signal, headers: reqHeaders } = request$1;
+	function writeH2(client, session, request$2) {
+		const { body, method, path: path$5, host, upgrade: upgrade$1, expectContinue, signal, headers: reqHeaders } = request$2;
 		let headers;
 		if (typeof reqHeaders === "string") headers = Request$3[kHTTP2CopyHeaders](reqHeaders.trim());
 		else headers = reqHeaders;
 		if (upgrade$1) {
-			errorRequest(client, request$1, /* @__PURE__ */ new Error("Upgrade not supported for H2"));
+			errorRequest(client, request$2, /* @__PURE__ */ new Error("Upgrade not supported for H2"));
 			return false;
 		}
 		try {
-			request$1.onConnect((err) => {
-				if (request$1.aborted || request$1.completed) return;
-				errorRequest(client, request$1, err || new RequestAbortedError$8());
+			request$2.onConnect((err) => {
+				if (request$2.aborted || request$2.completed) return;
+				errorRequest(client, request$2, err || new RequestAbortedError$8());
 			});
 		} catch (err) {
-			errorRequest(client, request$1, err);
+			errorRequest(client, request$2, err);
 		}
-		if (request$1.aborted) return false;
+		if (request$2.aborted) return false;
 		/** @type {import('node:http2').ClientHttp2Stream} */
 		let stream$2;
 		const h2State = client[kHTTP2SessionState];
@@ -6949,10 +6949,10 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				signal
 			});
 			if (stream$2.id && !stream$2.pending) {
-				request$1.onUpgrade(null, null, stream$2);
+				request$2.onUpgrade(null, null, stream$2);
 				++h2State.openStreams;
 			} else stream$2.once("ready", () => {
-				request$1.onUpgrade(null, null, stream$2);
+				request$2.onUpgrade(null, null, stream$2);
 				++h2State.openStreams;
 			});
 			stream$2.once("close", () => {
@@ -6966,11 +6966,11 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		const expectsPayload = method === "PUT" || method === "POST" || method === "PATCH";
 		if (body && typeof body.read === "function") body.read(0);
 		let contentLength = util$12.bodyLength(body);
-		if (contentLength == null) contentLength = request$1.contentLength;
+		if (contentLength == null) contentLength = request$2.contentLength;
 		if (contentLength === 0 || !expectsPayload) contentLength = null;
-		if (shouldSendContentLength(method) && contentLength > 0 && request$1.contentLength != null && request$1.contentLength !== contentLength) {
+		if (shouldSendContentLength(method) && contentLength > 0 && request$2.contentLength != null && request$2.contentLength !== contentLength) {
 			if (client[kStrictContentLength]) {
-				errorRequest(client, request$1, new RequestContentLengthMismatchError());
+				errorRequest(client, request$2, new RequestContentLengthMismatchError());
 				return false;
 			}
 			process.emitWarning(new RequestContentLengthMismatchError());
@@ -6998,13 +6998,13 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		++h2State.openStreams;
 		stream$2.once("response", (headers$1) => {
 			const { [HTTP2_HEADER_STATUS]: statusCode,...realHeaders } = headers$1;
-			if (request$1.onHeaders(Number(statusCode), realHeaders, stream$2.resume.bind(stream$2), "") === false) stream$2.pause();
+			if (request$2.onHeaders(Number(statusCode), realHeaders, stream$2.resume.bind(stream$2), "") === false) stream$2.pause();
 		});
 		stream$2.once("end", () => {
-			request$1.onComplete([]);
+			request$2.onComplete([]);
 		});
 		stream$2.on("data", (chunk) => {
-			if (request$1.onData(chunk) === false) stream$2.pause();
+			if (request$2.onData(chunk) === false) stream$2.pause();
 		});
 		stream$2.once("close", () => {
 			h2State.openStreams -= 1;
@@ -7018,7 +7018,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		});
 		stream$2.once("frameError", (type, code) => {
 			const err = new InformationalError(`HTTP/2: "frameError" received - type ${type}, code ${code}`);
-			errorRequest(client, request$1, err);
+			errorRequest(client, request$2, err);
 			if (client[kHTTP2Session] && !client[kHTTP2Session].destroyed && !this.closed && !this.destroyed) {
 				h2State.streams -= 1;
 				util$12.destroy(stream$2, err);
@@ -7027,18 +7027,18 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		return true;
 		function writeBodyH2() {
 			/* istanbul ignore else: assertion */
-			if (!body) request$1.onRequestSent();
+			if (!body) request$2.onRequestSent();
 			else if (util$12.isBuffer(body)) {
 				assert$12(contentLength === body.byteLength, "buffer body must have content length");
 				stream$2.cork();
 				stream$2.write(body);
 				stream$2.uncork();
 				stream$2.end();
-				request$1.onBodySent(body);
-				request$1.onRequestSent();
+				request$2.onBodySent(body);
+				request$2.onRequestSent();
 			} else if (util$12.isBlobLike(body)) if (typeof body.stream === "function") writeIterable({
 				client,
-				request: request$1,
+				request: request$2,
 				contentLength,
 				h2stream: stream$2,
 				expectsPayload,
@@ -7049,7 +7049,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			else writeBlob({
 				body,
 				client,
-				request: request$1,
+				request: request$2,
 				contentLength,
 				expectsPayload,
 				h2stream: stream$2,
@@ -7059,7 +7059,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			else if (util$12.isStream(body)) writeStream({
 				body,
 				client,
-				request: request$1,
+				request: request$2,
 				contentLength,
 				expectsPayload,
 				socket: client[kSocket],
@@ -7069,7 +7069,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			else if (util$12.isIterable(body)) writeIterable({
 				body,
 				client,
-				request: request$1,
+				request: request$2,
 				contentLength,
 				expectsPayload,
 				header: "",
@@ -7079,14 +7079,14 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			else assert$12(false);
 		}
 	}
-	function writeStream({ h2stream, body, client, request: request$1, socket, contentLength, header, expectsPayload }) {
+	function writeStream({ h2stream, body, client, request: request$2, socket, contentLength, header, expectsPayload }) {
 		assert$12(contentLength !== 0 || client[kRunning$3] === 0, "stream body cannot be pipelined");
 		if (client[kHTTPConnVersion] === "h2") {
 			const pipe = pipeline$2(body, h2stream, (err) => {
 				if (err) {
 					util$12.destroy(body, err);
 					util$12.destroy(h2stream, err);
-				} else request$1.onRequestSent();
+				} else request$2.onRequestSent();
 			});
 			pipe.on("data", onPipeData);
 			pipe.once("end", () => {
@@ -7094,14 +7094,14 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				util$12.destroy(pipe);
 			});
 			function onPipeData(chunk) {
-				request$1.onBodySent(chunk);
+				request$2.onBodySent(chunk);
 			}
 			return;
 		}
 		let finished$1 = false;
 		const writer = new AsyncWriter({
 			socket,
-			request: request$1,
+			request: request$2,
 			contentLength,
 			client,
 			expectsPayload,
@@ -7143,7 +7143,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		if (body.resume) body.resume();
 		socket.on("drain", onDrain).on("error", onFinished);
 	}
-	async function writeBlob({ h2stream, body, client, request: request$1, socket, contentLength, header, expectsPayload }) {
+	async function writeBlob({ h2stream, body, client, request: request$2, socket, contentLength, header, expectsPayload }) {
 		assert$12(contentLength === body.size, "blob body must have content length");
 		const isH2 = client[kHTTPConnVersion] === "h2";
 		try {
@@ -7159,15 +7159,15 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				socket.write(buffer);
 				socket.uncork();
 			}
-			request$1.onBodySent(buffer);
-			request$1.onRequestSent();
+			request$2.onBodySent(buffer);
+			request$2.onRequestSent();
 			if (!expectsPayload) socket[kReset] = true;
 			resume(client);
 		} catch (err) {
 			util$12.destroy(isH2 ? h2stream : socket, err);
 		}
 	}
-	async function writeIterable({ h2stream, body, client, request: request$1, socket, contentLength, header, expectsPayload }) {
+	async function writeIterable({ h2stream, body, client, request: request$2, socket, contentLength, header, expectsPayload }) {
 		assert$12(contentLength !== 0 || client[kRunning$3] === 0, "iterator body cannot be pipelined");
 		let callback = null;
 		function onDrain() {
@@ -7188,13 +7188,13 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				for await (const chunk of body) {
 					if (socket[kError$2]) throw socket[kError$2];
 					const res = h2stream.write(chunk);
-					request$1.onBodySent(chunk);
+					request$2.onBodySent(chunk);
 					if (!res) await waitForDrain();
 				}
 			} catch (err) {
 				h2stream.destroy(err);
 			} finally {
-				request$1.onRequestSent();
+				request$2.onRequestSent();
 				h2stream.end();
 				h2stream.off("close", onDrain).off("drain", onDrain);
 			}
@@ -7203,7 +7203,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		socket.on("close", onDrain).on("drain", onDrain);
 		const writer = new AsyncWriter({
 			socket,
-			request: request$1,
+			request: request$2,
 			contentLength,
 			client,
 			expectsPayload,
@@ -7222,9 +7222,9 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 		}
 	}
 	var AsyncWriter = class {
-		constructor({ socket, request: request$1, contentLength, client, expectsPayload, header }) {
+		constructor({ socket, request: request$2, contentLength, client, expectsPayload, header }) {
 			this.socket = socket;
-			this.request = request$1;
+			this.request = request$2;
 			this.contentLength = contentLength;
 			this.client = client;
 			this.bytesWritten = 0;
@@ -7233,7 +7233,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			socket[kWriting] = true;
 		}
 		write(chunk) {
-			const { socket, request: request$1, contentLength, client, bytesWritten, expectsPayload, header } = this;
+			const { socket, request: request$2, contentLength, client, bytesWritten, expectsPayload, header } = this;
 			if (socket[kError$2]) throw socket[kError$2];
 			if (socket.destroyed) return false;
 			const len = Buffer.byteLength(chunk);
@@ -7252,7 +7252,7 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			this.bytesWritten += len;
 			const ret = socket.write(chunk);
 			socket.uncork();
-			request$1.onBodySent(chunk);
+			request$2.onBodySent(chunk);
 			if (!ret) {
 				if (socket[kParser].timeout && socket[kParser].timeoutType === TIMEOUT_HEADERS) {
 					// istanbul ignore else: only for jest
@@ -7262,8 +7262,8 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			return ret;
 		}
 		end() {
-			const { socket, contentLength, client, bytesWritten, expectsPayload, header, request: request$1 } = this;
-			request$1.onRequestSent();
+			const { socket, contentLength, client, bytesWritten, expectsPayload, header, request: request$2 } = this;
+			request$2.onRequestSent();
 			socket[kWriting] = false;
 			if (socket[kError$2]) throw socket[kError$2];
 			if (socket.destroyed) return;
@@ -7287,10 +7287,10 @@ var require_client = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 			}
 		}
 	};
-	function errorRequest(client, request$1, err) {
+	function errorRequest(client, request$2, err) {
 		try {
-			request$1.onError(err);
-			assert$12(request$1.aborted);
+			request$2.onError(err);
+			assert$12(request$2.aborted);
 		} catch (err$1) {
 			client.emit("error", err$1);
 		}
@@ -7473,16 +7473,16 @@ var require_pool_base = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@
 			}
 			return Promise.all(this[kClients$4].map((c) => c.destroy(err)));
 		}
-		[kDispatch$1](opts, handler) {
+		[kDispatch$1](opts, handler$1) {
 			const dispatcher = this[kGetDispatcher$2]();
 			if (!dispatcher) {
 				this[kNeedDrain$2] = true;
 				this[kQueue].push({
 					opts,
-					handler
+					handler: handler$1
 				});
 				this[kQueued]++;
-			} else if (!dispatcher.dispatch(opts, handler)) {
+			} else if (!dispatcher.dispatch(opts, handler$1)) {
 				dispatcher[kNeedDrain$2] = true;
 				this[kNeedDrain$2] = !this[kGetDispatcher$2]();
 			}
@@ -7777,7 +7777,7 @@ var require_agent = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			}
 			return ret;
 		}
-		[kDispatch](opts, handler) {
+		[kDispatch](opts, handler$1) {
 			let key;
 			if (opts.origin && (typeof opts.origin === "string" || opts.origin instanceof URL)) key = String(opts.origin);
 			else throw new InvalidArgumentError$13("opts.origin must be a non-empty string or URL.");
@@ -7788,7 +7788,7 @@ var require_agent = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 				this[kClients$1].set(key, new WeakRef$1(dispatcher));
 				this[kFinalizer].register(dispatcher, key);
 			}
-			return dispatcher.dispatch(opts, handler);
+			return dispatcher.dispatch(opts, handler$1);
 		}
 		async [kClose$3]() {
 			const closePromises = [];
@@ -7826,7 +7826,7 @@ var require_readable = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5
 	const kBody = Symbol("kBody");
 	const kAbort = Symbol("abort");
 	const kContentType = Symbol("kContentType");
-	const noop = () => {};
+	const noop$1 = () => {};
 	module.exports = class BodyReadable extends Readable$3 {
 		constructor({ resume: resume$1, abort: abort$1, contentType = "", highWaterMark = 64 * 1024 }) {
 			super({
@@ -7915,12 +7915,12 @@ var require_readable = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5
 			return new Promise((resolve, reject) => {
 				const signalListenerCleanup = signal ? util$9.addAbortListener(signal, () => {
 					this.destroy();
-				}) : noop;
+				}) : noop$1;
 				this.on("close", function() {
 					signalListenerCleanup();
 					if (signal && signal.aborted) reject(signal.reason || Object.assign(/* @__PURE__ */ new Error("The operation was aborted"), { name: "AbortError" }));
 					else resolve(null);
-				}).on("error", noop).on("data", function(chunk) {
+				}).on("error", noop$1).on("data", function(chunk) {
 					limit -= chunk.length;
 					if (limit <= 0) this.destroy();
 				}).resume();
@@ -8192,9 +8192,9 @@ var require_api_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undic
 			}
 		}
 	};
-	function request(opts, callback) {
+	function request$1(opts, callback) {
 		if (callback === void 0) return new Promise((resolve, reject) => {
-			request.call(this, opts, (err, data) => {
+			request$1.call(this, opts, (err, data) => {
 				return err ? reject(err) : resolve(data);
 			});
 		});
@@ -8206,7 +8206,7 @@ var require_api_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undic
 			queueMicrotask(() => callback(err, { opaque }));
 		}
 	}
-	module.exports = request;
+	module.exports = request$1;
 	module.exports.RequestHandler = RequestHandler;
 }) });
 
@@ -8392,9 +8392,9 @@ var require_api_pipeline = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undi
 		}
 	};
 	var PipelineHandler = class extends AsyncResource$2 {
-		constructor(opts, handler) {
+		constructor(opts, handler$1) {
 			if (!opts || typeof opts !== "object") throw new InvalidArgumentError$9("invalid opts");
-			if (typeof handler !== "function") throw new InvalidArgumentError$9("invalid handler");
+			if (typeof handler$1 !== "function") throw new InvalidArgumentError$9("invalid handler");
 			const { signal, method, opaque, onInfo, responseHeaders } = opts;
 			if (signal && typeof signal.on !== "function" && typeof signal.addEventListener !== "function") throw new InvalidArgumentError$9("signal must be an EventEmitter or EventTarget");
 			if (method === "CONNECT") throw new InvalidArgumentError$9("invalid method");
@@ -8402,7 +8402,7 @@ var require_api_pipeline = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undi
 			super("UNDICI_PIPELINE");
 			this.opaque = opaque || null;
 			this.responseHeaders = responseHeaders || null;
-			this.handler = handler;
+			this.handler = handler$1;
 			this.abort = null;
 			this.context = null;
 			this.onInfo = onInfo || null;
@@ -8444,7 +8444,7 @@ var require_api_pipeline = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undi
 			this.context = context;
 		}
 		onHeaders(statusCode, rawHeaders, resume$1) {
-			const { opaque, handler, context } = this;
+			const { opaque, handler: handler$1, context } = this;
 			if (statusCode < 200) {
 				if (this.onInfo) {
 					const headers = this.responseHeaders === "raw" ? util$6.parseRawHeaders(rawHeaders) : util$6.parseHeaders(rawHeaders);
@@ -8460,7 +8460,7 @@ var require_api_pipeline = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undi
 			try {
 				this.handler = null;
 				const headers = this.responseHeaders === "raw" ? util$6.parseRawHeaders(rawHeaders) : util$6.parseHeaders(rawHeaders);
-				body = this.runInAsyncScope(handler, null, {
+				body = this.runInAsyncScope(handler$1, null, {
 					statusCode,
 					headers,
 					opaque,
@@ -8501,9 +8501,9 @@ var require_api_pipeline = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undi
 			util$6.destroy(ret, err);
 		}
 	};
-	function pipeline$1(opts, handler) {
+	function pipeline$1(opts, handler$1) {
 		try {
-			const pipelineHandler = new PipelineHandler(opts, handler);
+			const pipelineHandler = new PipelineHandler(opts, handler$1);
 			this.dispatch({
 				...opts,
 				body: pipelineHandler.req
@@ -8783,7 +8783,7 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 		const headersMatch = matchHeaders(mockDispatch$1, headers);
 		return pathMatch && methodMatch && bodyMatch && headersMatch;
 	}
-	function getResponseData$1(data) {
+	function getResponseData$2(data) {
 		if (Buffer.isBuffer(data)) return data;
 		else if (typeof data === "object") return JSON.stringify(data);
 		else return data.toString();
@@ -8860,7 +8860,7 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 	/**
 	* Mock dispatch function used to simulate undici dispatches
 	*/
-	function mockDispatch(opts, handler) {
+	function mockDispatch(opts, handler$1) {
 		const key = buildKey$1(opts);
 		const mockDispatch$1 = getMockDispatch(this[kDispatches$4], key);
 		mockDispatch$1.timesInvoked++;
@@ -8874,7 +8874,7 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 		mockDispatch$1.pending = timesInvoked < times;
 		if (error$1 !== null) {
 			deleteMockDispatch(this[kDispatches$4], key);
-			handler.onError(error$1);
+			handler$1.onError(error$1);
 			return true;
 		}
 		if (typeof delay === "number" && delay > 0) setTimeout(() => {
@@ -8891,13 +8891,13 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 				body.then((newData) => handleReply(mockDispatches, newData));
 				return;
 			}
-			const responseData = getResponseData$1(body);
+			const responseData = getResponseData$2(body);
 			const responseHeaders = generateKeyValues(headers);
 			const responseTrailers = generateKeyValues(trailers);
-			handler.abort = nop;
-			handler.onHeaders(statusCode, responseHeaders, resume$1, getStatusText(statusCode));
-			handler.onData(Buffer.from(responseData));
-			handler.onComplete(responseTrailers);
+			handler$1.abort = nop;
+			handler$1.onHeaders(statusCode, responseHeaders, resume$1, getStatusText(statusCode));
+			handler$1.onData(Buffer.from(responseData));
+			handler$1.onComplete(responseTrailers);
 			deleteMockDispatch(mockDispatches, key);
 		}
 		function resume$1() {}
@@ -8907,18 +8907,18 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 		const agent = this[kMockAgent$2];
 		const origin = this[kOrigin$2];
 		const originalDispatch = this[kOriginalDispatch$2];
-		return function dispatch(opts, handler) {
+		return function dispatch(opts, handler$1) {
 			if (agent.isMockActive) try {
-				mockDispatch.call(this, opts, handler);
+				mockDispatch.call(this, opts, handler$1);
 			} catch (error$1) {
 				if (error$1 instanceof MockNotMatchedError) {
 					const netConnect = agent[kGetNetConnect$1]();
 					if (netConnect === false) throw new MockNotMatchedError(`${error$1.message}: subsequent request to origin ${origin} was not allowed (net.connect disabled)`);
-					if (checkNetConnect(netConnect, origin)) originalDispatch.call(this, opts, handler);
+					if (checkNetConnect(netConnect, origin)) originalDispatch.call(this, opts, handler$1);
 					else throw new MockNotMatchedError(`${error$1.message}: subsequent request to origin ${origin} was not allowed (net.connect is not enabled for this origin)`);
 				} else throw error$1;
 			}
-			else originalDispatch.call(this, opts, handler);
+			else originalDispatch.call(this, opts, handler$1);
 		};
 	}
 	function checkNetConnect(netConnect, origin) {
@@ -8934,7 +8934,7 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 		}
 	}
 	module.exports = {
-		getResponseData: getResponseData$1,
+		getResponseData: getResponseData$2,
 		getMockDispatch,
 		addMockDispatch: addMockDispatch$1,
 		deleteMockDispatch,
@@ -8954,7 +8954,7 @@ var require_mock_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 //#endregion
 //#region node_modules/.deno/undici@5.29.0/node_modules/undici/lib/mock/mock-interceptor.js
 var require_mock_interceptor = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29.0/node_modules/undici/lib/mock/mock-interceptor.js": ((exports, module) => {
-	const { getResponseData, buildKey, addMockDispatch } = require_mock_utils();
+	const { getResponseData: getResponseData$1, buildKey, addMockDispatch } = require_mock_utils();
 	const { kDispatches: kDispatches$3, kDispatchKey, kDefaultHeaders, kDefaultTrailers, kContentLength, kMockDispatch } = require_mock_symbols();
 	const { InvalidArgumentError: InvalidArgumentError$6 } = require_errors();
 	const { buildURL } = require_util$6();
@@ -9010,7 +9010,7 @@ var require_mock_interceptor = /* @__PURE__ */ __commonJS({ "node_modules/.deno/
 			this[kContentLength] = false;
 		}
 		createMockScopeDispatchData(statusCode, data, responseOptions = {}) {
-			const responseData = getResponseData(data);
+			const responseData = getResponseData$1(data);
 			const contentLength = this[kContentLength] ? { "content-length": responseData.length } : {};
 			const headers = {
 				...this[kDefaultHeaders],
@@ -9285,9 +9285,9 @@ var require_mock_agent = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 			}
 			return dispatcher;
 		}
-		dispatch(opts, handler) {
+		dispatch(opts, handler$1) {
 			this.get(opts.origin);
-			return this[kAgent$1].dispatch(opts, handler);
+			return this[kAgent$1].dispatch(opts, handler$1);
 		}
 		async close() {
 			await this[kAgent$1].close();
@@ -9450,7 +9450,7 @@ var require_proxy_agent = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undic
 				}
 			});
 		}
-		dispatch(opts, handler) {
+		dispatch(opts, handler$1) {
 			const { host } = new URL$1(opts.origin);
 			const headers = buildHeaders(opts.headers);
 			throwIfProxyAuthIsSent(headers);
@@ -9460,7 +9460,7 @@ var require_proxy_agent = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undic
 					...headers,
 					host
 				}
-			}, handler);
+			}, handler$1);
 		}
 		async [kClose]() {
 			await this[kAgent].close();
@@ -9737,8 +9737,8 @@ var require_global = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 //#region node_modules/.deno/undici@5.29.0/node_modules/undici/lib/handler/DecoratorHandler.js
 var require_DecoratorHandler = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29.0/node_modules/undici/lib/handler/DecoratorHandler.js": ((exports, module) => {
 	module.exports = class DecoratorHandler$1 {
-		constructor(handler) {
-			this.handler = handler;
+		constructor(handler$1) {
+			this.handler = handler$1;
 		}
 		onConnect(...args) {
 			return this.handler.onConnect(...args);
@@ -10410,76 +10410,76 @@ var require_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 				},
 				policyContainer: makePolicyContainer$1()
 			} };
-			let request$1 = null;
+			let request$2 = null;
 			let fallbackMode = null;
-			const baseUrl = this[kRealm$2].settingsObject.baseUrl;
+			const baseUrl$1 = this[kRealm$2].settingsObject.baseUrl;
 			let signal = null;
 			if (typeof input === "string") {
 				let parsedURL;
 				try {
-					parsedURL = new URL(input, baseUrl);
+					parsedURL = new URL(input, baseUrl$1);
 				} catch (err) {
 					throw new TypeError("Failed to parse URL from " + input, { cause: err });
 				}
 				if (parsedURL.username || parsedURL.password) throw new TypeError("Request cannot be constructed from a URL that includes credentials: " + input);
-				request$1 = makeRequest$2({ urlList: [parsedURL] });
+				request$2 = makeRequest$2({ urlList: [parsedURL] });
 				fallbackMode = "cors";
 			} else {
 				assert$4(input instanceof Request$2);
-				request$1 = input[kState$5];
+				request$2 = input[kState$5];
 				signal = input[kSignal];
 			}
 			const origin = this[kRealm$2].settingsObject.origin;
 			let window = "client";
-			if (request$1.window?.constructor?.name === "EnvironmentSettingsObject" && sameOrigin$1(request$1.window, origin)) window = request$1.window;
+			if (request$2.window?.constructor?.name === "EnvironmentSettingsObject" && sameOrigin$1(request$2.window, origin)) window = request$2.window;
 			if (init.window != null) throw new TypeError(`'window' option '${window}' must be null`);
 			if ("window" in init) window = "no-window";
-			request$1 = makeRequest$2({
-				method: request$1.method,
-				headersList: request$1.headersList,
-				unsafeRequest: request$1.unsafeRequest,
+			request$2 = makeRequest$2({
+				method: request$2.method,
+				headersList: request$2.headersList,
+				unsafeRequest: request$2.unsafeRequest,
 				client: this[kRealm$2].settingsObject,
 				window,
-				priority: request$1.priority,
-				origin: request$1.origin,
-				referrer: request$1.referrer,
-				referrerPolicy: request$1.referrerPolicy,
-				mode: request$1.mode,
-				credentials: request$1.credentials,
-				cache: request$1.cache,
-				redirect: request$1.redirect,
-				integrity: request$1.integrity,
-				keepalive: request$1.keepalive,
-				reloadNavigation: request$1.reloadNavigation,
-				historyNavigation: request$1.historyNavigation,
-				urlList: [...request$1.urlList]
+				priority: request$2.priority,
+				origin: request$2.origin,
+				referrer: request$2.referrer,
+				referrerPolicy: request$2.referrerPolicy,
+				mode: request$2.mode,
+				credentials: request$2.credentials,
+				cache: request$2.cache,
+				redirect: request$2.redirect,
+				integrity: request$2.integrity,
+				keepalive: request$2.keepalive,
+				reloadNavigation: request$2.reloadNavigation,
+				historyNavigation: request$2.historyNavigation,
+				urlList: [...request$2.urlList]
 			});
 			const initHasKey = Object.keys(init).length !== 0;
 			if (initHasKey) {
-				if (request$1.mode === "navigate") request$1.mode = "same-origin";
-				request$1.reloadNavigation = false;
-				request$1.historyNavigation = false;
-				request$1.origin = "client";
-				request$1.referrer = "client";
-				request$1.referrerPolicy = "";
-				request$1.url = request$1.urlList[request$1.urlList.length - 1];
-				request$1.urlList = [request$1.url];
+				if (request$2.mode === "navigate") request$2.mode = "same-origin";
+				request$2.reloadNavigation = false;
+				request$2.historyNavigation = false;
+				request$2.origin = "client";
+				request$2.referrer = "client";
+				request$2.referrerPolicy = "";
+				request$2.url = request$2.urlList[request$2.urlList.length - 1];
+				request$2.urlList = [request$2.url];
 			}
 			if (init.referrer !== void 0) {
 				const referrer = init.referrer;
-				if (referrer === "") request$1.referrer = "no-referrer";
+				if (referrer === "") request$2.referrer = "no-referrer";
 				else {
 					let parsedReferrer;
 					try {
-						parsedReferrer = new URL(referrer, baseUrl);
+						parsedReferrer = new URL(referrer, baseUrl$1);
 					} catch (err) {
 						throw new TypeError(`Referrer "${referrer}" is not a valid URL.`, { cause: err });
 					}
-					if (parsedReferrer.protocol === "about:" && parsedReferrer.hostname === "client" || origin && !sameOrigin$1(parsedReferrer, this[kRealm$2].settingsObject.baseUrl)) request$1.referrer = "client";
-					else request$1.referrer = parsedReferrer;
+					if (parsedReferrer.protocol === "about:" && parsedReferrer.hostname === "client" || origin && !sameOrigin$1(parsedReferrer, this[kRealm$2].settingsObject.baseUrl)) request$2.referrer = "client";
+					else request$2.referrer = parsedReferrer;
 				}
 			}
-			if (init.referrerPolicy !== void 0) request$1.referrerPolicy = init.referrerPolicy;
+			if (init.referrerPolicy !== void 0) request$2.referrerPolicy = init.referrerPolicy;
 			let mode;
 			if (init.mode !== void 0) mode = init.mode;
 			else mode = fallbackMode;
@@ -10487,22 +10487,22 @@ var require_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 				header: "Request constructor",
 				message: "invalid request mode navigate."
 			});
-			if (mode != null) request$1.mode = mode;
-			if (init.credentials !== void 0) request$1.credentials = init.credentials;
-			if (init.cache !== void 0) request$1.cache = init.cache;
-			if (request$1.cache === "only-if-cached" && request$1.mode !== "same-origin") throw new TypeError("'only-if-cached' can be set only with 'same-origin' mode");
-			if (init.redirect !== void 0) request$1.redirect = init.redirect;
-			if (init.integrity != null) request$1.integrity = String(init.integrity);
-			if (init.keepalive !== void 0) request$1.keepalive = Boolean(init.keepalive);
+			if (mode != null) request$2.mode = mode;
+			if (init.credentials !== void 0) request$2.credentials = init.credentials;
+			if (init.cache !== void 0) request$2.cache = init.cache;
+			if (request$2.cache === "only-if-cached" && request$2.mode !== "same-origin") throw new TypeError("'only-if-cached' can be set only with 'same-origin' mode");
+			if (init.redirect !== void 0) request$2.redirect = init.redirect;
+			if (init.integrity != null) request$2.integrity = String(init.integrity);
+			if (init.keepalive !== void 0) request$2.keepalive = Boolean(init.keepalive);
 			if (init.method !== void 0) {
 				let method = init.method;
 				if (!isValidHTTPToken(method)) throw new TypeError(`'${method}' is not a valid HTTP method.`);
 				if (forbiddenMethodsSet.has(method.toUpperCase())) throw new TypeError(`'${method}' HTTP method is unsupported.`);
 				method = normalizeMethodRecord[method] ?? normalizeMethod(method);
-				request$1.method = method;
+				request$2.method = method;
 			}
 			if (init.signal !== void 0) signal = init.signal;
-			this[kState$5] = request$1;
+			this[kState$5] = request$2;
 			const ac = new AbortController();
 			this[kSignal] = ac.signal;
 			this[kSignal][kRealm$2] = this[kRealm$2];
@@ -10528,11 +10528,11 @@ var require_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 				}
 			}
 			this[kHeaders$2] = new Headers$4(kConstruct$2);
-			this[kHeaders$2][kHeadersList$3] = request$1.headersList;
+			this[kHeaders$2][kHeadersList$3] = request$2.headersList;
 			this[kHeaders$2][kGuard$2] = "request";
 			this[kHeaders$2][kRealm$2] = this[kRealm$2];
 			if (mode === "no-cors") {
-				if (!corsSafeListedMethodsSet.has(request$1.method)) throw new TypeError(`'${request$1.method} is unsupported in no-cors mode.`);
+				if (!corsSafeListedMethodsSet.has(request$2.method)) throw new TypeError(`'${request$2.method} is unsupported in no-cors mode.`);
 				this[kHeaders$2][kGuard$2] = "request-no-cors";
 			}
 			if (initHasKey) {
@@ -10546,18 +10546,18 @@ var require_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 				} else fillHeaders(this[kHeaders$2], headers);
 			}
 			const inputBody = input instanceof Request$2 ? input[kState$5].body : null;
-			if ((init.body != null || inputBody != null) && (request$1.method === "GET" || request$1.method === "HEAD")) throw new TypeError("Request with GET/HEAD method cannot have body.");
+			if ((init.body != null || inputBody != null) && (request$2.method === "GET" || request$2.method === "HEAD")) throw new TypeError("Request with GET/HEAD method cannot have body.");
 			let initBody = null;
 			if (init.body != null) {
-				const [extractedBody, contentType] = extractBody(init.body, request$1.keepalive);
+				const [extractedBody, contentType] = extractBody(init.body, request$2.keepalive);
 				initBody = extractedBody;
 				if (contentType && !this[kHeaders$2][kHeadersList$3].contains("content-type")) this[kHeaders$2].append("content-type", contentType);
 			}
 			const inputOrInitBody = initBody ?? inputBody;
 			if (inputOrInitBody != null && inputOrInitBody.source == null) {
 				if (initBody != null && init.duplex == null) throw new TypeError("RequestInit: duplex option is required when sending a body.");
-				if (request$1.mode !== "same-origin" && request$1.mode !== "cors") throw new TypeError("If request is made from ReadableStream, mode should be \"same-origin\" or \"cors\"");
-				request$1.useCORSPreflightFlag = true;
+				if (request$2.mode !== "same-origin" && request$2.mode !== "cors") throw new TypeError("If request is made from ReadableStream, mode should be \"same-origin\" or \"cors\"");
+				request$2.useCORSPreflightFlag = true;
 			}
 			let finalBody = inputOrInitBody;
 			if (initBody == null && inputBody != null) {
@@ -10668,7 +10668,7 @@ var require_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 	};
 	mixinBody(Request$2);
 	function makeRequest$2(init) {
-		const request$1 = {
+		const request$2 = {
 			method: "GET",
 			localURLsOnly: false,
 			unsafeRequest: false,
@@ -10707,15 +10707,15 @@ var require_request = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.
 			...init,
 			headersList: init.headersList ? new HeadersList(init.headersList) : new HeadersList()
 		};
-		request$1.url = request$1.urlList[0];
-		return request$1;
+		request$2.url = request$2.urlList[0];
+		return request$2;
 	}
-	function cloneRequest(request$1) {
+	function cloneRequest(request$2) {
 		const newRequest = makeRequest$2({
-			...request$1,
+			...request$2,
 			body: null
 		});
-		if (request$1.body != null) newRequest.body = cloneBody(request$1.body);
+		if (request$2.body != null) newRequest.body = cloneBody(request$2.body);
 		return newRequest;
 	}
 	Object.defineProperties(Request$2.prototype, {
@@ -10880,12 +10880,12 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			p.reject(e);
 			return p.promise;
 		}
-		const request$1 = requestObject[kState$4];
+		const request$2 = requestObject[kState$4];
 		if (requestObject.signal.aborted) {
-			abortFetch(p, request$1, null, requestObject.signal.reason);
+			abortFetch(p, request$2, null, requestObject.signal.reason);
 			return p.promise;
 		}
-		if (request$1.client.globalObject?.constructor?.name === "ServiceWorkerGlobalScope") request$1.serviceWorkers = "none";
+		if (request$2.client.globalObject?.constructor?.name === "ServiceWorkerGlobalScope") request$2.serviceWorkers = "none";
 		let responseObject = null;
 		const relevantRealm = null;
 		let locallyAborted = false;
@@ -10894,13 +10894,13 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			locallyAborted = true;
 			assert$3(controller != null);
 			controller.abort(requestObject.signal.reason);
-			abortFetch(p, request$1, responseObject, requestObject.signal.reason);
+			abortFetch(p, request$2, responseObject, requestObject.signal.reason);
 		});
 		const handleFetchDone = (response) => finalizeAndReportTiming(response, "fetch");
 		const processResponse = (response) => {
 			if (locallyAborted) return Promise.resolve();
 			if (response.aborted) {
-				abortFetch(p, request$1, responseObject, controller.serializedAbortReason);
+				abortFetch(p, request$2, responseObject, controller.serializedAbortReason);
 				return Promise.resolve();
 			}
 			if (response.type === "error") {
@@ -10916,7 +10916,7 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			p.resolve(responseObject);
 		};
 		controller = fetching$2({
-			request: request$1,
+			request: request$2,
 			processResponseEndOfBody: handleFetchDone,
 			processResponse,
 			dispatcher: init.dispatcher ?? getGlobalDispatcher$4()
@@ -10942,10 +10942,10 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 	function markResourceTiming(timingInfo, originalURL, initiatorType, globalThis$1, cacheState) {
 		if (nodeMajor > 18 || nodeMajor === 18 && nodeMinor >= 2) performance.markResourceTiming(timingInfo, originalURL.href, initiatorType, globalThis$1, cacheState);
 	}
-	function abortFetch(p, request$1, responseObject, error$1) {
+	function abortFetch(p, request$2, responseObject, error$1) {
 		if (!error$1) error$1 = new DOMException$3("The operation was aborted.", "AbortError");
 		p.reject(error$1);
-		if (request$1.body != null && isReadable(request$1.body?.stream)) request$1.body.stream.cancel(error$1).catch((err) => {
+		if (request$2.body != null && isReadable(request$2.body?.stream)) request$2.body.stream.cancel(error$1).catch((err) => {
 			if (err.code === "ERR_INVALID_STATE") return;
 			throw err;
 		});
@@ -10956,18 +10956,18 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			throw err;
 		});
 	}
-	function fetching$2({ request: request$1, processRequestBodyChunkLength, processRequestEndOfBody, processResponse, processResponseEndOfBody, processResponseConsumeBody, useParallelQueue = false, dispatcher }) {
+	function fetching$2({ request: request$2, processRequestBodyChunkLength, processRequestEndOfBody, processResponse, processResponseEndOfBody, processResponseConsumeBody, useParallelQueue = false, dispatcher }) {
 		let taskDestination = null;
 		let crossOriginIsolatedCapability = false;
-		if (request$1.client != null) {
-			taskDestination = request$1.client.globalObject;
-			crossOriginIsolatedCapability = request$1.client.crossOriginIsolatedCapability;
+		if (request$2.client != null) {
+			taskDestination = request$2.client.globalObject;
+			crossOriginIsolatedCapability = request$2.client.crossOriginIsolatedCapability;
 		}
 		const currenTime = coarsenedSharedCurrentTime(crossOriginIsolatedCapability);
 		const timingInfo = createOpaqueTimingInfo({ startTime: currenTime });
 		const fetchParams = {
 			controller: new Fetch(dispatcher),
-			request: request$1,
+			request: request$2,
 			timingInfo,
 			processRequestBodyChunkLength,
 			processRequestEndOfBody,
@@ -10977,68 +10977,68 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			taskDestination,
 			crossOriginIsolatedCapability
 		};
-		assert$3(!request$1.body || request$1.body.stream);
-		if (request$1.window === "client") request$1.window = request$1.client?.globalObject?.constructor?.name === "Window" ? request$1.client : "no-window";
-		if (request$1.origin === "client") request$1.origin = request$1.client?.origin;
-		if (request$1.policyContainer === "client") if (request$1.client != null) request$1.policyContainer = clonePolicyContainer(request$1.client.policyContainer);
-		else request$1.policyContainer = makePolicyContainer();
-		if (!request$1.headersList.contains("accept")) request$1.headersList.append("accept", "*/*");
-		if (!request$1.headersList.contains("accept-language")) request$1.headersList.append("accept-language", "*");
-		if (request$1.priority === null) {}
-		if (subresourceSet.has(request$1.destination)) {}
+		assert$3(!request$2.body || request$2.body.stream);
+		if (request$2.window === "client") request$2.window = request$2.client?.globalObject?.constructor?.name === "Window" ? request$2.client : "no-window";
+		if (request$2.origin === "client") request$2.origin = request$2.client?.origin;
+		if (request$2.policyContainer === "client") if (request$2.client != null) request$2.policyContainer = clonePolicyContainer(request$2.client.policyContainer);
+		else request$2.policyContainer = makePolicyContainer();
+		if (!request$2.headersList.contains("accept")) request$2.headersList.append("accept", "*/*");
+		if (!request$2.headersList.contains("accept-language")) request$2.headersList.append("accept-language", "*");
+		if (request$2.priority === null) {}
+		if (subresourceSet.has(request$2.destination)) {}
 		mainFetch(fetchParams).catch((err) => {
 			fetchParams.controller.terminate(err);
 		});
 		return fetchParams.controller;
 	}
 	async function mainFetch(fetchParams, recursive = false) {
-		const request$1 = fetchParams.request;
+		const request$2 = fetchParams.request;
 		let response = null;
-		if (request$1.localURLsOnly && !urlIsLocal(requestCurrentURL(request$1))) response = makeNetworkError("local URLs only");
-		tryUpgradeRequestToAPotentiallyTrustworthyURL(request$1);
-		if (requestBadPort(request$1) === "blocked") response = makeNetworkError("bad port");
-		if (request$1.referrerPolicy === "") request$1.referrerPolicy = request$1.policyContainer.referrerPolicy;
-		if (request$1.referrer !== "no-referrer") request$1.referrer = determineRequestsReferrer(request$1);
+		if (request$2.localURLsOnly && !urlIsLocal(requestCurrentURL(request$2))) response = makeNetworkError("local URLs only");
+		tryUpgradeRequestToAPotentiallyTrustworthyURL(request$2);
+		if (requestBadPort(request$2) === "blocked") response = makeNetworkError("bad port");
+		if (request$2.referrerPolicy === "") request$2.referrerPolicy = request$2.policyContainer.referrerPolicy;
+		if (request$2.referrer !== "no-referrer") request$2.referrer = determineRequestsReferrer(request$2);
 		if (response === null) response = await (async () => {
-			const currentURL = requestCurrentURL(request$1);
-			if (sameOrigin(currentURL, request$1.url) && request$1.responseTainting === "basic" || currentURL.protocol === "data:" || request$1.mode === "navigate" || request$1.mode === "websocket") {
-				request$1.responseTainting = "basic";
+			const currentURL = requestCurrentURL(request$2);
+			if (sameOrigin(currentURL, request$2.url) && request$2.responseTainting === "basic" || currentURL.protocol === "data:" || request$2.mode === "navigate" || request$2.mode === "websocket") {
+				request$2.responseTainting = "basic";
 				return await schemeFetch(fetchParams);
 			}
-			if (request$1.mode === "same-origin") return makeNetworkError("request mode cannot be \"same-origin\"");
-			if (request$1.mode === "no-cors") {
-				if (request$1.redirect !== "follow") return makeNetworkError("redirect mode cannot be \"follow\" for \"no-cors\" request");
-				request$1.responseTainting = "opaque";
+			if (request$2.mode === "same-origin") return makeNetworkError("request mode cannot be \"same-origin\"");
+			if (request$2.mode === "no-cors") {
+				if (request$2.redirect !== "follow") return makeNetworkError("redirect mode cannot be \"follow\" for \"no-cors\" request");
+				request$2.responseTainting = "opaque";
 				return await schemeFetch(fetchParams);
 			}
-			if (!urlIsHttpHttpsScheme$1(requestCurrentURL(request$1))) return makeNetworkError("URL scheme must be a HTTP(S) scheme");
-			request$1.responseTainting = "cors";
+			if (!urlIsHttpHttpsScheme$1(requestCurrentURL(request$2))) return makeNetworkError("URL scheme must be a HTTP(S) scheme");
+			request$2.responseTainting = "cors";
 			return await httpFetch(fetchParams);
 		})();
 		if (recursive) return response;
 		if (response.status !== 0 && !response.internalResponse) {
-			if (request$1.responseTainting === "cors") {}
-			if (request$1.responseTainting === "basic") response = filterResponse(response, "basic");
-			else if (request$1.responseTainting === "cors") response = filterResponse(response, "cors");
-			else if (request$1.responseTainting === "opaque") response = filterResponse(response, "opaque");
+			if (request$2.responseTainting === "cors") {}
+			if (request$2.responseTainting === "basic") response = filterResponse(response, "basic");
+			else if (request$2.responseTainting === "cors") response = filterResponse(response, "cors");
+			else if (request$2.responseTainting === "opaque") response = filterResponse(response, "opaque");
 			else assert$3(false);
 		}
 		let internalResponse = response.status === 0 ? response : response.internalResponse;
-		if (internalResponse.urlList.length === 0) internalResponse.urlList.push(...request$1.urlList);
-		if (!request$1.timingAllowFailed) response.timingAllowPassed = true;
-		if (response.type === "opaque" && internalResponse.status === 206 && internalResponse.rangeRequested && !request$1.headers.contains("range")) response = internalResponse = makeNetworkError();
-		if (response.status !== 0 && (request$1.method === "HEAD" || request$1.method === "CONNECT" || nullBodyStatus.includes(internalResponse.status))) {
+		if (internalResponse.urlList.length === 0) internalResponse.urlList.push(...request$2.urlList);
+		if (!request$2.timingAllowFailed) response.timingAllowPassed = true;
+		if (response.type === "opaque" && internalResponse.status === 206 && internalResponse.rangeRequested && !request$2.headers.contains("range")) response = internalResponse = makeNetworkError();
+		if (response.status !== 0 && (request$2.method === "HEAD" || request$2.method === "CONNECT" || nullBodyStatus.includes(internalResponse.status))) {
 			internalResponse.body = null;
 			fetchParams.controller.dump = true;
 		}
-		if (request$1.integrity) {
+		if (request$2.integrity) {
 			const processBodyError = (reason) => fetchFinale(fetchParams, makeNetworkError(reason));
-			if (request$1.responseTainting === "opaque" || response.body == null) {
+			if (request$2.responseTainting === "opaque" || response.body == null) {
 				processBodyError(response.error);
 				return;
 			}
 			const processBody = (bytes) => {
-				if (!bytesMatch(bytes, request$1.integrity)) {
+				if (!bytesMatch(bytes, request$2.integrity)) {
 					processBodyError("integrity mismatch");
 					return;
 				}
@@ -11050,16 +11050,16 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 	}
 	function schemeFetch(fetchParams) {
 		if (isCancelled(fetchParams) && fetchParams.request.redirectCount === 0) return Promise.resolve(makeAppropriateNetworkError(fetchParams));
-		const { request: request$1 } = fetchParams;
-		const { protocol: scheme } = requestCurrentURL(request$1);
+		const { request: request$2 } = fetchParams;
+		const { protocol: scheme } = requestCurrentURL(request$2);
 		switch (scheme) {
 			case "about:": return Promise.resolve(makeNetworkError("about scheme is not supported"));
 			case "blob:": {
 				if (!resolveObjectURL) resolveObjectURL = __require("buffer").resolveObjectURL;
-				const blobURLEntry = requestCurrentURL(request$1);
+				const blobURLEntry = requestCurrentURL(request$2);
 				if (blobURLEntry.search.length !== 0) return Promise.resolve(makeNetworkError("NetworkError when attempting to fetch resource."));
 				const blobURLEntryObject = resolveObjectURL(blobURLEntry.toString());
-				if (request$1.method !== "GET" || !isBlobLike$1(blobURLEntryObject)) return Promise.resolve(makeNetworkError("invalid method"));
+				if (request$2.method !== "GET" || !isBlobLike$1(blobURLEntryObject)) return Promise.resolve(makeNetworkError("invalid method"));
 				const bodyWithType = safelyExtractBody(blobURLEntryObject);
 				const body = bodyWithType[0];
 				const length = isomorphicEncode(`${body.length}`);
@@ -11078,7 +11078,7 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 				return Promise.resolve(response);
 			}
 			case "data:": {
-				const currentURL = requestCurrentURL(request$1);
+				const currentURL = requestCurrentURL(request$2);
 				const dataURLStruct = dataURLProcessor(currentURL);
 				if (dataURLStruct === "failure") return Promise.resolve(makeNetworkError("failed to fetch the data URL"));
 				const mimeType = serializeAMimeType$1(dataURLStruct.mimeType);
@@ -11136,81 +11136,81 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 		}
 	}
 	async function httpFetch(fetchParams) {
-		const request$1 = fetchParams.request;
+		const request$2 = fetchParams.request;
 		let response = null;
 		let actualResponse = null;
 		const timingInfo = fetchParams.timingInfo;
-		if (request$1.serviceWorkers === "all") {}
+		if (request$2.serviceWorkers === "all") {}
 		if (response === null) {
-			if (request$1.redirect === "follow") request$1.serviceWorkers = "none";
+			if (request$2.redirect === "follow") request$2.serviceWorkers = "none";
 			actualResponse = response = await httpNetworkOrCacheFetch(fetchParams);
-			if (request$1.responseTainting === "cors" && corsCheck(request$1, response) === "failure") return makeNetworkError("cors failure");
-			if (TAOCheck(request$1, response) === "failure") request$1.timingAllowFailed = true;
+			if (request$2.responseTainting === "cors" && corsCheck(request$2, response) === "failure") return makeNetworkError("cors failure");
+			if (TAOCheck(request$2, response) === "failure") request$2.timingAllowFailed = true;
 		}
-		if ((request$1.responseTainting === "opaque" || response.type === "opaque") && crossOriginResourcePolicyCheck(request$1.origin, request$1.client, request$1.destination, actualResponse) === "blocked") return makeNetworkError("blocked");
+		if ((request$2.responseTainting === "opaque" || response.type === "opaque") && crossOriginResourcePolicyCheck(request$2.origin, request$2.client, request$2.destination, actualResponse) === "blocked") return makeNetworkError("blocked");
 		if (redirectStatusSet.has(actualResponse.status)) {
-			if (request$1.redirect !== "manual") fetchParams.controller.connection.destroy();
-			if (request$1.redirect === "error") response = makeNetworkError("unexpected redirect");
-			else if (request$1.redirect === "manual") response = actualResponse;
-			else if (request$1.redirect === "follow") response = await httpRedirectFetch(fetchParams, response);
+			if (request$2.redirect !== "manual") fetchParams.controller.connection.destroy();
+			if (request$2.redirect === "error") response = makeNetworkError("unexpected redirect");
+			else if (request$2.redirect === "manual") response = actualResponse;
+			else if (request$2.redirect === "follow") response = await httpRedirectFetch(fetchParams, response);
 			else assert$3(false);
 		}
 		response.timingInfo = timingInfo;
 		return response;
 	}
 	function httpRedirectFetch(fetchParams, response) {
-		const request$1 = fetchParams.request;
+		const request$2 = fetchParams.request;
 		const actualResponse = response.internalResponse ? response.internalResponse : response;
 		let locationURL;
 		try {
-			locationURL = responseLocationURL(actualResponse, requestCurrentURL(request$1).hash);
+			locationURL = responseLocationURL(actualResponse, requestCurrentURL(request$2).hash);
 			if (locationURL == null) return response;
 		} catch (err) {
 			return Promise.resolve(makeNetworkError(err));
 		}
 		if (!urlIsHttpHttpsScheme$1(locationURL)) return Promise.resolve(makeNetworkError("URL scheme must be a HTTP(S) scheme"));
-		if (request$1.redirectCount === 20) return Promise.resolve(makeNetworkError("redirect count exceeded"));
-		request$1.redirectCount += 1;
-		if (request$1.mode === "cors" && (locationURL.username || locationURL.password) && !sameOrigin(request$1, locationURL)) return Promise.resolve(makeNetworkError("cross origin not allowed for request mode \"cors\""));
-		if (request$1.responseTainting === "cors" && (locationURL.username || locationURL.password)) return Promise.resolve(makeNetworkError("URL cannot contain credentials for request mode \"cors\""));
-		if (actualResponse.status !== 303 && request$1.body != null && request$1.body.source == null) return Promise.resolve(makeNetworkError());
-		if ([301, 302].includes(actualResponse.status) && request$1.method === "POST" || actualResponse.status === 303 && !GET_OR_HEAD.includes(request$1.method)) {
-			request$1.method = "GET";
-			request$1.body = null;
-			for (const headerName of requestBodyHeader) request$1.headersList.delete(headerName);
+		if (request$2.redirectCount === 20) return Promise.resolve(makeNetworkError("redirect count exceeded"));
+		request$2.redirectCount += 1;
+		if (request$2.mode === "cors" && (locationURL.username || locationURL.password) && !sameOrigin(request$2, locationURL)) return Promise.resolve(makeNetworkError("cross origin not allowed for request mode \"cors\""));
+		if (request$2.responseTainting === "cors" && (locationURL.username || locationURL.password)) return Promise.resolve(makeNetworkError("URL cannot contain credentials for request mode \"cors\""));
+		if (actualResponse.status !== 303 && request$2.body != null && request$2.body.source == null) return Promise.resolve(makeNetworkError());
+		if ([301, 302].includes(actualResponse.status) && request$2.method === "POST" || actualResponse.status === 303 && !GET_OR_HEAD.includes(request$2.method)) {
+			request$2.method = "GET";
+			request$2.body = null;
+			for (const headerName of requestBodyHeader) request$2.headersList.delete(headerName);
 		}
-		if (!sameOrigin(requestCurrentURL(request$1), locationURL)) {
-			request$1.headersList.delete("authorization");
-			request$1.headersList.delete("proxy-authorization", true);
-			request$1.headersList.delete("cookie");
-			request$1.headersList.delete("host");
+		if (!sameOrigin(requestCurrentURL(request$2), locationURL)) {
+			request$2.headersList.delete("authorization");
+			request$2.headersList.delete("proxy-authorization", true);
+			request$2.headersList.delete("cookie");
+			request$2.headersList.delete("host");
 		}
-		if (request$1.body != null) {
-			assert$3(request$1.body.source != null);
-			request$1.body = safelyExtractBody(request$1.body.source)[0];
+		if (request$2.body != null) {
+			assert$3(request$2.body.source != null);
+			request$2.body = safelyExtractBody(request$2.body.source)[0];
 		}
 		const timingInfo = fetchParams.timingInfo;
 		timingInfo.redirectEndTime = timingInfo.postRedirectStartTime = coarsenedSharedCurrentTime(fetchParams.crossOriginIsolatedCapability);
 		if (timingInfo.redirectStartTime === 0) timingInfo.redirectStartTime = timingInfo.startTime;
-		request$1.urlList.push(locationURL);
-		setRequestReferrerPolicyOnRedirect(request$1, actualResponse);
+		request$2.urlList.push(locationURL);
+		setRequestReferrerPolicyOnRedirect(request$2, actualResponse);
 		return mainFetch(fetchParams, true);
 	}
 	async function httpNetworkOrCacheFetch(fetchParams, isAuthenticationFetch = false, isNewConnectionFetch = false) {
-		const request$1 = fetchParams.request;
+		const request$2 = fetchParams.request;
 		let httpFetchParams = null;
 		let httpRequest = null;
 		let response = null;
 		const httpCache = null;
-		if (request$1.window === "no-window" && request$1.redirect === "error") {
+		if (request$2.window === "no-window" && request$2.redirect === "error") {
 			httpFetchParams = fetchParams;
-			httpRequest = request$1;
+			httpRequest = request$2;
 		} else {
-			httpRequest = makeRequest$1(request$1);
+			httpRequest = makeRequest$1(request$2);
 			httpFetchParams = { ...fetchParams };
 			httpFetchParams.request = httpRequest;
 		}
-		const includeCredentials = request$1.credentials === "include" || request$1.credentials === "same-origin" && request$1.responseTainting === "basic";
+		const includeCredentials = request$2.credentials === "include" || request$2.credentials === "same-origin" && request$2.responseTainting === "basic";
 		const contentLength = httpRequest.body ? httpRequest.body.length : null;
 		let contentLengthHeaderValue = null;
 		if (httpRequest.body == null && ["POST", "PUT"].includes(httpRequest.method)) contentLengthHeaderValue = "0";
@@ -11244,11 +11244,11 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 		if (httpRequest.headersList.contains("range")) response.rangeRequested = true;
 		response.requestIncludesCredentials = includeCredentials;
 		if (response.status === 407) {
-			if (request$1.window === "no-window") return makeNetworkError();
+			if (request$2.window === "no-window") return makeNetworkError();
 			if (isCancelled(fetchParams)) return makeAppropriateNetworkError(fetchParams);
 			return makeNetworkError("proxy authentication required");
 		}
-		if (response.status === 421 && !isNewConnectionFetch && (request$1.body == null || request$1.body.source != null)) {
+		if (response.status === 421 && !isNewConnectionFetch && (request$2.body == null || request$2.body.source != null)) {
 			if (isCancelled(fetchParams)) return makeAppropriateNetworkError(fetchParams);
 			fetchParams.controller.connection.destroy();
 			response = await httpNetworkOrCacheFetch(fetchParams, isAuthenticationFetch, true);
@@ -11268,14 +11268,14 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 				}
 			}
 		};
-		const request$1 = fetchParams.request;
+		const request$2 = fetchParams.request;
 		let response = null;
 		const timingInfo = fetchParams.timingInfo;
-		request$1.cache = "no-store";
-		if (request$1.mode === "websocket") {}
+		request$2.cache = "no-store";
+		if (request$2.mode === "websocket") {}
 		let requestBody = null;
-		if (request$1.body == null && fetchParams.processRequestEndOfBody) queueMicrotask(() => fetchParams.processRequestEndOfBody());
-		else if (request$1.body != null) {
+		if (request$2.body == null && fetchParams.processRequestEndOfBody) queueMicrotask(() => fetchParams.processRequestEndOfBody());
+		else if (request$2.body != null) {
 			const processBodyChunk = async function* (bytes) {
 				if (isCancelled(fetchParams)) return;
 				yield bytes;
@@ -11292,7 +11292,7 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			};
 			requestBody = (async function* () {
 				try {
-					for await (const bytes of request$1.body.stream) yield* processBodyChunk(bytes);
+					for await (const bytes of request$2.body.stream) yield* processBodyChunk(bytes);
 					processEndOfBody();
 				} catch (err) {
 					processBodyError(err);
@@ -11308,8 +11308,8 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 				socket
 			});
 			else {
-				const iterator = body[Symbol.asyncIterator]();
-				fetchParams.controller.next = () => iterator.next();
+				const iterator$1 = body[Symbol.asyncIterator]();
+				fetchParams.controller.next = () => iterator$1.next();
 				response = makeResponse({
 					status,
 					statusText,
@@ -11390,17 +11390,17 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 		}
 		return response;
 		async function dispatch({ body }) {
-			const url = requestCurrentURL(request$1);
+			const url = requestCurrentURL(request$2);
 			/** @type {import('../..').Agent} */
 			const agent = fetchParams.controller.dispatcher;
 			return new Promise((resolve, reject) => agent.dispatch({
 				path: url.pathname + url.search,
 				origin: url.origin,
-				method: request$1.method,
-				body: fetchParams.controller.dispatcher.isMockActive ? request$1.body && (request$1.body.source || request$1.body.stream) : body,
-				headers: request$1.headersList.entries,
+				method: request$2.method,
+				body: fetchParams.controller.dispatcher.isMockActive ? request$2.body && (request$2.body.source || request$2.body.stream) : body,
+				headers: request$2.headersList.entries,
 				maxRedirections: 0,
-				upgrade: request$1.mode === "websocket" ? "websocket" : void 0
+				upgrade: request$2.mode === "websocket" ? "websocket" : void 0
 			}, {
 				body: null,
 				abort: null,
@@ -11435,8 +11435,8 @@ var require_fetch = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 					}
 					this.body = new Readable({ read: resume$1 });
 					const decoders$1 = [];
-					const willFollow = request$1.redirect === "follow" && location && redirectStatusSet.has(status);
-					if (request$1.method !== "HEAD" && request$1.method !== "CONNECT" && !nullBodyStatus.includes(status) && !willFollow) for (const coding of codings) if (coding === "x-gzip" || coding === "gzip") decoders$1.push(zlib.createGunzip({
+					const willFollow = request$2.redirect === "follow" && location && redirectStatusSet.has(status);
+					if (request$2.method !== "HEAD" && request$2.method !== "CONNECT" && !nullBodyStatus.includes(status) && !willFollow) for (const coding of codings) if (coding === "x-gzip" || coding === "gzip") decoders$1.push(zlib.createGunzip({
 						flush: zlib.constants.Z_SYNC_FLUSH,
 						finishFlush: zlib.constants.Z_SYNC_FLUSH
 					}));
@@ -12295,28 +12295,28 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			if (arguments[0] !== kConstruct$1) webidl$4.illegalConstructor();
 			this.#relevantRequestResponseList = arguments[1];
 		}
-		async match(request$1, options = {}) {
+		async match(request$2, options = {}) {
 			webidl$4.brandCheck(this, Cache$1);
 			webidl$4.argumentLengthCheck(arguments, 1, { header: "Cache.match" });
-			request$1 = webidl$4.converters.RequestInfo(request$1);
+			request$2 = webidl$4.converters.RequestInfo(request$2);
 			options = webidl$4.converters.CacheQueryOptions(options);
-			const p = await this.matchAll(request$1, options);
+			const p = await this.matchAll(request$2, options);
 			if (p.length === 0) return;
 			return p[0];
 		}
-		async matchAll(request$1 = void 0, options = {}) {
+		async matchAll(request$2 = void 0, options = {}) {
 			webidl$4.brandCheck(this, Cache$1);
-			if (request$1 !== void 0) request$1 = webidl$4.converters.RequestInfo(request$1);
+			if (request$2 !== void 0) request$2 = webidl$4.converters.RequestInfo(request$2);
 			options = webidl$4.converters.CacheQueryOptions(options);
 			let r = null;
-			if (request$1 !== void 0) {
-				if (request$1 instanceof Request) {
-					r = request$1[kState];
+			if (request$2 !== void 0) {
+				if (request$2 instanceof Request) {
+					r = request$2[kState];
 					if (r.method !== "GET" && !options.ignoreMethod) return [];
-				} else if (typeof request$1 === "string") r = new Request(request$1)[kState];
+				} else if (typeof request$2 === "string") r = new Request(request$2)[kState];
 			}
 			const responses = [];
-			if (request$1 === void 0) for (const requestResponse of this.#relevantRequestResponseList) responses.push(requestResponse[1]);
+			if (request$2 === void 0) for (const requestResponse of this.#relevantRequestResponseList) responses.push(requestResponse[1]);
 			else {
 				const requestResponses = this.#queryCache(r, options);
 				for (const requestResponse of requestResponses) responses.push(requestResponse[1]);
@@ -12333,11 +12333,11 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			}
 			return Object.freeze(responseList);
 		}
-		async add(request$1) {
+		async add(request$2) {
 			webidl$4.brandCheck(this, Cache$1);
 			webidl$4.argumentLengthCheck(arguments, 1, { header: "Cache.add" });
-			request$1 = webidl$4.converters.RequestInfo(request$1);
-			const requests = [request$1];
+			request$2 = webidl$4.converters.RequestInfo(request$2);
+			const requests = [request$2];
 			return await this.addAll(requests);
 		}
 		async addAll(requests) {
@@ -12346,9 +12346,9 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			requests = webidl$4.converters["sequence<RequestInfo>"](requests);
 			const responsePromises = [];
 			const requestList = [];
-			for (const request$1 of requests) {
-				if (typeof request$1 === "string") continue;
-				const r = request$1[kState];
+			for (const request$2 of requests) {
+				if (typeof request$2 === "string") continue;
+				const r = request$2[kState];
 				if (!urlIsHttpHttpsScheme(r.url) || r.method !== "GET") throw webidl$4.errors.exception({
 					header: "Cache.addAll",
 					message: "Expected http/s scheme when method is not GET."
@@ -12356,8 +12356,8 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			}
 			/** @type {ReturnType<typeof fetching>[]} */
 			const fetchControllers = [];
-			for (const request$1 of requests) {
-				const r = new Request(request$1)[kState];
+			for (const request$2 of requests) {
+				const r = new Request(request$2)[kState];
 				if (!urlIsHttpHttpsScheme(r.url)) throw webidl$4.errors.exception({
 					header: "Cache.addAll",
 					message: "Expected http/s scheme."
@@ -12422,14 +12422,14 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			});
 			return cacheJobPromise.promise;
 		}
-		async put(request$1, response) {
+		async put(request$2, response) {
 			webidl$4.brandCheck(this, Cache$1);
 			webidl$4.argumentLengthCheck(arguments, 2, { header: "Cache.put" });
-			request$1 = webidl$4.converters.RequestInfo(request$1);
+			request$2 = webidl$4.converters.RequestInfo(request$2);
 			response = webidl$4.converters.Response(response);
 			let innerRequest = null;
-			if (request$1 instanceof Request) innerRequest = request$1[kState];
-			else innerRequest = new Request(request$1)[kState];
+			if (request$2 instanceof Request) innerRequest = request$2[kState];
+			else innerRequest = new Request(request$2)[kState];
 			if (!urlIsHttpHttpsScheme(innerRequest.url) || innerRequest.method !== "GET") throw webidl$4.errors.exception({
 				header: "Cache.put",
 				message: "Expected an http/s scheme when method is not GET"
@@ -12480,21 +12480,21 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			});
 			return cacheJobPromise.promise;
 		}
-		async delete(request$1, options = {}) {
+		async delete(request$2, options = {}) {
 			webidl$4.brandCheck(this, Cache$1);
 			webidl$4.argumentLengthCheck(arguments, 1, { header: "Cache.delete" });
-			request$1 = webidl$4.converters.RequestInfo(request$1);
+			request$2 = webidl$4.converters.RequestInfo(request$2);
 			options = webidl$4.converters.CacheQueryOptions(options);
 			/**
 			* @type {Request}
 			*/
 			let r = null;
-			if (request$1 instanceof Request) {
-				r = request$1[kState];
+			if (request$2 instanceof Request) {
+				r = request$2[kState];
 				if (r.method !== "GET" && !options.ignoreMethod) return false;
 			} else {
-				assert$1(typeof request$1 === "string");
-				r = new Request(request$1)[kState];
+				assert$1(typeof request$2 === "string");
+				r = new Request(request$2)[kState];
 			}
 			/** @type {CacheBatchOperation[]} */
 			const operations = [];
@@ -12525,32 +12525,32 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 		* @param {import('../../types/cache').CacheQueryOptions} options
 		* @returns {readonly Request[]}
 		*/
-		async keys(request$1 = void 0, options = {}) {
+		async keys(request$2 = void 0, options = {}) {
 			webidl$4.brandCheck(this, Cache$1);
-			if (request$1 !== void 0) request$1 = webidl$4.converters.RequestInfo(request$1);
+			if (request$2 !== void 0) request$2 = webidl$4.converters.RequestInfo(request$2);
 			options = webidl$4.converters.CacheQueryOptions(options);
 			let r = null;
-			if (request$1 !== void 0) {
-				if (request$1 instanceof Request) {
-					r = request$1[kState];
+			if (request$2 !== void 0) {
+				if (request$2 instanceof Request) {
+					r = request$2[kState];
 					if (r.method !== "GET" && !options.ignoreMethod) return [];
-				} else if (typeof request$1 === "string") r = new Request(request$1)[kState];
+				} else if (typeof request$2 === "string") r = new Request(request$2)[kState];
 			}
 			const promise = createDeferredPromise();
 			const requests = [];
-			if (request$1 === void 0) for (const requestResponse of this.#relevantRequestResponseList) requests.push(requestResponse[0]);
+			if (request$2 === void 0) for (const requestResponse of this.#relevantRequestResponseList) requests.push(requestResponse[0]);
 			else {
 				const requestResponses = this.#queryCache(r, options);
 				for (const requestResponse of requestResponses) requests.push(requestResponse[0]);
 			}
 			queueMicrotask(() => {
 				const requestList = [];
-				for (const request$2 of requests) {
+				for (const request$3 of requests) {
 					const requestObject = new Request("https://a");
-					requestObject[kState] = request$2;
-					requestObject[kHeaders][kHeadersList$1] = request$2.headersList;
+					requestObject[kState] = request$3;
+					requestObject[kHeaders][kHeadersList$1] = request$3.headersList;
 					requestObject[kHeaders][kGuard] = "immutable";
-					requestObject[kRealm] = request$2.client;
+					requestObject[kRealm] = request$3.client;
 					requestList.push(requestObject);
 				}
 				promise.resolve(Object.freeze(requestList));
@@ -12648,9 +12648,9 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 		* @param {import('../../types/cache').CacheQueryOptions | undefined} options
 		* @returns {boolean}
 		*/
-		#requestMatchesCachedItem(requestQuery, request$1, response = null, options) {
+		#requestMatchesCachedItem(requestQuery, request$2, response = null, options) {
 			const queryURL = new URL(requestQuery.url);
-			const cachedURL = new URL(request$1.url);
+			const cachedURL = new URL(request$2.url);
 			if (options?.ignoreSearch) {
 				cachedURL.search = "";
 				queryURL.search = "";
@@ -12660,7 +12660,7 @@ var require_cache = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.29
 			const fieldValues$1 = getFieldValues(response.headersList.get("vary"));
 			for (const fieldValue of fieldValues$1) {
 				if (fieldValue === "*") return false;
-				const requestValue = request$1.headersList.get(fieldValue);
+				const requestValue = request$2.headersList.get(fieldValue);
 				const queryValue = requestQuery.headersList.get(fieldValue);
 				if (requestValue !== queryValue) return false;
 			}
@@ -12723,18 +12723,18 @@ var require_cachestorage = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undi
 		constructor() {
 			if (arguments[0] !== kConstruct) webidl$3.illegalConstructor();
 		}
-		async match(request$1, options = {}) {
+		async match(request$2, options = {}) {
 			webidl$3.brandCheck(this, CacheStorage);
 			webidl$3.argumentLengthCheck(arguments, 1, { header: "CacheStorage.match" });
-			request$1 = webidl$3.converters.RequestInfo(request$1);
+			request$2 = webidl$3.converters.RequestInfo(request$2);
 			options = webidl$3.converters.MultiCacheQueryOptions(options);
 			if (options.cacheName != null) {
 				if (this.#caches.has(options.cacheName)) {
 					const cacheList = this.#caches.get(options.cacheName);
-					return await new Cache(kConstruct, cacheList).match(request$1, options);
+					return await new Cache(kConstruct, cacheList).match(request$2, options);
 				}
 			} else for (const cacheList of this.#caches.values()) {
-				const response = await new Cache(kConstruct, cacheList).match(request$1, options);
+				const response = await new Cache(kConstruct, cacheList).match(request$2, options);
 				if (response !== void 0) return response;
 			}
 		}
@@ -13689,7 +13689,7 @@ var require_connection = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 	function establishWebSocketConnection$1(url, protocols, ws, onEstablish, options) {
 		const requestURL = url;
 		requestURL.protocol = url.protocol === "ws:" ? "http:" : "https:";
-		const request$1 = makeRequest({
+		const request$2 = makeRequest({
 			urlList: [requestURL],
 			serviceWorkers: "none",
 			referrer: "no-referrer",
@@ -13698,14 +13698,14 @@ var require_connection = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 			cache: "no-store",
 			redirect: "error"
 		});
-		if (options.headers) request$1.headersList = new Headers$1(options.headers)[kHeadersList];
+		if (options.headers) request$2.headersList = new Headers$1(options.headers)[kHeadersList];
 		const keyValue = crypto$1.randomBytes(16).toString("base64");
-		request$1.headersList.append("sec-websocket-key", keyValue);
-		request$1.headersList.append("sec-websocket-version", "13");
-		for (const protocol of protocols) request$1.headersList.append("sec-websocket-protocol", protocol);
+		request$2.headersList.append("sec-websocket-key", keyValue);
+		request$2.headersList.append("sec-websocket-version", "13");
+		for (const protocol of protocols) request$2.headersList.append("sec-websocket-protocol", protocol);
 		const permessageDeflate = "";
 		return fetching({
-			request: request$1,
+			request: request$2,
 			useParallelQueue: true,
 			dispatcher: options.dispatcher ?? getGlobalDispatcher$2(),
 			processResponse(response) {
@@ -13737,7 +13737,7 @@ var require_connection = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici
 					return;
 				}
 				const secProtocol = response.headersList.get("Sec-WebSocket-Protocol");
-				if (secProtocol !== null && secProtocol !== request$1.headersList.get("Sec-WebSocket-Protocol")) {
+				if (secProtocol !== null && secProtocol !== request$2.headersList.get("Sec-WebSocket-Protocol")) {
 					failWebsocketConnection$2(ws, "Protocol was not set in the opening handshake.");
 					return;
 				}
@@ -14401,9 +14401,9 @@ var require_undici = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 	module.exports.buildConnector = buildConnector;
 	module.exports.errors = errors;
 	function makeDispatcher(fn) {
-		return (url, opts, handler) => {
+		return (url, opts, handler$1) => {
 			if (typeof opts === "function") {
-				handler = opts;
+				handler$1 = opts;
 				opts = null;
 			}
 			if (!url || typeof url !== "string" && typeof url !== "object" && !(url instanceof URL)) throw new InvalidArgumentError("invalid url");
@@ -14424,7 +14424,7 @@ var require_undici = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 				origin: url.origin,
 				path: url.search ? `${url.pathname}${url.search}` : url.pathname,
 				method: opts.method || (opts.body ? "PUT" : "GET")
-			}, handler);
+			}, handler$1);
 		};
 	}
 	module.exports.setGlobalDispatcher = setGlobalDispatcher;
@@ -14481,7 +14481,7 @@ var require_undici = /* @__PURE__ */ __commonJS({ "node_modules/.deno/undici@5.2
 //#endregion
 //#region node_modules/.deno/@actions+http-client@2.2.3/node_modules/@actions/http-client/lib/index.js
 var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http-client@2.2.3/node_modules/@actions/http-client/lib/index.js": ((exports) => {
-	var __createBinding$7 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$10 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		var desc = Object.getOwnPropertyDescriptor(m, k);
 		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -14495,7 +14495,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$7 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$10 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -14503,16 +14503,16 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$7 = exports && exports.__importStar || function(mod) {
+	var __importStar$10 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$7(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$10(result, mod, k);
 		}
-		__setModuleDefault$7(result, mod);
+		__setModuleDefault$10(result, mod);
 		return result;
 	};
-	var __awaiter$9 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$10 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -14540,11 +14540,11 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 		});
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const http = __importStar$7(__require("http"));
-	const https = __importStar$7(__require("https"));
-	const pm = __importStar$7(require_proxy());
-	const tunnel = __importStar$7(require_tunnel());
-	const undici_1 = require_undici();
+	const http = __importStar$10(__require("http"));
+	const https = __importStar$10(__require("https"));
+	const pm = __importStar$10(require_proxy());
+	const tunnel = __importStar$10(require_tunnel());
+	const undici_1$1 = require_undici();
 	var HttpCodes;
 	(function(HttpCodes$1) {
 		HttpCodes$1[HttpCodes$1["OK"] = 200] = "OK";
@@ -14627,8 +14627,8 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			this.message = message;
 		}
 		readBody() {
-			return __awaiter$9(this, void 0, void 0, function* () {
-				return new Promise((resolve) => __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
+				return new Promise((resolve) => __awaiter$10(this, void 0, void 0, function* () {
 					let output = Buffer.alloc(0);
 					this.message.on("data", (chunk) => {
 						output = Buffer.concat([output, chunk]);
@@ -14640,8 +14640,8 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			});
 		}
 		readBodyBuffer() {
-			return __awaiter$9(this, void 0, void 0, function* () {
-				return new Promise((resolve) => __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
+				return new Promise((resolve) => __awaiter$10(this, void 0, void 0, function* () {
 					const chunks = [];
 					this.message.on("data", (chunk) => {
 						chunks.push(chunk);
@@ -14659,7 +14659,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 	}
 	exports.isHttps = isHttps;
 	var HttpClient = class {
-		constructor(userAgent, handlers, requestOptions) {
+		constructor(userAgent$1, handlers, requestOptions) {
 			this._ignoreSslError = false;
 			this._allowRedirects = true;
 			this._allowRedirectDowngrade = false;
@@ -14668,7 +14668,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			this._maxRetries = 1;
 			this._keepAlive = false;
 			this._disposed = false;
-			this.userAgent = userAgent;
+			this.userAgent = userAgent$1;
 			this.handlers = handlers || [];
 			this.requestOptions = requestOptions;
 			if (requestOptions) {
@@ -14683,42 +14683,42 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			}
 		}
 		options(requestUrl, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("OPTIONS", requestUrl, null, additionalHeaders || {});
 			});
 		}
 		get(requestUrl, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("GET", requestUrl, null, additionalHeaders || {});
 			});
 		}
 		del(requestUrl, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("DELETE", requestUrl, null, additionalHeaders || {});
 			});
 		}
 		post(requestUrl, data, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("POST", requestUrl, data, additionalHeaders || {});
 			});
 		}
 		patch(requestUrl, data, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("PATCH", requestUrl, data, additionalHeaders || {});
 			});
 		}
 		put(requestUrl, data, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("PUT", requestUrl, data, additionalHeaders || {});
 			});
 		}
 		head(requestUrl, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request("HEAD", requestUrl, null, additionalHeaders || {});
 			});
 		}
 		sendStream(verb, requestUrl, stream$2, additionalHeaders) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return this.request(verb, requestUrl, stream$2, additionalHeaders);
 			});
 		}
@@ -14727,14 +14727,14 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 		* Be aware that not found returns a null.  Other errors (4xx, 5xx) reject the promise
 		*/
 		getJson(requestUrl, additionalHeaders = {}) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
 				const res = yield this.get(requestUrl, additionalHeaders);
 				return this._processResponse(res, this.requestOptions);
 			});
 		}
 		postJson(requestUrl, obj, additionalHeaders = {}) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				const data = JSON.stringify(obj, null, 2);
 				additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
 				additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
@@ -14743,7 +14743,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			});
 		}
 		putJson(requestUrl, obj, additionalHeaders = {}) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				const data = JSON.stringify(obj, null, 2);
 				additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
 				additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
@@ -14752,7 +14752,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			});
 		}
 		patchJson(requestUrl, obj, additionalHeaders = {}) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				const data = JSON.stringify(obj, null, 2);
 				additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
 				additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
@@ -14766,7 +14766,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 		* Prefer get, del, post and patch
 		*/
 		request(verb, requestUrl, data, headers) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				if (this._disposed) throw new Error("Client has already been disposed.");
 				const parsedUrl = new URL(requestUrl);
 				let info$1 = this._prepareRequest(verb, parsedUrl, headers);
@@ -14777,8 +14777,8 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 					response = yield this.requestRaw(info$1, data);
 					if (response && response.message && response.message.statusCode === HttpCodes.Unauthorized) {
 						let authenticationHandler;
-						for (const handler of this.handlers) if (handler.canHandleAuthentication(response)) {
-							authenticationHandler = handler;
+						for (const handler$1 of this.handlers) if (handler$1.canHandleAuthentication(response)) {
+							authenticationHandler = handler$1;
 							break;
 						}
 						if (authenticationHandler) return authenticationHandler.handleAuthentication(this, info$1, data);
@@ -14821,7 +14821,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 		* @param data
 		*/
 		requestRaw(info$1, data) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				return new Promise((resolve, reject) => {
 					function callbackForResult(err, res) {
 						if (err) reject(err);
@@ -14902,16 +14902,16 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			info$1.options.headers = this._mergeHeaders(headers);
 			if (this.userAgent != null) info$1.options.headers["user-agent"] = this.userAgent;
 			info$1.options.agent = this._getAgent(info$1.parsedUrl);
-			if (this.handlers) for (const handler of this.handlers) handler.prepareRequest(info$1.options);
+			if (this.handlers) for (const handler$1 of this.handlers) handler$1.prepareRequest(info$1.options);
 			return info$1;
 		}
 		_mergeHeaders(headers) {
-			if (this.requestOptions && this.requestOptions.headers) return Object.assign({}, lowercaseKeys(this.requestOptions.headers), lowercaseKeys(headers || {}));
-			return lowercaseKeys(headers || {});
+			if (this.requestOptions && this.requestOptions.headers) return Object.assign({}, lowercaseKeys$1(this.requestOptions.headers), lowercaseKeys$1(headers || {}));
+			return lowercaseKeys$1(headers || {});
 		}
 		_getExistingOrDefaultHeader(additionalHeaders, header, _default) {
 			let clientHeader;
-			if (this.requestOptions && this.requestOptions.headers) clientHeader = lowercaseKeys(this.requestOptions.headers)[header];
+			if (this.requestOptions && this.requestOptions.headers) clientHeader = lowercaseKeys$1(this.requestOptions.headers)[header];
 			return additionalHeaders[header] || clientHeader || _default;
 		}
 		_getAgent(parsedUrl) {
@@ -14956,7 +14956,7 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			if (this._keepAlive) proxyAgent = this._proxyAgentDispatcher;
 			if (proxyAgent) return proxyAgent;
 			const usingSsl = parsedUrl.protocol === "https:";
-			proxyAgent = new undici_1.ProxyAgent(Object.assign({
+			proxyAgent = new undici_1$1.ProxyAgent(Object.assign({
 				uri: proxyUrl.href,
 				pipelining: !this._keepAlive ? 0 : 1
 			}, (proxyUrl.username || proxyUrl.password) && { token: `Basic ${Buffer.from(`${proxyUrl.username}:${proxyUrl.password}`).toString("base64")}` }));
@@ -14965,15 +14965,15 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 			return proxyAgent;
 		}
 		_performExponentialBackoff(retryNumber) {
-			return __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
 				retryNumber = Math.min(ExponentialBackoffCeiling, retryNumber);
 				const ms = ExponentialBackoffTimeSlice * Math.pow(2, retryNumber);
 				return new Promise((resolve) => setTimeout(() => resolve(), ms));
 			});
 		}
 		_processResponse(res, options) {
-			return __awaiter$9(this, void 0, void 0, function* () {
-				return new Promise((resolve, reject) => __awaiter$9(this, void 0, void 0, function* () {
+			return __awaiter$10(this, void 0, void 0, function* () {
+				return new Promise((resolve, reject) => __awaiter$10(this, void 0, void 0, function* () {
 					const statusCode = res.message.statusCode || 0;
 					const response = {
 						statusCode,
@@ -15013,13 +15013,13 @@ var require_lib = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http
 		}
 	};
 	exports.HttpClient = HttpClient;
-	const lowercaseKeys = (obj) => Object.keys(obj).reduce((c, k) => (c[k.toLowerCase()] = obj[k], c), {});
+	const lowercaseKeys$1 = (obj) => Object.keys(obj).reduce((c, k) => (c[k.toLowerCase()] = obj[k], c), {});
 }) });
 
 //#endregion
 //#region node_modules/.deno/@actions+http-client@2.2.3/node_modules/@actions/http-client/lib/auth.js
 var require_auth = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+http-client@2.2.3/node_modules/@actions/http-client/lib/auth.js": ((exports) => {
-	var __awaiter$8 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$9 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -15060,7 +15060,7 @@ var require_auth = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+htt
 			return false;
 		}
 		handleAuthentication() {
-			return __awaiter$8(this, void 0, void 0, function* () {
+			return __awaiter$9(this, void 0, void 0, function* () {
 				throw new Error("not implemented");
 			});
 		}
@@ -15078,7 +15078,7 @@ var require_auth = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+htt
 			return false;
 		}
 		handleAuthentication() {
-			return __awaiter$8(this, void 0, void 0, function* () {
+			return __awaiter$9(this, void 0, void 0, function* () {
 				throw new Error("not implemented");
 			});
 		}
@@ -15096,7 +15096,7 @@ var require_auth = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+htt
 			return false;
 		}
 		handleAuthentication() {
-			return __awaiter$8(this, void 0, void 0, function* () {
+			return __awaiter$9(this, void 0, void 0, function* () {
 				throw new Error("not implemented");
 			});
 		}
@@ -15107,7 +15107,7 @@ var require_auth = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+htt
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/oidc-utils.js
 var require_oidc_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/oidc-utils.js": ((exports) => {
-	var __awaiter$7 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$8 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -15137,7 +15137,7 @@ var require_oidc_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const http_client_1 = require_lib();
 	const auth_1 = require_auth();
-	const core_1 = require_core();
+	const core_1$1 = require_core();
 	var OidcClient = class OidcClient {
 		static createHttpClient(allowRetry = true, maxRetry = 10) {
 			const requestOptions = {
@@ -15158,7 +15158,7 @@ var require_oidc_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 		}
 		static getCall(id_token_url) {
 			var _a$1;
-			return __awaiter$7(this, void 0, void 0, function* () {
+			return __awaiter$8(this, void 0, void 0, function* () {
 				const id_token = (_a$1 = (yield OidcClient.createHttpClient().getJson(id_token_url).catch((error$1) => {
 					throw new Error(`Failed to get ID Token. \n 
         Error Code : ${error$1.statusCode}\n 
@@ -15169,13 +15169,13 @@ var require_oidc_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 			});
 		}
 		static getIDToken(audience) {
-			return __awaiter$7(this, void 0, void 0, function* () {
+			return __awaiter$8(this, void 0, void 0, function* () {
 				try {
 					let id_token_url = OidcClient.getIDTokenUrl();
 					if (audience) id_token_url = `${id_token_url}&audience=${encodeURIComponent(audience)}`;
-					(0, core_1.debug)(`ID token url is ${id_token_url}`);
+					(0, core_1$1.debug)(`ID token url is ${id_token_url}`);
 					const id_token = yield OidcClient.getCall(id_token_url);
-					(0, core_1.setSecret)(id_token);
+					(0, core_1$1.setSecret)(id_token);
 					return id_token;
 				} catch (error$1) {
 					throw new Error(`Error message: ${error$1.message}`);
@@ -15189,7 +15189,7 @@ var require_oidc_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/summary.js
 var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/summary.js": ((exports) => {
-	var __awaiter$6 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$7 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -15218,9 +15218,9 @@ var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.summary = exports.markdownSummary = exports.SUMMARY_DOCS_URL = exports.SUMMARY_ENV_VAR = void 0;
-	const os_1$1 = __require("os");
-	const fs_1 = __require("fs");
-	const { access, appendFile, writeFile } = fs_1.promises;
+	const os_1$2 = __require("os");
+	const fs_1$1 = __require("fs");
+	const { access, appendFile, writeFile } = fs_1$1.promises;
 	exports.SUMMARY_ENV_VAR = "GITHUB_STEP_SUMMARY";
 	exports.SUMMARY_DOCS_URL = "https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary";
 	var Summary = class {
@@ -15234,12 +15234,12 @@ var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		* @returns step summary file path
 		*/
 		filePath() {
-			return __awaiter$6(this, void 0, void 0, function* () {
+			return __awaiter$7(this, void 0, void 0, function* () {
 				if (this._filePath) return this._filePath;
 				const pathFromEnv = process.env[exports.SUMMARY_ENV_VAR];
 				if (!pathFromEnv) throw new Error(`Unable to find environment variable for $${exports.SUMMARY_ENV_VAR}. Check if your runtime environment supports job summaries.`);
 				try {
-					yield access(pathFromEnv, fs_1.constants.R_OK | fs_1.constants.W_OK);
+					yield access(pathFromEnv, fs_1$1.constants.R_OK | fs_1$1.constants.W_OK);
 				} catch (_a$1) {
 					throw new Error(`Unable to access summary file: '${pathFromEnv}'. Check if the file has correct read/write permissions.`);
 				}
@@ -15269,7 +15269,7 @@ var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		* @returns {Promise<Summary>} summary instance
 		*/
 		write(options) {
-			return __awaiter$6(this, void 0, void 0, function* () {
+			return __awaiter$7(this, void 0, void 0, function* () {
 				const overwrite = !!(options === null || options === void 0 ? void 0 : options.overwrite);
 				const filePath = yield this.filePath();
 				yield (overwrite ? writeFile : appendFile)(filePath, this._buffer, { encoding: "utf8" });
@@ -15282,7 +15282,7 @@ var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		* @returns {Summary} summary instance
 		*/
 		clear() {
-			return __awaiter$6(this, void 0, void 0, function* () {
+			return __awaiter$7(this, void 0, void 0, function* () {
 				return this.emptyBuffer().write({ overwrite: true });
 			});
 		}
@@ -15329,7 +15329,7 @@ var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		* @returns {Summary} summary instance
 		*/
 		addEOL() {
-			return this.addRaw(os_1$1.EOL);
+			return this.addRaw(os_1$2.EOL);
 		}
 		/**
 		* Adds an HTML codeblock to the summary buffer
@@ -15485,7 +15485,7 @@ var require_summary = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/path-utils.js
 var require_path_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/path-utils.js": ((exports) => {
-	var __createBinding$6 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$9 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		var desc = Object.getOwnPropertyDescriptor(m, k);
 		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -15499,7 +15499,7 @@ var require_path_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$6 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$9 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -15507,17 +15507,17 @@ var require_path_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$6 = exports && exports.__importStar || function(mod) {
+	var __importStar$9 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$6(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$9(result, mod, k);
 		}
-		__setModuleDefault$6(result, mod);
+		__setModuleDefault$9(result, mod);
 		return result;
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const path$4 = __importStar$6(__require("path"));
+	const path$4 = __importStar$9(__require("path"));
 	/**
 	* toPosixPath converts the given path to the posix form. On Windows, \\ will be
 	* replaced with /.
@@ -15557,7 +15557,7 @@ var require_path_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 //#endregion
 //#region node_modules/.deno/@actions+io@1.1.3/node_modules/@actions/io/lib/io-util.js
 var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.1.3/node_modules/@actions/io/lib/io-util.js": ((exports) => {
-	var __createBinding$5 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$8 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		Object.defineProperty(o, k2, {
 			enumerable: true,
@@ -15569,7 +15569,7 @@ var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$5 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$8 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -15577,16 +15577,16 @@ var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$5 = exports && exports.__importStar || function(mod) {
+	var __importStar$8 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$5(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$8(result, mod, k);
 		}
-		__setModuleDefault$5(result, mod);
+		__setModuleDefault$8(result, mod);
 		return result;
 	};
-	var __awaiter$5 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$6 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -15616,14 +15616,14 @@ var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 	var _a;
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.getCmdPath = exports.tryGetExecutablePath = exports.isRooted = exports.isDirectory = exports.exists = exports.READONLY = exports.UV_FS_O_EXLOCK = exports.IS_WINDOWS = exports.unlink = exports.symlink = exports.stat = exports.rmdir = exports.rm = exports.rename = exports.readlink = exports.readdir = exports.open = exports.mkdir = exports.lstat = exports.copyFile = exports.chmod = void 0;
-	const fs = __importStar$5(__require("fs"));
-	const path$3 = __importStar$5(__require("path"));
+	const fs = __importStar$8(__require("fs"));
+	const path$3 = __importStar$8(__require("path"));
 	_a = fs.promises, exports.chmod = _a.chmod, exports.copyFile = _a.copyFile, exports.lstat = _a.lstat, exports.mkdir = _a.mkdir, exports.open = _a.open, exports.readdir = _a.readdir, exports.readlink = _a.readlink, exports.rename = _a.rename, exports.rm = _a.rm, exports.rmdir = _a.rmdir, exports.stat = _a.stat, exports.symlink = _a.symlink, exports.unlink = _a.unlink;
 	exports.IS_WINDOWS = process.platform === "win32";
 	exports.UV_FS_O_EXLOCK = 268435456;
 	exports.READONLY = fs.constants.O_RDONLY;
 	function exists(fsPath) {
-		return __awaiter$5(this, void 0, void 0, function* () {
+		return __awaiter$6(this, void 0, void 0, function* () {
 			try {
 				yield exports.stat(fsPath);
 			} catch (err) {
@@ -15635,7 +15635,7 @@ var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 	}
 	exports.exists = exists;
 	function isDirectory(fsPath, useStat = false) {
-		return __awaiter$5(this, void 0, void 0, function* () {
+		return __awaiter$6(this, void 0, void 0, function* () {
 			return (useStat ? yield exports.stat(fsPath) : yield exports.lstat(fsPath)).isDirectory();
 		});
 	}
@@ -15658,7 +15658,7 @@ var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 	* @return if file exists and is executable, returns the file path. otherwise empty string.
 	*/
 	function tryGetExecutablePath(filePath, extensions) {
-		return __awaiter$5(this, void 0, void 0, function* () {
+		return __awaiter$6(this, void 0, void 0, function* () {
 			let stats = void 0;
 			try {
 				stats = yield exports.stat(filePath);
@@ -15721,7 +15721,7 @@ var require_io_util = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+
 //#endregion
 //#region node_modules/.deno/@actions+io@1.1.3/node_modules/@actions/io/lib/io.js
 var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.1.3/node_modules/@actions/io/lib/io.js": ((exports) => {
-	var __createBinding$4 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$7 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		Object.defineProperty(o, k2, {
 			enumerable: true,
@@ -15733,7 +15733,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$4 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$7 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -15741,16 +15741,16 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$4 = exports && exports.__importStar || function(mod) {
+	var __importStar$7 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$4(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$7(result, mod, k);
 		}
-		__setModuleDefault$4(result, mod);
+		__setModuleDefault$7(result, mod);
 		return result;
 	};
-	var __awaiter$4 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$5 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -15779,8 +15779,8 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const assert_1 = __require("assert");
-	const path$2 = __importStar$4(__require("path"));
-	const ioUtil$1 = __importStar$4(require_io_util());
+	const path$2 = __importStar$7(__require("path"));
+	const ioUtil$1 = __importStar$7(require_io_util());
 	/**
 	* Copies a file or folder.
 	* Based off of shelljs - https://github.com/shelljs/shelljs/blob/9237f66c52e5daa40458f94f9565e18e8132f5a6/src/cp.js
@@ -15790,7 +15790,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	* @param     options   optional. See CopyOptions.
 	*/
 	function cp(source, dest, options = {}) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			const { force, recursive, copySourceDirectory } = readCopyOptions(options);
 			const destStat = (yield ioUtil$1.exists(dest)) ? yield ioUtil$1.stat(dest) : null;
 			if (destStat && destStat.isFile() && !force) return;
@@ -15813,7 +15813,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	* @param     options   optional. See MoveOptions.
 	*/
 	function mv(source, dest, options = {}) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			if (yield ioUtil$1.exists(dest)) {
 				let destExists = true;
 				if (yield ioUtil$1.isDirectory(dest)) {
@@ -15834,7 +15834,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	* @param inputPath path to remove
 	*/
 	function rmRF(inputPath) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			if (ioUtil$1.IS_WINDOWS) {
 				if (/[*"<>|]/.test(inputPath)) throw new Error("File path must not contain `*`, `\"`, `<`, `>` or `|` on Windows");
 			}
@@ -15859,7 +15859,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	* @returns Promise<void>
 	*/
 	function mkdirP(fsPath) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			assert_1.ok(fsPath, "a path argument must be provided");
 			yield ioUtil$1.mkdir(fsPath, { recursive: true });
 		});
@@ -15874,7 +15874,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	* @returns   Promise<string>   path to tool
 	*/
 	function which(tool, check) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			if (!tool) throw new Error("parameter 'tool' is required");
 			if (check) {
 				const result = yield which(tool, false);
@@ -15894,7 +15894,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 	* @returns   Promise<string[]>  the paths of the tool
 	*/
 	function findInPath(tool) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			if (!tool) throw new Error("parameter 'tool' is required");
 			const extensions = [];
 			if (ioUtil$1.IS_WINDOWS && process.env["PATHEXT"]) {
@@ -15930,7 +15930,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 		};
 	}
 	function cpDirRecursive(sourceDir, destDir, currentDepth, force) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			if (currentDepth >= 255) return;
 			currentDepth++;
 			yield mkdirP(destDir);
@@ -15945,7 +15945,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 		});
 	}
 	function copyFile(srcFile, destFile, force) {
-		return __awaiter$4(this, void 0, void 0, function* () {
+		return __awaiter$5(this, void 0, void 0, function* () {
 			if ((yield ioUtil$1.lstat(srcFile)).isSymbolicLink()) {
 				try {
 					yield ioUtil$1.lstat(destFile);
@@ -15966,7 +15966,7 @@ var require_io = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+io@1.
 //#endregion
 //#region node_modules/.deno/@actions+exec@1.1.1/node_modules/@actions/exec/lib/toolrunner.js
 var require_toolrunner = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exec@1.1.1/node_modules/@actions/exec/lib/toolrunner.js": ((exports) => {
-	var __createBinding$3 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$6 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		Object.defineProperty(o, k2, {
 			enumerable: true,
@@ -15978,7 +15978,7 @@ var require_toolrunner = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$3 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$6 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -15986,16 +15986,16 @@ var require_toolrunner = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$3 = exports && exports.__importStar || function(mod) {
+	var __importStar$6 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$3(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$6(result, mod, k);
 		}
-		__setModuleDefault$3(result, mod);
+		__setModuleDefault$6(result, mod);
 		return result;
 	};
-	var __awaiter$3 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$4 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -16023,12 +16023,12 @@ var require_toolrunner = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 		});
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const os$1 = __importStar$3(__require("os"));
-	const events = __importStar$3(__require("events"));
-	const child = __importStar$3(__require("child_process"));
-	const path$1 = __importStar$3(__require("path"));
-	const io = __importStar$3(require_io());
-	const ioUtil = __importStar$3(require_io_util());
+	const os$1 = __importStar$6(__require("os"));
+	const events = __importStar$6(__require("events"));
+	const child = __importStar$6(__require("child_process"));
+	const path$1 = __importStar$6(__require("path"));
+	const io = __importStar$6(require_io());
+	const ioUtil = __importStar$6(require_io_util());
 	const timers_1 = __require("timers");
 	const IS_WINDOWS = process.platform === "win32";
 	var ToolRunner = class extends events.EventEmitter {
@@ -16202,10 +16202,10 @@ var require_toolrunner = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 		* @returns   number
 		*/
 		exec() {
-			return __awaiter$3(this, void 0, void 0, function* () {
+			return __awaiter$4(this, void 0, void 0, function* () {
 				if (!ioUtil.isRooted(this.toolPath) && (this.toolPath.includes("/") || IS_WINDOWS && this.toolPath.includes("\\"))) this.toolPath = path$1.resolve(process.cwd(), this.options.cwd || process.cwd(), this.toolPath);
 				this.toolPath = yield io.which(this.toolPath, true);
-				return new Promise((resolve, reject) => __awaiter$3(this, void 0, void 0, function* () {
+				return new Promise((resolve, reject) => __awaiter$4(this, void 0, void 0, function* () {
 					this._debug(`exec tool: ${this.toolPath}`);
 					this._debug("arguments:");
 					for (const arg of this.args) this._debug(`   ${arg}`);
@@ -16366,7 +16366,7 @@ var require_toolrunner = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actio
 //#endregion
 //#region node_modules/.deno/@actions+exec@1.1.1/node_modules/@actions/exec/lib/exec.js
 var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exec@1.1.1/node_modules/@actions/exec/lib/exec.js": ((exports) => {
-	var __createBinding$2 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$5 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		Object.defineProperty(o, k2, {
 			enumerable: true,
@@ -16378,7 +16378,7 @@ var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exe
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$2 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$5 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -16386,16 +16386,16 @@ var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exe
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$2 = exports && exports.__importStar || function(mod) {
+	var __importStar$5 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$2(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding$5(result, mod, k);
 		}
-		__setModuleDefault$2(result, mod);
+		__setModuleDefault$5(result, mod);
 		return result;
 	};
-	var __awaiter$2 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$3 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -16424,7 +16424,7 @@ var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exe
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const string_decoder_1 = __require("string_decoder");
-	const tr = __importStar$2(require_toolrunner());
+	const tr = __importStar$5(require_toolrunner());
 	/**
 	* Exec a command.
 	* Output will be streamed to the live console.
@@ -16436,7 +16436,7 @@ var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exe
 	* @returns   Promise<number>    exit code
 	*/
 	function exec$1(commandLine, args, options) {
-		return __awaiter$2(this, void 0, void 0, function* () {
+		return __awaiter$3(this, void 0, void 0, function* () {
 			const commandArgs = tr.argStringToArray(commandLine);
 			if (commandArgs.length === 0) throw new Error(`Parameter 'commandLine' cannot be null or empty.`);
 			const toolPath = commandArgs[0];
@@ -16457,7 +16457,7 @@ var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exe
 	*/
 	function getExecOutput(commandLine, args, options) {
 		var _a$1, _b;
-		return __awaiter$2(this, void 0, void 0, function* () {
+		return __awaiter$3(this, void 0, void 0, function* () {
 			let stdout = "";
 			let stderr = "";
 			const stdoutDecoder = new string_decoder_1.StringDecoder("utf8");
@@ -16492,7 +16492,7 @@ var require_exec = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+exe
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/platform.js
 var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/platform.js": ((exports) => {
-	var __createBinding$1 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$4 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		var desc = Object.getOwnPropertyDescriptor(m, k);
 		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -16506,7 +16506,7 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault$1 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$4 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -16514,16 +16514,16 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar$1 = exports && exports.__importStar || function(mod) {
+	var __importStar$4 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$1(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$4(result, mod, k);
 		}
-		__setModuleDefault$1(result, mod);
+		__setModuleDefault$4(result, mod);
 		return result;
 	};
-	var __awaiter$1 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$2 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -16555,9 +16555,9 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 	};
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.getDetails = exports.isLinux = exports.isMacOS = exports.isWindows = exports.arch = exports.platform = void 0;
-	const os_1 = __importDefault(__require("os"));
-	const exec = __importStar$1(require_exec());
-	const getWindowsInfo = () => __awaiter$1(void 0, void 0, void 0, function* () {
+	const os_1$1 = __importDefault(__require("os"));
+	const exec = __importStar$4(require_exec());
+	const getWindowsInfo = () => __awaiter$2(void 0, void 0, void 0, function* () {
 		const { stdout: version } = yield exec.getExecOutput("powershell -command \"(Get-CimInstance -ClassName Win32_OperatingSystem).Version\"", void 0, { silent: true });
 		const { stdout: name } = yield exec.getExecOutput("powershell -command \"(Get-CimInstance -ClassName Win32_OperatingSystem).Caption\"", void 0, { silent: true });
 		return {
@@ -16565,7 +16565,7 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 			version: version.trim()
 		};
 	});
-	const getMacOsInfo = () => __awaiter$1(void 0, void 0, void 0, function* () {
+	const getMacOsInfo = () => __awaiter$2(void 0, void 0, void 0, function* () {
 		var _a$1, _b, _c, _d;
 		const { stdout } = yield exec.getExecOutput("sw_vers", void 0, { silent: true });
 		const version = (_b = (_a$1 = stdout.match(/ProductVersion:\s*(.+)/)) === null || _a$1 === void 0 ? void 0 : _a$1[1]) !== null && _b !== void 0 ? _b : "";
@@ -16574,7 +16574,7 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 			version
 		};
 	});
-	const getLinuxInfo = () => __awaiter$1(void 0, void 0, void 0, function* () {
+	const getLinuxInfo = () => __awaiter$2(void 0, void 0, void 0, function* () {
 		const { stdout } = yield exec.getExecOutput("lsb_release", [
 			"-i",
 			"-r",
@@ -16586,13 +16586,13 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 			version
 		};
 	});
-	exports.platform = os_1.default.platform();
-	exports.arch = os_1.default.arch();
+	exports.platform = os_1$1.default.platform();
+	exports.arch = os_1$1.default.arch();
 	exports.isWindows = exports.platform === "win32";
 	exports.isMacOS = exports.platform === "darwin";
 	exports.isLinux = exports.platform === "linux";
 	function getDetails() {
-		return __awaiter$1(this, void 0, void 0, function* () {
+		return __awaiter$2(this, void 0, void 0, function* () {
 			return Object.assign(Object.assign({}, yield exports.isWindows ? getWindowsInfo() : exports.isMacOS ? getMacOsInfo() : getLinuxInfo()), {
 				platform: exports.platform,
 				arch: exports.arch,
@@ -16608,7 +16608,7 @@ var require_platform = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions
 //#endregion
 //#region node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/core.js
 var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+core@1.11.1/node_modules/@actions/core/lib/core.js": ((exports) => {
-	var __createBinding = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+	var __createBinding$3 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
 		if (k2 === void 0) k2 = k;
 		var desc = Object.getOwnPropertyDescriptor(m, k);
 		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -16622,7 +16622,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 		if (k2 === void 0) k2 = k;
 		o[k2] = m[k];
 	}));
-	var __setModuleDefault = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+	var __setModuleDefault$3 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
 		Object.defineProperty(o, "default", {
 			enumerable: true,
 			value: v
@@ -16630,16 +16630,16 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	}) : function(o, v) {
 		o["default"] = v;
 	});
-	var __importStar = exports && exports.__importStar || function(mod) {
+	var __importStar$3 = exports && exports.__importStar || function(mod) {
 		if (mod && mod.__esModule) return mod;
 		var result = {};
 		if (mod != null) {
-			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$3(result, mod, k);
 		}
-		__setModuleDefault(result, mod);
+		__setModuleDefault$3(result, mod);
 		return result;
 	};
-	var __awaiter = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+	var __awaiter$1 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
 		function adopt(value) {
 			return value instanceof P ? value : new P(function(resolve) {
 				resolve(value);
@@ -16670,9 +16670,9 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	exports.platform = exports.toPlatformPath = exports.toWin32Path = exports.toPosixPath = exports.markdownSummary = exports.summary = exports.getIDToken = exports.getState = exports.saveState = exports.group = exports.endGroup = exports.startGroup = exports.info = exports.notice = exports.warning = exports.error = exports.debug = exports.isDebug = exports.setFailed = exports.setCommandEcho = exports.setOutput = exports.getBooleanInput = exports.getMultilineInput = exports.getInput = exports.addPath = exports.setSecret = exports.exportVariable = exports.ExitCode = void 0;
 	const command_1 = require_command();
 	const file_command_1 = require_file_command();
-	const utils_1 = require_utils$1();
-	const os = __importStar(__require("os"));
-	const path = __importStar(__require("path"));
+	const utils_1$1 = require_utils$3();
+	const os = __importStar$3(__require("os"));
+	const path = __importStar$3(__require("path"));
 	const oidc_utils_1 = require_oidc_utils();
 	/**
 	* The code to exit an action
@@ -16694,7 +16694,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	* @param val the value of the variable. Non-string values will be converted to a string via JSON.stringify
 	*/
 	function exportVariable(name, val) {
-		const convertedVal = (0, utils_1.toCommandValue)(val);
+		const convertedVal = (0, utils_1$1.toCommandValue)(val);
 		process.env[name] = convertedVal;
 		if (process.env["GITHUB_ENV"] || "") return (0, file_command_1.issueFileCommand)("ENV", (0, file_command_1.prepareKeyValueMessage)(name, val));
 		(0, command_1.issueCommand)("set-env", { name }, convertedVal);
@@ -16784,7 +16784,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	function setOutput(name, value) {
 		if (process.env["GITHUB_OUTPUT"] || "") return (0, file_command_1.issueFileCommand)("OUTPUT", (0, file_command_1.prepareKeyValueMessage)(name, value));
 		process.stdout.write(os.EOL);
-		(0, command_1.issueCommand)("set-output", { name }, (0, utils_1.toCommandValue)(value));
+		(0, command_1.issueCommand)("set-output", { name }, (0, utils_1$1.toCommandValue)(value));
 	}
 	exports.setOutput = setOutput;
 	/**
@@ -16827,7 +16827,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	* @param properties optional properties to add to the annotation.
 	*/
 	function error(message, properties = {}) {
-		(0, command_1.issueCommand)("error", (0, utils_1.toCommandProperties)(properties), message instanceof Error ? message.toString() : message);
+		(0, command_1.issueCommand)("error", (0, utils_1$1.toCommandProperties)(properties), message instanceof Error ? message.toString() : message);
 	}
 	exports.error = error;
 	/**
@@ -16836,7 +16836,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	* @param properties optional properties to add to the annotation.
 	*/
 	function warning(message, properties = {}) {
-		(0, command_1.issueCommand)("warning", (0, utils_1.toCommandProperties)(properties), message instanceof Error ? message.toString() : message);
+		(0, command_1.issueCommand)("warning", (0, utils_1$1.toCommandProperties)(properties), message instanceof Error ? message.toString() : message);
 	}
 	exports.warning = warning;
 	/**
@@ -16845,7 +16845,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	* @param properties optional properties to add to the annotation.
 	*/
 	function notice(message, properties = {}) {
-		(0, command_1.issueCommand)("notice", (0, utils_1.toCommandProperties)(properties), message instanceof Error ? message.toString() : message);
+		(0, command_1.issueCommand)("notice", (0, utils_1$1.toCommandProperties)(properties), message instanceof Error ? message.toString() : message);
 	}
 	exports.notice = notice;
 	/**
@@ -16883,7 +16883,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	* @param fn The function to wrap in the group
 	*/
 	function group(name, fn) {
-		return __awaiter(this, void 0, void 0, function* () {
+		return __awaiter$1(this, void 0, void 0, function* () {
 			startGroup(name);
 			let result;
 			try {
@@ -16903,7 +16903,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	*/
 	function saveState(name, value) {
 		if (process.env["GITHUB_STATE"] || "") return (0, file_command_1.issueFileCommand)("STATE", (0, file_command_1.prepareKeyValueMessage)(name, value));
-		(0, command_1.issueCommand)("save-state", { name }, (0, utils_1.toCommandValue)(value));
+		(0, command_1.issueCommand)("save-state", { name }, (0, utils_1$1.toCommandValue)(value));
 	}
 	exports.saveState = saveState;
 	/**
@@ -16917,7 +16917,7 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	}
 	exports.getState = getState;
 	function getIDToken(aud) {
-		return __awaiter(this, void 0, void 0, function* () {
+		return __awaiter$1(this, void 0, void 0, function* () {
 			return yield oidc_utils_1.OidcClient.getIDToken(aud);
 		});
 	}
@@ -16967,19 +16967,2958 @@ var require_core = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+cor
 	/**
 	* Platform utilities exports
 	*/
-	exports.platform = __importStar(require_platform());
+	exports.platform = __importStar$3(require_platform());
+}) });
+
+//#endregion
+//#region node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/context.js
+var require_context = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/context.js": ((exports) => {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const fs_1 = __require("fs");
+	const os_1 = __require("os");
+	var Context$2 = class {
+		/**
+		* Hydrate the context from the environment
+		*/
+		constructor() {
+			var _a$1, _b, _c;
+			this.payload = {};
+			if (process.env.GITHUB_EVENT_PATH) if ((0, fs_1.existsSync)(process.env.GITHUB_EVENT_PATH)) this.payload = JSON.parse((0, fs_1.readFileSync)(process.env.GITHUB_EVENT_PATH, { encoding: "utf8" }));
+			else {
+				const path$5 = process.env.GITHUB_EVENT_PATH;
+				process.stdout.write(`GITHUB_EVENT_PATH ${path$5} does not exist${os_1.EOL}`);
+			}
+			this.eventName = process.env.GITHUB_EVENT_NAME;
+			this.sha = process.env.GITHUB_SHA;
+			this.ref = process.env.GITHUB_REF;
+			this.workflow = process.env.GITHUB_WORKFLOW;
+			this.action = process.env.GITHUB_ACTION;
+			this.actor = process.env.GITHUB_ACTOR;
+			this.job = process.env.GITHUB_JOB;
+			this.runAttempt = parseInt(process.env.GITHUB_RUN_ATTEMPT, 10);
+			this.runNumber = parseInt(process.env.GITHUB_RUN_NUMBER, 10);
+			this.runId = parseInt(process.env.GITHUB_RUN_ID, 10);
+			this.apiUrl = (_a$1 = process.env.GITHUB_API_URL) !== null && _a$1 !== void 0 ? _a$1 : `https://api.github.com`;
+			this.serverUrl = (_b = process.env.GITHUB_SERVER_URL) !== null && _b !== void 0 ? _b : `https://github.com`;
+			this.graphqlUrl = (_c = process.env.GITHUB_GRAPHQL_URL) !== null && _c !== void 0 ? _c : `https://api.github.com/graphql`;
+		}
+		get issue() {
+			const payload = this.payload;
+			return Object.assign(Object.assign({}, this.repo), { number: (payload.issue || payload.pull_request || payload).number });
+		}
+		get repo() {
+			if (process.env.GITHUB_REPOSITORY) {
+				const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
+				return {
+					owner,
+					repo
+				};
+			}
+			if (this.payload.repository) return {
+				owner: this.payload.repository.owner.login,
+				repo: this.payload.repository.name
+			};
+			throw new Error("context.repo requires a GITHUB_REPOSITORY environment variable like 'owner/repo'");
+		}
+	};
+	exports.Context = Context$2;
+}) });
+
+//#endregion
+//#region node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/internal/utils.js
+var require_utils$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/internal/utils.js": ((exports) => {
+	var __createBinding$2 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+		if (k2 === void 0) k2 = k;
+		var desc = Object.getOwnPropertyDescriptor(m, k);
+		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
+			enumerable: true,
+			get: function() {
+				return m[k];
+			}
+		};
+		Object.defineProperty(o, k2, desc);
+	}) : (function(o, m, k, k2) {
+		if (k2 === void 0) k2 = k;
+		o[k2] = m[k];
+	}));
+	var __setModuleDefault$2 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+		Object.defineProperty(o, "default", {
+			enumerable: true,
+			value: v
+		});
+	}) : function(o, v) {
+		o["default"] = v;
+	});
+	var __importStar$2 = exports && exports.__importStar || function(mod) {
+		if (mod && mod.__esModule) return mod;
+		var result = {};
+		if (mod != null) {
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$2(result, mod, k);
+		}
+		__setModuleDefault$2(result, mod);
+		return result;
+	};
+	var __awaiter = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
+		function adopt(value) {
+			return value instanceof P ? value : new P(function(resolve) {
+				resolve(value);
+			});
+		}
+		return new (P || (P = Promise))(function(resolve, reject) {
+			function fulfilled(value) {
+				try {
+					step(generator.next(value));
+				} catch (e) {
+					reject(e);
+				}
+			}
+			function rejected(value) {
+				try {
+					step(generator["throw"](value));
+				} catch (e) {
+					reject(e);
+				}
+			}
+			function step(result) {
+				result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+			}
+			step((generator = generator.apply(thisArg, _arguments || [])).next());
+		});
+	};
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const httpClient = __importStar$2(require_lib());
+	const undici_1 = require_undici();
+	function getAuthString(token, options) {
+		if (!token && !options.auth) throw new Error("Parameter token or opts.auth is required");
+		else if (token && options.auth) throw new Error("Parameters token and opts.auth may not both be specified");
+		return typeof options.auth === "string" ? options.auth : `token ${token}`;
+	}
+	exports.getAuthString = getAuthString;
+	function getProxyAgent(destinationUrl) {
+		return new httpClient.HttpClient().getAgent(destinationUrl);
+	}
+	exports.getProxyAgent = getProxyAgent;
+	function getProxyAgentDispatcher(destinationUrl) {
+		return new httpClient.HttpClient().getAgentDispatcher(destinationUrl);
+	}
+	exports.getProxyAgentDispatcher = getProxyAgentDispatcher;
+	function getProxyFetch(destinationUrl) {
+		const httpDispatcher = getProxyAgentDispatcher(destinationUrl);
+		const proxyFetch = (url, opts) => __awaiter(this, void 0, void 0, function* () {
+			return (0, undici_1.fetch)(url, Object.assign(Object.assign({}, opts), { dispatcher: httpDispatcher }));
+		});
+		return proxyFetch;
+	}
+	exports.getProxyFetch = getProxyFetch;
+	function getApiBaseUrl() {
+		return process.env["GITHUB_API_URL"] || "https://api.github.com";
+	}
+	exports.getApiBaseUrl = getApiBaseUrl;
+}) });
+
+//#endregion
+//#region node_modules/.deno/universal-user-agent@6.0.1/node_modules/universal-user-agent/dist-node/index.js
+var require_dist_node$9 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/universal-user-agent@6.0.1/node_modules/universal-user-agent/dist-node/index.js": ((exports) => {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	function getUserAgent() {
+		if (typeof navigator === "object" && "userAgent" in navigator) return navigator.userAgent;
+		if (typeof process === "object" && process.version !== void 0) return `Node.js/${process.version.substr(1)} (${process.platform}; ${process.arch})`;
+		return "<environment undetectable>";
+	}
+	exports.getUserAgent = getUserAgent;
+}) });
+
+//#endregion
+//#region node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/lib/register.js
+var require_register = /* @__PURE__ */ __commonJS({ "node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/lib/register.js": ((exports, module) => {
+	module.exports = register$1;
+	function register$1(state, name, method, options) {
+		if (typeof method !== "function") throw new Error("method for before hook must be a function");
+		if (!options) options = {};
+		if (Array.isArray(name)) return name.reverse().reduce(function(callback, name$1) {
+			return register$1.bind(null, state, name$1, callback, options);
+		}, method)();
+		return Promise.resolve().then(function() {
+			if (!state.registry[name]) return method(options);
+			return state.registry[name].reduce(function(method$1, registered) {
+				return registered.hook.bind(null, method$1, options);
+			}, method)();
+		});
+	}
+}) });
+
+//#endregion
+//#region node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/lib/add.js
+var require_add = /* @__PURE__ */ __commonJS({ "node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/lib/add.js": ((exports, module) => {
+	module.exports = addHook$1;
+	function addHook$1(state, kind, name, hook$1) {
+		var orig = hook$1;
+		if (!state.registry[name]) state.registry[name] = [];
+		if (kind === "before") hook$1 = function(method, options) {
+			return Promise.resolve().then(orig.bind(null, options)).then(method.bind(null, options));
+		};
+		if (kind === "after") hook$1 = function(method, options) {
+			var result;
+			return Promise.resolve().then(method.bind(null, options)).then(function(result_) {
+				result = result_;
+				return orig(result, options);
+			}).then(function() {
+				return result;
+			});
+		};
+		if (kind === "error") hook$1 = function(method, options) {
+			return Promise.resolve().then(method.bind(null, options)).catch(function(error$1) {
+				return orig(error$1, options);
+			});
+		};
+		state.registry[name].push({
+			hook: hook$1,
+			orig
+		});
+	}
+}) });
+
+//#endregion
+//#region node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/lib/remove.js
+var require_remove = /* @__PURE__ */ __commonJS({ "node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/lib/remove.js": ((exports, module) => {
+	module.exports = removeHook$1;
+	function removeHook$1(state, name, method) {
+		if (!state.registry[name]) return;
+		var index = state.registry[name].map(function(registered) {
+			return registered.orig;
+		}).indexOf(method);
+		if (index === -1) return;
+		state.registry[name].splice(index, 1);
+	}
+}) });
+
+//#endregion
+//#region node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/index.js
+var require_before_after_hook = /* @__PURE__ */ __commonJS({ "node_modules/.deno/before-after-hook@2.2.3/node_modules/before-after-hook/index.js": ((exports, module) => {
+	var register = require_register();
+	var addHook = require_add();
+	var removeHook = require_remove();
+	var bind = Function.bind;
+	var bindable = bind.bind(bind);
+	function bindApi(hook$1, state, name) {
+		var removeHookRef = bindable(removeHook, null).apply(null, name ? [state, name] : [state]);
+		hook$1.api = { remove: removeHookRef };
+		hook$1.remove = removeHookRef;
+		[
+			"before",
+			"error",
+			"after",
+			"wrap"
+		].forEach(function(kind) {
+			var args = name ? [
+				state,
+				kind,
+				name
+			] : [state, kind];
+			hook$1[kind] = hook$1.api[kind] = bindable(addHook, null).apply(null, args);
+		});
+	}
+	function HookSingular() {
+		var singularHookName = "h";
+		var singularHookState = { registry: {} };
+		var singularHook = register.bind(null, singularHookState, singularHookName);
+		bindApi(singularHook, singularHookState, singularHookName);
+		return singularHook;
+	}
+	function HookCollection() {
+		var state = { registry: {} };
+		var hook$1 = register.bind(null, state);
+		bindApi(hook$1, state);
+		return hook$1;
+	}
+	var collectionHookDeprecationMessageDisplayed = false;
+	function Hook() {
+		if (!collectionHookDeprecationMessageDisplayed) {
+			console.warn("[before-after-hook]: \"Hook()\" repurposing warning, use \"Hook.Collection()\". Read more: https://git.io/upgrade-before-after-hook-to-1.4");
+			collectionHookDeprecationMessageDisplayed = true;
+		}
+		return HookCollection();
+	}
+	Hook.Singular = HookSingular.bind();
+	Hook.Collection = HookCollection.bind();
+	module.exports = Hook;
+	module.exports.Hook = Hook;
+	module.exports.Singular = Hook.Singular;
+	module.exports.Collection = Hook.Collection;
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+endpoint@9.0.6/node_modules/@octokit/endpoint/dist-node/index.js
+var require_dist_node$8 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+endpoint@9.0.6/node_modules/@octokit/endpoint/dist-node/index.js": ((exports, module) => {
+	var __defProp$7 = Object.defineProperty;
+	var __getOwnPropDesc$7 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$7 = Object.getOwnPropertyNames;
+	var __hasOwnProp$7 = Object.prototype.hasOwnProperty;
+	var __export$7 = (target, all) => {
+		for (var name in all) __defProp$7(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$7 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$7(from)) if (!__hasOwnProp$7.call(to, key) && key !== except) __defProp$7(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$7(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS$7 = (mod) => __copyProps$7(__defProp$7({}, "__esModule", { value: true }), mod);
+	var dist_src_exports$5 = {};
+	__export$7(dist_src_exports$5, { endpoint: () => endpoint });
+	module.exports = __toCommonJS$7(dist_src_exports$5);
+	var userAgent = `octokit-endpoint.js/9.0.6 ${(0, require_dist_node$9().getUserAgent)()}`;
+	var DEFAULTS = {
+		method: "GET",
+		baseUrl: "https://api.github.com",
+		headers: {
+			accept: "application/vnd.github.v3+json",
+			"user-agent": userAgent
+		},
+		mediaType: { format: "" }
+	};
+	function lowercaseKeys(object) {
+		if (!object) return {};
+		return Object.keys(object).reduce((newObj, key) => {
+			newObj[key.toLowerCase()] = object[key];
+			return newObj;
+		}, {});
+	}
+	function isPlainObject$1(value) {
+		if (typeof value !== "object" || value === null) return false;
+		if (Object.prototype.toString.call(value) !== "[object Object]") return false;
+		const proto = Object.getPrototypeOf(value);
+		if (proto === null) return true;
+		const Ctor = Object.prototype.hasOwnProperty.call(proto, "constructor") && proto.constructor;
+		return typeof Ctor === "function" && Ctor instanceof Ctor && Function.prototype.call(Ctor) === Function.prototype.call(value);
+	}
+	function mergeDeep(defaults, options) {
+		const result = Object.assign({}, defaults);
+		Object.keys(options).forEach((key) => {
+			if (isPlainObject$1(options[key])) if (!(key in defaults)) Object.assign(result, { [key]: options[key] });
+			else result[key] = mergeDeep(defaults[key], options[key]);
+			else Object.assign(result, { [key]: options[key] });
+		});
+		return result;
+	}
+	function removeUndefinedProperties(obj) {
+		for (const key in obj) if (obj[key] === void 0) delete obj[key];
+		return obj;
+	}
+	function merge(defaults, route, options) {
+		if (typeof route === "string") {
+			let [method, url] = route.split(" ");
+			options = Object.assign(url ? {
+				method,
+				url
+			} : { url: method }, options);
+		} else options = Object.assign({}, route);
+		options.headers = lowercaseKeys(options.headers);
+		removeUndefinedProperties(options);
+		removeUndefinedProperties(options.headers);
+		const mergedOptions = mergeDeep(defaults || {}, options);
+		if (options.url === "/graphql") {
+			if (defaults && defaults.mediaType.previews?.length) mergedOptions.mediaType.previews = defaults.mediaType.previews.filter((preview) => !mergedOptions.mediaType.previews.includes(preview)).concat(mergedOptions.mediaType.previews);
+			mergedOptions.mediaType.previews = (mergedOptions.mediaType.previews || []).map((preview) => preview.replace(/-preview/, ""));
+		}
+		return mergedOptions;
+	}
+	function addQueryParameters(url, parameters) {
+		const separator = /\?/.test(url) ? "&" : "?";
+		const names = Object.keys(parameters);
+		if (names.length === 0) return url;
+		return url + separator + names.map((name) => {
+			if (name === "q") return "q=" + parameters.q.split("+").map(encodeURIComponent).join("+");
+			return `${name}=${encodeURIComponent(parameters[name])}`;
+		}).join("&");
+	}
+	var urlVariableRegex = /\{[^{}}]+\}/g;
+	function removeNonChars(variableName) {
+		return variableName.replace(/(?:^\W+)|(?:(?<!\W)\W+$)/g, "").split(/,/);
+	}
+	function extractUrlVariableNames(url) {
+		const matches = url.match(urlVariableRegex);
+		if (!matches) return [];
+		return matches.map(removeNonChars).reduce((a, b) => a.concat(b), []);
+	}
+	function omit(object, keysToOmit) {
+		const result = { __proto__: null };
+		for (const key of Object.keys(object)) if (keysToOmit.indexOf(key) === -1) result[key] = object[key];
+		return result;
+	}
+	function encodeReserved(str) {
+		return str.split(/(%[0-9A-Fa-f]{2})/g).map(function(part) {
+			if (!/%[0-9A-Fa-f]/.test(part)) part = encodeURI(part).replace(/%5B/g, "[").replace(/%5D/g, "]");
+			return part;
+		}).join("");
+	}
+	function encodeUnreserved(str) {
+		return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
+			return "%" + c.charCodeAt(0).toString(16).toUpperCase();
+		});
+	}
+	function encodeValue(operator, value, key) {
+		value = operator === "+" || operator === "#" ? encodeReserved(value) : encodeUnreserved(value);
+		if (key) return encodeUnreserved(key) + "=" + value;
+		else return value;
+	}
+	function isDefined(value) {
+		return value !== void 0 && value !== null;
+	}
+	function isKeyOperator(operator) {
+		return operator === ";" || operator === "&" || operator === "?";
+	}
+	function getValues(context, operator, key, modifier) {
+		var value = context[key], result = [];
+		if (isDefined(value) && value !== "") if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+			value = value.toString();
+			if (modifier && modifier !== "*") value = value.substring(0, parseInt(modifier, 10));
+			result.push(encodeValue(operator, value, isKeyOperator(operator) ? key : ""));
+		} else if (modifier === "*") if (Array.isArray(value)) value.filter(isDefined).forEach(function(value2) {
+			result.push(encodeValue(operator, value2, isKeyOperator(operator) ? key : ""));
+		});
+		else Object.keys(value).forEach(function(k) {
+			if (isDefined(value[k])) result.push(encodeValue(operator, value[k], k));
+		});
+		else {
+			const tmp = [];
+			if (Array.isArray(value)) value.filter(isDefined).forEach(function(value2) {
+				tmp.push(encodeValue(operator, value2));
+			});
+			else Object.keys(value).forEach(function(k) {
+				if (isDefined(value[k])) {
+					tmp.push(encodeUnreserved(k));
+					tmp.push(encodeValue(operator, value[k].toString()));
+				}
+			});
+			if (isKeyOperator(operator)) result.push(encodeUnreserved(key) + "=" + tmp.join(","));
+			else if (tmp.length !== 0) result.push(tmp.join(","));
+		}
+		else if (operator === ";") {
+			if (isDefined(value)) result.push(encodeUnreserved(key));
+		} else if (value === "" && (operator === "&" || operator === "?")) result.push(encodeUnreserved(key) + "=");
+		else if (value === "") result.push("");
+		return result;
+	}
+	function parseUrl(template) {
+		return { expand: expand.bind(null, template) };
+	}
+	function expand(template, context) {
+		var operators = [
+			"+",
+			"#",
+			".",
+			"/",
+			";",
+			"?",
+			"&"
+		];
+		template = template.replace(/\{([^\{\}]+)\}|([^\{\}]+)/g, function(_, expression, literal) {
+			if (expression) {
+				let operator = "";
+				const values = [];
+				if (operators.indexOf(expression.charAt(0)) !== -1) {
+					operator = expression.charAt(0);
+					expression = expression.substr(1);
+				}
+				expression.split(/,/g).forEach(function(variable) {
+					var tmp = /([^:\*]*)(?::(\d+)|(\*))?/.exec(variable);
+					values.push(getValues(context, operator, tmp[1], tmp[2] || tmp[3]));
+				});
+				if (operator && operator !== "+") {
+					var separator = ",";
+					if (operator === "?") separator = "&";
+					else if (operator !== "#") separator = operator;
+					return (values.length !== 0 ? operator : "") + values.join(separator);
+				} else return values.join(",");
+			} else return encodeReserved(literal);
+		});
+		if (template === "/") return template;
+		else return template.replace(/\/$/, "");
+	}
+	function parse(options) {
+		let method = options.method.toUpperCase();
+		let url = (options.url || "/").replace(/:([a-z]\w+)/g, "{$1}");
+		let headers = Object.assign({}, options.headers);
+		let body;
+		let parameters = omit(options, [
+			"method",
+			"baseUrl",
+			"url",
+			"headers",
+			"request",
+			"mediaType"
+		]);
+		const urlVariableNames = extractUrlVariableNames(url);
+		url = parseUrl(url).expand(parameters);
+		if (!/^http/.test(url)) url = options.baseUrl + url;
+		const omittedParameters = Object.keys(options).filter((option) => urlVariableNames.includes(option)).concat("baseUrl");
+		const remainingParameters = omit(parameters, omittedParameters);
+		if (!/application\/octet-stream/i.test(headers.accept)) {
+			if (options.mediaType.format) headers.accept = headers.accept.split(/,/).map((format) => format.replace(/application\/vnd(\.\w+)(\.v3)?(\.\w+)?(\+json)?$/, `application/vnd$1$2.${options.mediaType.format}`)).join(",");
+			if (url.endsWith("/graphql")) {
+				if (options.mediaType.previews?.length) headers.accept = (headers.accept.match(/(?<![\w-])[\w-]+(?=-preview)/g) || []).concat(options.mediaType.previews).map((preview) => {
+					const format = options.mediaType.format ? `.${options.mediaType.format}` : "+json";
+					return `application/vnd.github.${preview}-preview${format}`;
+				}).join(",");
+			}
+		}
+		if (["GET", "HEAD"].includes(method)) url = addQueryParameters(url, remainingParameters);
+		else if ("data" in remainingParameters) body = remainingParameters.data;
+		else if (Object.keys(remainingParameters).length) body = remainingParameters;
+		if (!headers["content-type"] && typeof body !== "undefined") headers["content-type"] = "application/json; charset=utf-8";
+		if (["PATCH", "PUT"].includes(method) && typeof body === "undefined") body = "";
+		return Object.assign({
+			method,
+			url,
+			headers
+		}, typeof body !== "undefined" ? { body } : null, options.request ? { request: options.request } : null);
+	}
+	function endpointWithDefaults(defaults, route, options) {
+		return parse(merge(defaults, route, options));
+	}
+	function withDefaults$2(oldDefaults, newDefaults) {
+		const DEFAULTS2 = merge(oldDefaults, newDefaults);
+		const endpoint2 = endpointWithDefaults.bind(null, DEFAULTS2);
+		return Object.assign(endpoint2, {
+			DEFAULTS: DEFAULTS2,
+			defaults: withDefaults$2.bind(null, DEFAULTS2),
+			merge: merge.bind(null, DEFAULTS2),
+			parse
+		});
+	}
+	var endpoint = withDefaults$2(null, DEFAULTS);
+}) });
+
+//#endregion
+//#region node_modules/.deno/deprecation@2.3.1/node_modules/deprecation/dist-node/index.js
+var require_dist_node$7 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/deprecation@2.3.1/node_modules/deprecation/dist-node/index.js": ((exports) => {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var Deprecation = class extends Error {
+		constructor(message) {
+			super(message);
+			/* istanbul ignore next */
+			if (Error.captureStackTrace) Error.captureStackTrace(this, this.constructor);
+			this.name = "Deprecation";
+		}
+	};
+	exports.Deprecation = Deprecation;
+}) });
+
+//#endregion
+//#region node_modules/.deno/wrappy@1.0.2/node_modules/wrappy/wrappy.js
+var require_wrappy = /* @__PURE__ */ __commonJS({ "node_modules/.deno/wrappy@1.0.2/node_modules/wrappy/wrappy.js": ((exports, module) => {
+	module.exports = wrappy$1;
+	function wrappy$1(fn, cb) {
+		if (fn && cb) return wrappy$1(fn)(cb);
+		if (typeof fn !== "function") throw new TypeError("need wrapper function");
+		Object.keys(fn).forEach(function(k) {
+			wrapper[k] = fn[k];
+		});
+		return wrapper;
+		function wrapper() {
+			var args = new Array(arguments.length);
+			for (var i = 0; i < args.length; i++) args[i] = arguments[i];
+			var ret = fn.apply(this, args);
+			var cb$1 = args[args.length - 1];
+			if (typeof ret === "function" && ret !== cb$1) Object.keys(cb$1).forEach(function(k) {
+				ret[k] = cb$1[k];
+			});
+			return ret;
+		}
+	}
+}) });
+
+//#endregion
+//#region node_modules/.deno/once@1.4.0/node_modules/once/once.js
+var require_once = /* @__PURE__ */ __commonJS({ "node_modules/.deno/once@1.4.0/node_modules/once/once.js": ((exports, module) => {
+	var wrappy = require_wrappy();
+	module.exports = wrappy(once);
+	module.exports.strict = wrappy(onceStrict);
+	once.proto = once(function() {
+		Object.defineProperty(Function.prototype, "once", {
+			value: function() {
+				return once(this);
+			},
+			configurable: true
+		});
+		Object.defineProperty(Function.prototype, "onceStrict", {
+			value: function() {
+				return onceStrict(this);
+			},
+			configurable: true
+		});
+	});
+	function once(fn) {
+		var f = function() {
+			if (f.called) return f.value;
+			f.called = true;
+			return f.value = fn.apply(this, arguments);
+		};
+		f.called = false;
+		return f;
+	}
+	function onceStrict(fn) {
+		var f = function() {
+			if (f.called) throw new Error(f.onceError);
+			f.called = true;
+			return f.value = fn.apply(this, arguments);
+		};
+		f.onceError = (fn.name || "Function wrapped with `once`") + " shouldn't be called more than once";
+		f.called = false;
+		return f;
+	}
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+request-error@5.1.1/node_modules/@octokit/request-error/dist-node/index.js
+var require_dist_node$6 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+request-error@5.1.1/node_modules/@octokit/request-error/dist-node/index.js": ((exports, module) => {
+	var __create = Object.create;
+	var __defProp$6 = Object.defineProperty;
+	var __getOwnPropDesc$6 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$6 = Object.getOwnPropertyNames;
+	var __getProtoOf = Object.getPrototypeOf;
+	var __hasOwnProp$6 = Object.prototype.hasOwnProperty;
+	var __export$6 = (target, all) => {
+		for (var name in all) __defProp$6(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$6 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$6(from)) if (!__hasOwnProp$6.call(to, key) && key !== except) __defProp$6(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$6(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps$6(isNodeMode || !mod || !mod.__esModule ? __defProp$6(target, "default", {
+		value: mod,
+		enumerable: true
+	}) : target, mod));
+	var __toCommonJS$6 = (mod) => __copyProps$6(__defProp$6({}, "__esModule", { value: true }), mod);
+	var dist_src_exports$4 = {};
+	__export$6(dist_src_exports$4, { RequestError: () => RequestError });
+	module.exports = __toCommonJS$6(dist_src_exports$4);
+	var import_deprecation = require_dist_node$7();
+	var import_once = __toESM(require_once());
+	var logOnceCode = (0, import_once.default)((deprecation) => console.warn(deprecation));
+	var logOnceHeaders = (0, import_once.default)((deprecation) => console.warn(deprecation));
+	var RequestError = class extends Error {
+		constructor(message, statusCode, options) {
+			super(message);
+			if (Error.captureStackTrace) Error.captureStackTrace(this, this.constructor);
+			this.name = "HttpError";
+			this.status = statusCode;
+			let headers;
+			if ("headers" in options && typeof options.headers !== "undefined") headers = options.headers;
+			if ("response" in options) {
+				this.response = options.response;
+				headers = options.response.headers;
+			}
+			const requestCopy = Object.assign({}, options.request);
+			if (options.request.headers.authorization) requestCopy.headers = Object.assign({}, options.request.headers, { authorization: options.request.headers.authorization.replace(/(?<! ) .*$/, " [REDACTED]") });
+			requestCopy.url = requestCopy.url.replace(/\bclient_secret=\w+/g, "client_secret=[REDACTED]").replace(/\baccess_token=\w+/g, "access_token=[REDACTED]");
+			this.request = requestCopy;
+			Object.defineProperty(this, "code", { get() {
+				logOnceCode(new import_deprecation.Deprecation("[@octokit/request-error] `error.code` is deprecated, use `error.status`."));
+				return statusCode;
+			} });
+			Object.defineProperty(this, "headers", { get() {
+				logOnceHeaders(new import_deprecation.Deprecation("[@octokit/request-error] `error.headers` is deprecated, use `error.response.headers`."));
+				return headers || {};
+			} });
+		}
+	};
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+request@8.4.1/node_modules/@octokit/request/dist-node/index.js
+var require_dist_node$5 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+request@8.4.1/node_modules/@octokit/request/dist-node/index.js": ((exports, module) => {
+	var __defProp$5 = Object.defineProperty;
+	var __getOwnPropDesc$5 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$5 = Object.getOwnPropertyNames;
+	var __hasOwnProp$5 = Object.prototype.hasOwnProperty;
+	var __export$5 = (target, all) => {
+		for (var name in all) __defProp$5(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$5 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$5(from)) if (!__hasOwnProp$5.call(to, key) && key !== except) __defProp$5(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$5(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS$5 = (mod) => __copyProps$5(__defProp$5({}, "__esModule", { value: true }), mod);
+	var dist_src_exports$3 = {};
+	__export$5(dist_src_exports$3, { request: () => request });
+	module.exports = __toCommonJS$5(dist_src_exports$3);
+	var import_endpoint = require_dist_node$8();
+	var import_universal_user_agent$2 = require_dist_node$9();
+	var VERSION$4 = "8.4.1";
+	function isPlainObject(value) {
+		if (typeof value !== "object" || value === null) return false;
+		if (Object.prototype.toString.call(value) !== "[object Object]") return false;
+		const proto = Object.getPrototypeOf(value);
+		if (proto === null) return true;
+		const Ctor = Object.prototype.hasOwnProperty.call(proto, "constructor") && proto.constructor;
+		return typeof Ctor === "function" && Ctor instanceof Ctor && Function.prototype.call(Ctor) === Function.prototype.call(value);
+	}
+	var import_request_error = require_dist_node$6();
+	function getBufferResponse(response) {
+		return response.arrayBuffer();
+	}
+	function fetchWrapper(requestOptions) {
+		var _a$1, _b, _c, _d;
+		const log = requestOptions.request && requestOptions.request.log ? requestOptions.request.log : console;
+		const parseSuccessResponseBody = ((_a$1 = requestOptions.request) == null ? void 0 : _a$1.parseSuccessResponseBody) !== false;
+		if (isPlainObject(requestOptions.body) || Array.isArray(requestOptions.body)) requestOptions.body = JSON.stringify(requestOptions.body);
+		let headers = {};
+		let status;
+		let url;
+		let { fetch: fetch$1 } = globalThis;
+		if ((_b = requestOptions.request) == null ? void 0 : _b.fetch) fetch$1 = requestOptions.request.fetch;
+		if (!fetch$1) throw new Error("fetch is not set. Please pass a fetch implementation as new Octokit({ request: { fetch }}). Learn more at https://github.com/octokit/octokit.js/#fetch-missing");
+		return fetch$1(requestOptions.url, {
+			method: requestOptions.method,
+			body: requestOptions.body,
+			redirect: (_c = requestOptions.request) == null ? void 0 : _c.redirect,
+			headers: requestOptions.headers,
+			signal: (_d = requestOptions.request) == null ? void 0 : _d.signal,
+			...requestOptions.body && { duplex: "half" }
+		}).then(async (response) => {
+			url = response.url;
+			status = response.status;
+			for (const keyAndValue of response.headers) headers[keyAndValue[0]] = keyAndValue[1];
+			if ("deprecation" in headers) {
+				const matches = headers.link && headers.link.match(/<([^<>]+)>; rel="deprecation"/);
+				const deprecationLink = matches && matches.pop();
+				log.warn(`[@octokit/request] "${requestOptions.method} ${requestOptions.url}" is deprecated. It is scheduled to be removed on ${headers.sunset}${deprecationLink ? `. See ${deprecationLink}` : ""}`);
+			}
+			if (status === 204 || status === 205) return;
+			if (requestOptions.method === "HEAD") {
+				if (status < 400) return;
+				throw new import_request_error.RequestError(response.statusText, status, {
+					response: {
+						url,
+						status,
+						headers,
+						data: void 0
+					},
+					request: requestOptions
+				});
+			}
+			if (status === 304) throw new import_request_error.RequestError("Not modified", status, {
+				response: {
+					url,
+					status,
+					headers,
+					data: await getResponseData(response)
+				},
+				request: requestOptions
+			});
+			if (status >= 400) {
+				const data = await getResponseData(response);
+				throw new import_request_error.RequestError(toErrorMessage(data), status, {
+					response: {
+						url,
+						status,
+						headers,
+						data
+					},
+					request: requestOptions
+				});
+			}
+			return parseSuccessResponseBody ? await getResponseData(response) : response.body;
+		}).then((data) => {
+			return {
+				status,
+				url,
+				headers,
+				data
+			};
+		}).catch((error$1) => {
+			if (error$1 instanceof import_request_error.RequestError) throw error$1;
+			else if (error$1.name === "AbortError") throw error$1;
+			let message = error$1.message;
+			if (error$1.name === "TypeError" && "cause" in error$1) {
+				if (error$1.cause instanceof Error) message = error$1.cause.message;
+				else if (typeof error$1.cause === "string") message = error$1.cause;
+			}
+			throw new import_request_error.RequestError(message, 500, { request: requestOptions });
+		});
+	}
+	async function getResponseData(response) {
+		const contentType = response.headers.get("content-type");
+		if (/application\/json/.test(contentType)) return response.json().catch(() => response.text()).catch(() => "");
+		if (!contentType || /^text\/|charset=utf-8$/.test(contentType)) return response.text();
+		return getBufferResponse(response);
+	}
+	function toErrorMessage(data) {
+		if (typeof data === "string") return data;
+		let suffix;
+		if ("documentation_url" in data) suffix = ` - ${data.documentation_url}`;
+		else suffix = "";
+		if ("message" in data) {
+			if (Array.isArray(data.errors)) return `${data.message}: ${data.errors.map(JSON.stringify).join(", ")}${suffix}`;
+			return `${data.message}${suffix}`;
+		}
+		return `Unknown error: ${JSON.stringify(data)}`;
+	}
+	function withDefaults$1(oldEndpoint, newDefaults) {
+		const endpoint2 = oldEndpoint.defaults(newDefaults);
+		const newApi = function(route, parameters) {
+			const endpointOptions = endpoint2.merge(route, parameters);
+			if (!endpointOptions.request || !endpointOptions.request.hook) return fetchWrapper(endpoint2.parse(endpointOptions));
+			const request2 = (route2, parameters2) => {
+				return fetchWrapper(endpoint2.parse(endpoint2.merge(route2, parameters2)));
+			};
+			Object.assign(request2, {
+				endpoint: endpoint2,
+				defaults: withDefaults$1.bind(null, endpoint2)
+			});
+			return endpointOptions.request.hook(request2, endpointOptions);
+		};
+		return Object.assign(newApi, {
+			endpoint: endpoint2,
+			defaults: withDefaults$1.bind(null, endpoint2)
+		});
+	}
+	var request = withDefaults$1(import_endpoint.endpoint, { headers: { "user-agent": `octokit-request.js/${VERSION$4} ${(0, import_universal_user_agent$2.getUserAgent)()}` } });
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+graphql@7.1.1/node_modules/@octokit/graphql/dist-node/index.js
+var require_dist_node$4 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+graphql@7.1.1/node_modules/@octokit/graphql/dist-node/index.js": ((exports, module) => {
+	var __defProp$4 = Object.defineProperty;
+	var __getOwnPropDesc$4 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$4 = Object.getOwnPropertyNames;
+	var __hasOwnProp$4 = Object.prototype.hasOwnProperty;
+	var __export$4 = (target, all) => {
+		for (var name in all) __defProp$4(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$4 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$4(from)) if (!__hasOwnProp$4.call(to, key) && key !== except) __defProp$4(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$4(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS$4 = (mod) => __copyProps$4(__defProp$4({}, "__esModule", { value: true }), mod);
+	var index_exports$1 = {};
+	__export$4(index_exports$1, {
+		GraphqlResponseError: () => GraphqlResponseError,
+		graphql: () => graphql2,
+		withCustomRequest: () => withCustomRequest
+	});
+	module.exports = __toCommonJS$4(index_exports$1);
+	var import_request3 = require_dist_node$5();
+	var import_universal_user_agent$1 = require_dist_node$9();
+	var VERSION$3 = "7.1.1";
+	require_dist_node$5();
+	require_dist_node$5();
+	function _buildMessageForResponseErrors(data) {
+		return `Request failed due to following response errors:
+` + data.errors.map((e) => ` - ${e.message}`).join("\n");
+	}
+	var GraphqlResponseError = class extends Error {
+		constructor(request2, headers, response) {
+			super(_buildMessageForResponseErrors(response));
+			this.request = request2;
+			this.headers = headers;
+			this.response = response;
+			this.name = "GraphqlResponseError";
+			this.errors = response.errors;
+			this.data = response.data;
+			if (Error.captureStackTrace) Error.captureStackTrace(this, this.constructor);
+		}
+	};
+	var NON_VARIABLE_OPTIONS = [
+		"method",
+		"baseUrl",
+		"url",
+		"headers",
+		"request",
+		"query",
+		"mediaType"
+	];
+	var FORBIDDEN_VARIABLE_OPTIONS = [
+		"query",
+		"method",
+		"url"
+	];
+	var GHES_V3_SUFFIX_REGEX = /\/api\/v3\/?$/;
+	function graphql(request2, query, options) {
+		if (options) {
+			if (typeof query === "string" && "query" in options) return Promise.reject(/* @__PURE__ */ new Error(`[@octokit/graphql] "query" cannot be used as variable name`));
+			for (const key in options) {
+				if (!FORBIDDEN_VARIABLE_OPTIONS.includes(key)) continue;
+				return Promise.reject(/* @__PURE__ */ new Error(`[@octokit/graphql] "${key}" cannot be used as variable name`));
+			}
+		}
+		const parsedOptions = typeof query === "string" ? Object.assign({ query }, options) : query;
+		const requestOptions = Object.keys(parsedOptions).reduce((result, key) => {
+			if (NON_VARIABLE_OPTIONS.includes(key)) {
+				result[key] = parsedOptions[key];
+				return result;
+			}
+			if (!result.variables) result.variables = {};
+			result.variables[key] = parsedOptions[key];
+			return result;
+		}, {});
+		const baseUrl$1 = parsedOptions.baseUrl || request2.endpoint.DEFAULTS.baseUrl;
+		if (GHES_V3_SUFFIX_REGEX.test(baseUrl$1)) requestOptions.url = baseUrl$1.replace(GHES_V3_SUFFIX_REGEX, "/api/graphql");
+		return request2(requestOptions).then((response) => {
+			if (response.data.errors) {
+				const headers = {};
+				for (const key of Object.keys(response.headers)) headers[key] = response.headers[key];
+				throw new GraphqlResponseError(requestOptions, headers, response.data);
+			}
+			return response.data.data;
+		});
+	}
+	function withDefaults(request2, newDefaults) {
+		const newRequest = request2.defaults(newDefaults);
+		const newApi = (query, options) => {
+			return graphql(newRequest, query, options);
+		};
+		return Object.assign(newApi, {
+			defaults: withDefaults.bind(null, newRequest),
+			endpoint: newRequest.endpoint
+		});
+	}
+	var graphql2 = withDefaults(import_request3.request, {
+		headers: { "user-agent": `octokit-graphql.js/${VERSION$3} ${(0, import_universal_user_agent$1.getUserAgent)()}` },
+		method: "POST",
+		url: "/graphql"
+	});
+	function withCustomRequest(customRequest) {
+		return withDefaults(customRequest, {
+			method: "POST",
+			url: "/graphql"
+		});
+	}
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+auth-token@4.0.0/node_modules/@octokit/auth-token/dist-node/index.js
+var require_dist_node$3 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+auth-token@4.0.0/node_modules/@octokit/auth-token/dist-node/index.js": ((exports, module) => {
+	var __defProp$3 = Object.defineProperty;
+	var __getOwnPropDesc$3 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$3 = Object.getOwnPropertyNames;
+	var __hasOwnProp$3 = Object.prototype.hasOwnProperty;
+	var __export$3 = (target, all) => {
+		for (var name in all) __defProp$3(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$3 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$3(from)) if (!__hasOwnProp$3.call(to, key) && key !== except) __defProp$3(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$3(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS$3 = (mod) => __copyProps$3(__defProp$3({}, "__esModule", { value: true }), mod);
+	var dist_src_exports$2 = {};
+	__export$3(dist_src_exports$2, { createTokenAuth: () => createTokenAuth });
+	module.exports = __toCommonJS$3(dist_src_exports$2);
+	var REGEX_IS_INSTALLATION_LEGACY = /^v1\./;
+	var REGEX_IS_INSTALLATION = /^ghs_/;
+	var REGEX_IS_USER_TO_SERVER = /^ghu_/;
+	async function auth(token) {
+		const isApp = token.split(/\./).length === 3;
+		const isInstallation = REGEX_IS_INSTALLATION_LEGACY.test(token) || REGEX_IS_INSTALLATION.test(token);
+		const isUserToServer = REGEX_IS_USER_TO_SERVER.test(token);
+		return {
+			type: "token",
+			token,
+			tokenType: isApp ? "app" : isInstallation ? "installation" : isUserToServer ? "user-to-server" : "oauth"
+		};
+	}
+	function withAuthorizationPrefix(token) {
+		if (token.split(/\./).length === 3) return `bearer ${token}`;
+		return `token ${token}`;
+	}
+	async function hook(token, request$2, route, parameters) {
+		const endpoint$1 = request$2.endpoint.merge(route, parameters);
+		endpoint$1.headers.authorization = withAuthorizationPrefix(token);
+		return request$2(endpoint$1);
+	}
+	var createTokenAuth = function createTokenAuth2(token) {
+		if (!token) throw new Error("[@octokit/auth-token] No token passed to createTokenAuth");
+		if (typeof token !== "string") throw new Error("[@octokit/auth-token] Token passed to createTokenAuth is not a string");
+		token = token.replace(/^(token|bearer) +/i, "");
+		return Object.assign(auth.bind(null, token), { hook: hook.bind(null, token) });
+	};
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+core@5.2.2/node_modules/@octokit/core/dist-node/index.js
+var require_dist_node$2 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+core@5.2.2/node_modules/@octokit/core/dist-node/index.js": ((exports, module) => {
+	var __defProp$2 = Object.defineProperty;
+	var __getOwnPropDesc$2 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$2 = Object.getOwnPropertyNames;
+	var __hasOwnProp$2 = Object.prototype.hasOwnProperty;
+	var __export$2 = (target, all) => {
+		for (var name in all) __defProp$2(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$2 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$2(from)) if (!__hasOwnProp$2.call(to, key) && key !== except) __defProp$2(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$2(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS$2 = (mod) => __copyProps$2(__defProp$2({}, "__esModule", { value: true }), mod);
+	var index_exports = {};
+	__export$2(index_exports, { Octokit: () => Octokit });
+	module.exports = __toCommonJS$2(index_exports);
+	var import_universal_user_agent = require_dist_node$9();
+	var import_before_after_hook = require_before_after_hook();
+	var import_request = require_dist_node$5();
+	var import_graphql = require_dist_node$4();
+	var import_auth_token = require_dist_node$3();
+	var VERSION$2 = "5.2.2";
+	var noop = () => {};
+	var consoleWarn = console.warn.bind(console);
+	var consoleError = console.error.bind(console);
+	function createLogger(logger = {}) {
+		if (typeof logger.debug !== "function") logger.debug = noop;
+		if (typeof logger.info !== "function") logger.info = noop;
+		if (typeof logger.warn !== "function") logger.warn = consoleWarn;
+		if (typeof logger.error !== "function") logger.error = consoleError;
+		return logger;
+	}
+	var userAgentTrail = `octokit-core.js/${VERSION$2} ${(0, import_universal_user_agent.getUserAgent)()}`;
+	var Octokit = class {
+		static {
+			this.VERSION = VERSION$2;
+		}
+		static defaults(defaults) {
+			const OctokitWithDefaults = class extends this {
+				constructor(...args) {
+					const options = args[0] || {};
+					if (typeof defaults === "function") {
+						super(defaults(options));
+						return;
+					}
+					super(Object.assign({}, defaults, options, options.userAgent && defaults.userAgent ? { userAgent: `${options.userAgent} ${defaults.userAgent}` } : null));
+				}
+			};
+			return OctokitWithDefaults;
+		}
+		static {
+			this.plugins = [];
+		}
+		/**
+		* Attach a plugin (or many) to your Octokit instance.
+		*
+		* @example
+		* const API = Octokit.plugin(plugin1, plugin2, plugin3, ...)
+		*/
+		static plugin(...newPlugins) {
+			const currentPlugins = this.plugins;
+			const NewOctokit = class extends this {
+				static {
+					this.plugins = currentPlugins.concat(newPlugins.filter((plugin) => !currentPlugins.includes(plugin)));
+				}
+			};
+			return NewOctokit;
+		}
+		constructor(options = {}) {
+			const hook$1 = new import_before_after_hook.Collection();
+			const requestDefaults = {
+				baseUrl: import_request.request.endpoint.DEFAULTS.baseUrl,
+				headers: {},
+				request: Object.assign({}, options.request, { hook: hook$1.bind(null, "request") }),
+				mediaType: {
+					previews: [],
+					format: ""
+				}
+			};
+			requestDefaults.headers["user-agent"] = options.userAgent ? `${options.userAgent} ${userAgentTrail}` : userAgentTrail;
+			if (options.baseUrl) requestDefaults.baseUrl = options.baseUrl;
+			if (options.previews) requestDefaults.mediaType.previews = options.previews;
+			if (options.timeZone) requestDefaults.headers["time-zone"] = options.timeZone;
+			this.request = import_request.request.defaults(requestDefaults);
+			this.graphql = (0, import_graphql.withCustomRequest)(this.request).defaults(requestDefaults);
+			this.log = createLogger(options.log);
+			this.hook = hook$1;
+			if (!options.authStrategy) if (!options.auth) this.auth = async () => ({ type: "unauthenticated" });
+			else {
+				const auth$1 = (0, import_auth_token.createTokenAuth)(options.auth);
+				hook$1.wrap("request", auth$1.hook);
+				this.auth = auth$1;
+			}
+			else {
+				const { authStrategy,...otherOptions } = options;
+				const auth$1 = authStrategy(Object.assign({
+					request: this.request,
+					log: this.log,
+					octokit: this,
+					octokitOptions: otherOptions
+				}, options.auth));
+				hook$1.wrap("request", auth$1.hook);
+				this.auth = auth$1;
+			}
+			const classConstructor = this.constructor;
+			for (let i = 0; i < classConstructor.plugins.length; ++i) Object.assign(this, classConstructor.plugins[i](this, options));
+		}
+	};
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+plugin-rest-endpoint-methods@10.4.1/node_modules/@octokit/plugin-rest-endpoint-methods/dist-node/index.js
+var require_dist_node$1 = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+plugin-rest-endpoint-methods@10.4.1/node_modules/@octokit/plugin-rest-endpoint-methods/dist-node/index.js": ((exports, module) => {
+	var __defProp$1 = Object.defineProperty;
+	var __getOwnPropDesc$1 = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames$1 = Object.getOwnPropertyNames;
+	var __hasOwnProp$1 = Object.prototype.hasOwnProperty;
+	var __export$1 = (target, all) => {
+		for (var name in all) __defProp$1(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps$1 = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames$1(from)) if (!__hasOwnProp$1.call(to, key) && key !== except) __defProp$1(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc$1(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS$1 = (mod) => __copyProps$1(__defProp$1({}, "__esModule", { value: true }), mod);
+	var dist_src_exports$1 = {};
+	__export$1(dist_src_exports$1, {
+		legacyRestEndpointMethods: () => legacyRestEndpointMethods,
+		restEndpointMethods: () => restEndpointMethods
+	});
+	module.exports = __toCommonJS$1(dist_src_exports$1);
+	var VERSION$1 = "10.4.1";
+	var endpoints_default = {
+		actions: {
+			addCustomLabelsToSelfHostedRunnerForOrg: ["POST /orgs/{org}/actions/runners/{runner_id}/labels"],
+			addCustomLabelsToSelfHostedRunnerForRepo: ["POST /repos/{owner}/{repo}/actions/runners/{runner_id}/labels"],
+			addSelectedRepoToOrgSecret: ["PUT /orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}"],
+			addSelectedRepoToOrgVariable: ["PUT /orgs/{org}/actions/variables/{name}/repositories/{repository_id}"],
+			approveWorkflowRun: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/approve"],
+			cancelWorkflowRun: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/cancel"],
+			createEnvironmentVariable: ["POST /repositories/{repository_id}/environments/{environment_name}/variables"],
+			createOrUpdateEnvironmentSecret: ["PUT /repositories/{repository_id}/environments/{environment_name}/secrets/{secret_name}"],
+			createOrUpdateOrgSecret: ["PUT /orgs/{org}/actions/secrets/{secret_name}"],
+			createOrUpdateRepoSecret: ["PUT /repos/{owner}/{repo}/actions/secrets/{secret_name}"],
+			createOrgVariable: ["POST /orgs/{org}/actions/variables"],
+			createRegistrationTokenForOrg: ["POST /orgs/{org}/actions/runners/registration-token"],
+			createRegistrationTokenForRepo: ["POST /repos/{owner}/{repo}/actions/runners/registration-token"],
+			createRemoveTokenForOrg: ["POST /orgs/{org}/actions/runners/remove-token"],
+			createRemoveTokenForRepo: ["POST /repos/{owner}/{repo}/actions/runners/remove-token"],
+			createRepoVariable: ["POST /repos/{owner}/{repo}/actions/variables"],
+			createWorkflowDispatch: ["POST /repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches"],
+			deleteActionsCacheById: ["DELETE /repos/{owner}/{repo}/actions/caches/{cache_id}"],
+			deleteActionsCacheByKey: ["DELETE /repos/{owner}/{repo}/actions/caches{?key,ref}"],
+			deleteArtifact: ["DELETE /repos/{owner}/{repo}/actions/artifacts/{artifact_id}"],
+			deleteEnvironmentSecret: ["DELETE /repositories/{repository_id}/environments/{environment_name}/secrets/{secret_name}"],
+			deleteEnvironmentVariable: ["DELETE /repositories/{repository_id}/environments/{environment_name}/variables/{name}"],
+			deleteOrgSecret: ["DELETE /orgs/{org}/actions/secrets/{secret_name}"],
+			deleteOrgVariable: ["DELETE /orgs/{org}/actions/variables/{name}"],
+			deleteRepoSecret: ["DELETE /repos/{owner}/{repo}/actions/secrets/{secret_name}"],
+			deleteRepoVariable: ["DELETE /repos/{owner}/{repo}/actions/variables/{name}"],
+			deleteSelfHostedRunnerFromOrg: ["DELETE /orgs/{org}/actions/runners/{runner_id}"],
+			deleteSelfHostedRunnerFromRepo: ["DELETE /repos/{owner}/{repo}/actions/runners/{runner_id}"],
+			deleteWorkflowRun: ["DELETE /repos/{owner}/{repo}/actions/runs/{run_id}"],
+			deleteWorkflowRunLogs: ["DELETE /repos/{owner}/{repo}/actions/runs/{run_id}/logs"],
+			disableSelectedRepositoryGithubActionsOrganization: ["DELETE /orgs/{org}/actions/permissions/repositories/{repository_id}"],
+			disableWorkflow: ["PUT /repos/{owner}/{repo}/actions/workflows/{workflow_id}/disable"],
+			downloadArtifact: ["GET /repos/{owner}/{repo}/actions/artifacts/{artifact_id}/{archive_format}"],
+			downloadJobLogsForWorkflowRun: ["GET /repos/{owner}/{repo}/actions/jobs/{job_id}/logs"],
+			downloadWorkflowRunAttemptLogs: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/logs"],
+			downloadWorkflowRunLogs: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs"],
+			enableSelectedRepositoryGithubActionsOrganization: ["PUT /orgs/{org}/actions/permissions/repositories/{repository_id}"],
+			enableWorkflow: ["PUT /repos/{owner}/{repo}/actions/workflows/{workflow_id}/enable"],
+			forceCancelWorkflowRun: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/force-cancel"],
+			generateRunnerJitconfigForOrg: ["POST /orgs/{org}/actions/runners/generate-jitconfig"],
+			generateRunnerJitconfigForRepo: ["POST /repos/{owner}/{repo}/actions/runners/generate-jitconfig"],
+			getActionsCacheList: ["GET /repos/{owner}/{repo}/actions/caches"],
+			getActionsCacheUsage: ["GET /repos/{owner}/{repo}/actions/cache/usage"],
+			getActionsCacheUsageByRepoForOrg: ["GET /orgs/{org}/actions/cache/usage-by-repository"],
+			getActionsCacheUsageForOrg: ["GET /orgs/{org}/actions/cache/usage"],
+			getAllowedActionsOrganization: ["GET /orgs/{org}/actions/permissions/selected-actions"],
+			getAllowedActionsRepository: ["GET /repos/{owner}/{repo}/actions/permissions/selected-actions"],
+			getArtifact: ["GET /repos/{owner}/{repo}/actions/artifacts/{artifact_id}"],
+			getCustomOidcSubClaimForRepo: ["GET /repos/{owner}/{repo}/actions/oidc/customization/sub"],
+			getEnvironmentPublicKey: ["GET /repositories/{repository_id}/environments/{environment_name}/secrets/public-key"],
+			getEnvironmentSecret: ["GET /repositories/{repository_id}/environments/{environment_name}/secrets/{secret_name}"],
+			getEnvironmentVariable: ["GET /repositories/{repository_id}/environments/{environment_name}/variables/{name}"],
+			getGithubActionsDefaultWorkflowPermissionsOrganization: ["GET /orgs/{org}/actions/permissions/workflow"],
+			getGithubActionsDefaultWorkflowPermissionsRepository: ["GET /repos/{owner}/{repo}/actions/permissions/workflow"],
+			getGithubActionsPermissionsOrganization: ["GET /orgs/{org}/actions/permissions"],
+			getGithubActionsPermissionsRepository: ["GET /repos/{owner}/{repo}/actions/permissions"],
+			getJobForWorkflowRun: ["GET /repos/{owner}/{repo}/actions/jobs/{job_id}"],
+			getOrgPublicKey: ["GET /orgs/{org}/actions/secrets/public-key"],
+			getOrgSecret: ["GET /orgs/{org}/actions/secrets/{secret_name}"],
+			getOrgVariable: ["GET /orgs/{org}/actions/variables/{name}"],
+			getPendingDeploymentsForRun: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/pending_deployments"],
+			getRepoPermissions: [
+				"GET /repos/{owner}/{repo}/actions/permissions",
+				{},
+				{ renamed: ["actions", "getGithubActionsPermissionsRepository"] }
+			],
+			getRepoPublicKey: ["GET /repos/{owner}/{repo}/actions/secrets/public-key"],
+			getRepoSecret: ["GET /repos/{owner}/{repo}/actions/secrets/{secret_name}"],
+			getRepoVariable: ["GET /repos/{owner}/{repo}/actions/variables/{name}"],
+			getReviewsForRun: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/approvals"],
+			getSelfHostedRunnerForOrg: ["GET /orgs/{org}/actions/runners/{runner_id}"],
+			getSelfHostedRunnerForRepo: ["GET /repos/{owner}/{repo}/actions/runners/{runner_id}"],
+			getWorkflow: ["GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}"],
+			getWorkflowAccessToRepository: ["GET /repos/{owner}/{repo}/actions/permissions/access"],
+			getWorkflowRun: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}"],
+			getWorkflowRunAttempt: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}"],
+			getWorkflowRunUsage: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/timing"],
+			getWorkflowUsage: ["GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/timing"],
+			listArtifactsForRepo: ["GET /repos/{owner}/{repo}/actions/artifacts"],
+			listEnvironmentSecrets: ["GET /repositories/{repository_id}/environments/{environment_name}/secrets"],
+			listEnvironmentVariables: ["GET /repositories/{repository_id}/environments/{environment_name}/variables"],
+			listJobsForWorkflowRun: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs"],
+			listJobsForWorkflowRunAttempt: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs"],
+			listLabelsForSelfHostedRunnerForOrg: ["GET /orgs/{org}/actions/runners/{runner_id}/labels"],
+			listLabelsForSelfHostedRunnerForRepo: ["GET /repos/{owner}/{repo}/actions/runners/{runner_id}/labels"],
+			listOrgSecrets: ["GET /orgs/{org}/actions/secrets"],
+			listOrgVariables: ["GET /orgs/{org}/actions/variables"],
+			listRepoOrganizationSecrets: ["GET /repos/{owner}/{repo}/actions/organization-secrets"],
+			listRepoOrganizationVariables: ["GET /repos/{owner}/{repo}/actions/organization-variables"],
+			listRepoSecrets: ["GET /repos/{owner}/{repo}/actions/secrets"],
+			listRepoVariables: ["GET /repos/{owner}/{repo}/actions/variables"],
+			listRepoWorkflows: ["GET /repos/{owner}/{repo}/actions/workflows"],
+			listRunnerApplicationsForOrg: ["GET /orgs/{org}/actions/runners/downloads"],
+			listRunnerApplicationsForRepo: ["GET /repos/{owner}/{repo}/actions/runners/downloads"],
+			listSelectedReposForOrgSecret: ["GET /orgs/{org}/actions/secrets/{secret_name}/repositories"],
+			listSelectedReposForOrgVariable: ["GET /orgs/{org}/actions/variables/{name}/repositories"],
+			listSelectedRepositoriesEnabledGithubActionsOrganization: ["GET /orgs/{org}/actions/permissions/repositories"],
+			listSelfHostedRunnersForOrg: ["GET /orgs/{org}/actions/runners"],
+			listSelfHostedRunnersForRepo: ["GET /repos/{owner}/{repo}/actions/runners"],
+			listWorkflowRunArtifacts: ["GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts"],
+			listWorkflowRuns: ["GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs"],
+			listWorkflowRunsForRepo: ["GET /repos/{owner}/{repo}/actions/runs"],
+			reRunJobForWorkflowRun: ["POST /repos/{owner}/{repo}/actions/jobs/{job_id}/rerun"],
+			reRunWorkflow: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/rerun"],
+			reRunWorkflowFailedJobs: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs"],
+			removeAllCustomLabelsFromSelfHostedRunnerForOrg: ["DELETE /orgs/{org}/actions/runners/{runner_id}/labels"],
+			removeAllCustomLabelsFromSelfHostedRunnerForRepo: ["DELETE /repos/{owner}/{repo}/actions/runners/{runner_id}/labels"],
+			removeCustomLabelFromSelfHostedRunnerForOrg: ["DELETE /orgs/{org}/actions/runners/{runner_id}/labels/{name}"],
+			removeCustomLabelFromSelfHostedRunnerForRepo: ["DELETE /repos/{owner}/{repo}/actions/runners/{runner_id}/labels/{name}"],
+			removeSelectedRepoFromOrgSecret: ["DELETE /orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}"],
+			removeSelectedRepoFromOrgVariable: ["DELETE /orgs/{org}/actions/variables/{name}/repositories/{repository_id}"],
+			reviewCustomGatesForRun: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/deployment_protection_rule"],
+			reviewPendingDeploymentsForRun: ["POST /repos/{owner}/{repo}/actions/runs/{run_id}/pending_deployments"],
+			setAllowedActionsOrganization: ["PUT /orgs/{org}/actions/permissions/selected-actions"],
+			setAllowedActionsRepository: ["PUT /repos/{owner}/{repo}/actions/permissions/selected-actions"],
+			setCustomLabelsForSelfHostedRunnerForOrg: ["PUT /orgs/{org}/actions/runners/{runner_id}/labels"],
+			setCustomLabelsForSelfHostedRunnerForRepo: ["PUT /repos/{owner}/{repo}/actions/runners/{runner_id}/labels"],
+			setCustomOidcSubClaimForRepo: ["PUT /repos/{owner}/{repo}/actions/oidc/customization/sub"],
+			setGithubActionsDefaultWorkflowPermissionsOrganization: ["PUT /orgs/{org}/actions/permissions/workflow"],
+			setGithubActionsDefaultWorkflowPermissionsRepository: ["PUT /repos/{owner}/{repo}/actions/permissions/workflow"],
+			setGithubActionsPermissionsOrganization: ["PUT /orgs/{org}/actions/permissions"],
+			setGithubActionsPermissionsRepository: ["PUT /repos/{owner}/{repo}/actions/permissions"],
+			setSelectedReposForOrgSecret: ["PUT /orgs/{org}/actions/secrets/{secret_name}/repositories"],
+			setSelectedReposForOrgVariable: ["PUT /orgs/{org}/actions/variables/{name}/repositories"],
+			setSelectedRepositoriesEnabledGithubActionsOrganization: ["PUT /orgs/{org}/actions/permissions/repositories"],
+			setWorkflowAccessToRepository: ["PUT /repos/{owner}/{repo}/actions/permissions/access"],
+			updateEnvironmentVariable: ["PATCH /repositories/{repository_id}/environments/{environment_name}/variables/{name}"],
+			updateOrgVariable: ["PATCH /orgs/{org}/actions/variables/{name}"],
+			updateRepoVariable: ["PATCH /repos/{owner}/{repo}/actions/variables/{name}"]
+		},
+		activity: {
+			checkRepoIsStarredByAuthenticatedUser: ["GET /user/starred/{owner}/{repo}"],
+			deleteRepoSubscription: ["DELETE /repos/{owner}/{repo}/subscription"],
+			deleteThreadSubscription: ["DELETE /notifications/threads/{thread_id}/subscription"],
+			getFeeds: ["GET /feeds"],
+			getRepoSubscription: ["GET /repos/{owner}/{repo}/subscription"],
+			getThread: ["GET /notifications/threads/{thread_id}"],
+			getThreadSubscriptionForAuthenticatedUser: ["GET /notifications/threads/{thread_id}/subscription"],
+			listEventsForAuthenticatedUser: ["GET /users/{username}/events"],
+			listNotificationsForAuthenticatedUser: ["GET /notifications"],
+			listOrgEventsForAuthenticatedUser: ["GET /users/{username}/events/orgs/{org}"],
+			listPublicEvents: ["GET /events"],
+			listPublicEventsForRepoNetwork: ["GET /networks/{owner}/{repo}/events"],
+			listPublicEventsForUser: ["GET /users/{username}/events/public"],
+			listPublicOrgEvents: ["GET /orgs/{org}/events"],
+			listReceivedEventsForUser: ["GET /users/{username}/received_events"],
+			listReceivedPublicEventsForUser: ["GET /users/{username}/received_events/public"],
+			listRepoEvents: ["GET /repos/{owner}/{repo}/events"],
+			listRepoNotificationsForAuthenticatedUser: ["GET /repos/{owner}/{repo}/notifications"],
+			listReposStarredByAuthenticatedUser: ["GET /user/starred"],
+			listReposStarredByUser: ["GET /users/{username}/starred"],
+			listReposWatchedByUser: ["GET /users/{username}/subscriptions"],
+			listStargazersForRepo: ["GET /repos/{owner}/{repo}/stargazers"],
+			listWatchedReposForAuthenticatedUser: ["GET /user/subscriptions"],
+			listWatchersForRepo: ["GET /repos/{owner}/{repo}/subscribers"],
+			markNotificationsAsRead: ["PUT /notifications"],
+			markRepoNotificationsAsRead: ["PUT /repos/{owner}/{repo}/notifications"],
+			markThreadAsDone: ["DELETE /notifications/threads/{thread_id}"],
+			markThreadAsRead: ["PATCH /notifications/threads/{thread_id}"],
+			setRepoSubscription: ["PUT /repos/{owner}/{repo}/subscription"],
+			setThreadSubscription: ["PUT /notifications/threads/{thread_id}/subscription"],
+			starRepoForAuthenticatedUser: ["PUT /user/starred/{owner}/{repo}"],
+			unstarRepoForAuthenticatedUser: ["DELETE /user/starred/{owner}/{repo}"]
+		},
+		apps: {
+			addRepoToInstallation: [
+				"PUT /user/installations/{installation_id}/repositories/{repository_id}",
+				{},
+				{ renamed: ["apps", "addRepoToInstallationForAuthenticatedUser"] }
+			],
+			addRepoToInstallationForAuthenticatedUser: ["PUT /user/installations/{installation_id}/repositories/{repository_id}"],
+			checkToken: ["POST /applications/{client_id}/token"],
+			createFromManifest: ["POST /app-manifests/{code}/conversions"],
+			createInstallationAccessToken: ["POST /app/installations/{installation_id}/access_tokens"],
+			deleteAuthorization: ["DELETE /applications/{client_id}/grant"],
+			deleteInstallation: ["DELETE /app/installations/{installation_id}"],
+			deleteToken: ["DELETE /applications/{client_id}/token"],
+			getAuthenticated: ["GET /app"],
+			getBySlug: ["GET /apps/{app_slug}"],
+			getInstallation: ["GET /app/installations/{installation_id}"],
+			getOrgInstallation: ["GET /orgs/{org}/installation"],
+			getRepoInstallation: ["GET /repos/{owner}/{repo}/installation"],
+			getSubscriptionPlanForAccount: ["GET /marketplace_listing/accounts/{account_id}"],
+			getSubscriptionPlanForAccountStubbed: ["GET /marketplace_listing/stubbed/accounts/{account_id}"],
+			getUserInstallation: ["GET /users/{username}/installation"],
+			getWebhookConfigForApp: ["GET /app/hook/config"],
+			getWebhookDelivery: ["GET /app/hook/deliveries/{delivery_id}"],
+			listAccountsForPlan: ["GET /marketplace_listing/plans/{plan_id}/accounts"],
+			listAccountsForPlanStubbed: ["GET /marketplace_listing/stubbed/plans/{plan_id}/accounts"],
+			listInstallationReposForAuthenticatedUser: ["GET /user/installations/{installation_id}/repositories"],
+			listInstallationRequestsForAuthenticatedApp: ["GET /app/installation-requests"],
+			listInstallations: ["GET /app/installations"],
+			listInstallationsForAuthenticatedUser: ["GET /user/installations"],
+			listPlans: ["GET /marketplace_listing/plans"],
+			listPlansStubbed: ["GET /marketplace_listing/stubbed/plans"],
+			listReposAccessibleToInstallation: ["GET /installation/repositories"],
+			listSubscriptionsForAuthenticatedUser: ["GET /user/marketplace_purchases"],
+			listSubscriptionsForAuthenticatedUserStubbed: ["GET /user/marketplace_purchases/stubbed"],
+			listWebhookDeliveries: ["GET /app/hook/deliveries"],
+			redeliverWebhookDelivery: ["POST /app/hook/deliveries/{delivery_id}/attempts"],
+			removeRepoFromInstallation: [
+				"DELETE /user/installations/{installation_id}/repositories/{repository_id}",
+				{},
+				{ renamed: ["apps", "removeRepoFromInstallationForAuthenticatedUser"] }
+			],
+			removeRepoFromInstallationForAuthenticatedUser: ["DELETE /user/installations/{installation_id}/repositories/{repository_id}"],
+			resetToken: ["PATCH /applications/{client_id}/token"],
+			revokeInstallationAccessToken: ["DELETE /installation/token"],
+			scopeToken: ["POST /applications/{client_id}/token/scoped"],
+			suspendInstallation: ["PUT /app/installations/{installation_id}/suspended"],
+			unsuspendInstallation: ["DELETE /app/installations/{installation_id}/suspended"],
+			updateWebhookConfigForApp: ["PATCH /app/hook/config"]
+		},
+		billing: {
+			getGithubActionsBillingOrg: ["GET /orgs/{org}/settings/billing/actions"],
+			getGithubActionsBillingUser: ["GET /users/{username}/settings/billing/actions"],
+			getGithubPackagesBillingOrg: ["GET /orgs/{org}/settings/billing/packages"],
+			getGithubPackagesBillingUser: ["GET /users/{username}/settings/billing/packages"],
+			getSharedStorageBillingOrg: ["GET /orgs/{org}/settings/billing/shared-storage"],
+			getSharedStorageBillingUser: ["GET /users/{username}/settings/billing/shared-storage"]
+		},
+		checks: {
+			create: ["POST /repos/{owner}/{repo}/check-runs"],
+			createSuite: ["POST /repos/{owner}/{repo}/check-suites"],
+			get: ["GET /repos/{owner}/{repo}/check-runs/{check_run_id}"],
+			getSuite: ["GET /repos/{owner}/{repo}/check-suites/{check_suite_id}"],
+			listAnnotations: ["GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations"],
+			listForRef: ["GET /repos/{owner}/{repo}/commits/{ref}/check-runs"],
+			listForSuite: ["GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs"],
+			listSuitesForRef: ["GET /repos/{owner}/{repo}/commits/{ref}/check-suites"],
+			rerequestRun: ["POST /repos/{owner}/{repo}/check-runs/{check_run_id}/rerequest"],
+			rerequestSuite: ["POST /repos/{owner}/{repo}/check-suites/{check_suite_id}/rerequest"],
+			setSuitesPreferences: ["PATCH /repos/{owner}/{repo}/check-suites/preferences"],
+			update: ["PATCH /repos/{owner}/{repo}/check-runs/{check_run_id}"]
+		},
+		codeScanning: {
+			deleteAnalysis: ["DELETE /repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}{?confirm_delete}"],
+			getAlert: [
+				"GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}",
+				{},
+				{ renamedParameters: { alert_id: "alert_number" } }
+			],
+			getAnalysis: ["GET /repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}"],
+			getCodeqlDatabase: ["GET /repos/{owner}/{repo}/code-scanning/codeql/databases/{language}"],
+			getDefaultSetup: ["GET /repos/{owner}/{repo}/code-scanning/default-setup"],
+			getSarif: ["GET /repos/{owner}/{repo}/code-scanning/sarifs/{sarif_id}"],
+			listAlertInstances: ["GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances"],
+			listAlertsForOrg: ["GET /orgs/{org}/code-scanning/alerts"],
+			listAlertsForRepo: ["GET /repos/{owner}/{repo}/code-scanning/alerts"],
+			listAlertsInstances: [
+				"GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances",
+				{},
+				{ renamed: ["codeScanning", "listAlertInstances"] }
+			],
+			listCodeqlDatabases: ["GET /repos/{owner}/{repo}/code-scanning/codeql/databases"],
+			listRecentAnalyses: ["GET /repos/{owner}/{repo}/code-scanning/analyses"],
+			updateAlert: ["PATCH /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}"],
+			updateDefaultSetup: ["PATCH /repos/{owner}/{repo}/code-scanning/default-setup"],
+			uploadSarif: ["POST /repos/{owner}/{repo}/code-scanning/sarifs"]
+		},
+		codesOfConduct: {
+			getAllCodesOfConduct: ["GET /codes_of_conduct"],
+			getConductCode: ["GET /codes_of_conduct/{key}"]
+		},
+		codespaces: {
+			addRepositoryForSecretForAuthenticatedUser: ["PUT /user/codespaces/secrets/{secret_name}/repositories/{repository_id}"],
+			addSelectedRepoToOrgSecret: ["PUT /orgs/{org}/codespaces/secrets/{secret_name}/repositories/{repository_id}"],
+			checkPermissionsForDevcontainer: ["GET /repos/{owner}/{repo}/codespaces/permissions_check"],
+			codespaceMachinesForAuthenticatedUser: ["GET /user/codespaces/{codespace_name}/machines"],
+			createForAuthenticatedUser: ["POST /user/codespaces"],
+			createOrUpdateOrgSecret: ["PUT /orgs/{org}/codespaces/secrets/{secret_name}"],
+			createOrUpdateRepoSecret: ["PUT /repos/{owner}/{repo}/codespaces/secrets/{secret_name}"],
+			createOrUpdateSecretForAuthenticatedUser: ["PUT /user/codespaces/secrets/{secret_name}"],
+			createWithPrForAuthenticatedUser: ["POST /repos/{owner}/{repo}/pulls/{pull_number}/codespaces"],
+			createWithRepoForAuthenticatedUser: ["POST /repos/{owner}/{repo}/codespaces"],
+			deleteForAuthenticatedUser: ["DELETE /user/codespaces/{codespace_name}"],
+			deleteFromOrganization: ["DELETE /orgs/{org}/members/{username}/codespaces/{codespace_name}"],
+			deleteOrgSecret: ["DELETE /orgs/{org}/codespaces/secrets/{secret_name}"],
+			deleteRepoSecret: ["DELETE /repos/{owner}/{repo}/codespaces/secrets/{secret_name}"],
+			deleteSecretForAuthenticatedUser: ["DELETE /user/codespaces/secrets/{secret_name}"],
+			exportForAuthenticatedUser: ["POST /user/codespaces/{codespace_name}/exports"],
+			getCodespacesForUserInOrg: ["GET /orgs/{org}/members/{username}/codespaces"],
+			getExportDetailsForAuthenticatedUser: ["GET /user/codespaces/{codespace_name}/exports/{export_id}"],
+			getForAuthenticatedUser: ["GET /user/codespaces/{codespace_name}"],
+			getOrgPublicKey: ["GET /orgs/{org}/codespaces/secrets/public-key"],
+			getOrgSecret: ["GET /orgs/{org}/codespaces/secrets/{secret_name}"],
+			getPublicKeyForAuthenticatedUser: ["GET /user/codespaces/secrets/public-key"],
+			getRepoPublicKey: ["GET /repos/{owner}/{repo}/codespaces/secrets/public-key"],
+			getRepoSecret: ["GET /repos/{owner}/{repo}/codespaces/secrets/{secret_name}"],
+			getSecretForAuthenticatedUser: ["GET /user/codespaces/secrets/{secret_name}"],
+			listDevcontainersInRepositoryForAuthenticatedUser: ["GET /repos/{owner}/{repo}/codespaces/devcontainers"],
+			listForAuthenticatedUser: ["GET /user/codespaces"],
+			listInOrganization: [
+				"GET /orgs/{org}/codespaces",
+				{},
+				{ renamedParameters: { org_id: "org" } }
+			],
+			listInRepositoryForAuthenticatedUser: ["GET /repos/{owner}/{repo}/codespaces"],
+			listOrgSecrets: ["GET /orgs/{org}/codespaces/secrets"],
+			listRepoSecrets: ["GET /repos/{owner}/{repo}/codespaces/secrets"],
+			listRepositoriesForSecretForAuthenticatedUser: ["GET /user/codespaces/secrets/{secret_name}/repositories"],
+			listSecretsForAuthenticatedUser: ["GET /user/codespaces/secrets"],
+			listSelectedReposForOrgSecret: ["GET /orgs/{org}/codespaces/secrets/{secret_name}/repositories"],
+			preFlightWithRepoForAuthenticatedUser: ["GET /repos/{owner}/{repo}/codespaces/new"],
+			publishForAuthenticatedUser: ["POST /user/codespaces/{codespace_name}/publish"],
+			removeRepositoryForSecretForAuthenticatedUser: ["DELETE /user/codespaces/secrets/{secret_name}/repositories/{repository_id}"],
+			removeSelectedRepoFromOrgSecret: ["DELETE /orgs/{org}/codespaces/secrets/{secret_name}/repositories/{repository_id}"],
+			repoMachinesForAuthenticatedUser: ["GET /repos/{owner}/{repo}/codespaces/machines"],
+			setRepositoriesForSecretForAuthenticatedUser: ["PUT /user/codespaces/secrets/{secret_name}/repositories"],
+			setSelectedReposForOrgSecret: ["PUT /orgs/{org}/codespaces/secrets/{secret_name}/repositories"],
+			startForAuthenticatedUser: ["POST /user/codespaces/{codespace_name}/start"],
+			stopForAuthenticatedUser: ["POST /user/codespaces/{codespace_name}/stop"],
+			stopInOrganization: ["POST /orgs/{org}/members/{username}/codespaces/{codespace_name}/stop"],
+			updateForAuthenticatedUser: ["PATCH /user/codespaces/{codespace_name}"]
+		},
+		copilot: {
+			addCopilotSeatsForTeams: ["POST /orgs/{org}/copilot/billing/selected_teams"],
+			addCopilotSeatsForUsers: ["POST /orgs/{org}/copilot/billing/selected_users"],
+			cancelCopilotSeatAssignmentForTeams: ["DELETE /orgs/{org}/copilot/billing/selected_teams"],
+			cancelCopilotSeatAssignmentForUsers: ["DELETE /orgs/{org}/copilot/billing/selected_users"],
+			getCopilotOrganizationDetails: ["GET /orgs/{org}/copilot/billing"],
+			getCopilotSeatDetailsForUser: ["GET /orgs/{org}/members/{username}/copilot"],
+			listCopilotSeats: ["GET /orgs/{org}/copilot/billing/seats"]
+		},
+		dependabot: {
+			addSelectedRepoToOrgSecret: ["PUT /orgs/{org}/dependabot/secrets/{secret_name}/repositories/{repository_id}"],
+			createOrUpdateOrgSecret: ["PUT /orgs/{org}/dependabot/secrets/{secret_name}"],
+			createOrUpdateRepoSecret: ["PUT /repos/{owner}/{repo}/dependabot/secrets/{secret_name}"],
+			deleteOrgSecret: ["DELETE /orgs/{org}/dependabot/secrets/{secret_name}"],
+			deleteRepoSecret: ["DELETE /repos/{owner}/{repo}/dependabot/secrets/{secret_name}"],
+			getAlert: ["GET /repos/{owner}/{repo}/dependabot/alerts/{alert_number}"],
+			getOrgPublicKey: ["GET /orgs/{org}/dependabot/secrets/public-key"],
+			getOrgSecret: ["GET /orgs/{org}/dependabot/secrets/{secret_name}"],
+			getRepoPublicKey: ["GET /repos/{owner}/{repo}/dependabot/secrets/public-key"],
+			getRepoSecret: ["GET /repos/{owner}/{repo}/dependabot/secrets/{secret_name}"],
+			listAlertsForEnterprise: ["GET /enterprises/{enterprise}/dependabot/alerts"],
+			listAlertsForOrg: ["GET /orgs/{org}/dependabot/alerts"],
+			listAlertsForRepo: ["GET /repos/{owner}/{repo}/dependabot/alerts"],
+			listOrgSecrets: ["GET /orgs/{org}/dependabot/secrets"],
+			listRepoSecrets: ["GET /repos/{owner}/{repo}/dependabot/secrets"],
+			listSelectedReposForOrgSecret: ["GET /orgs/{org}/dependabot/secrets/{secret_name}/repositories"],
+			removeSelectedRepoFromOrgSecret: ["DELETE /orgs/{org}/dependabot/secrets/{secret_name}/repositories/{repository_id}"],
+			setSelectedReposForOrgSecret: ["PUT /orgs/{org}/dependabot/secrets/{secret_name}/repositories"],
+			updateAlert: ["PATCH /repos/{owner}/{repo}/dependabot/alerts/{alert_number}"]
+		},
+		dependencyGraph: {
+			createRepositorySnapshot: ["POST /repos/{owner}/{repo}/dependency-graph/snapshots"],
+			diffRange: ["GET /repos/{owner}/{repo}/dependency-graph/compare/{basehead}"],
+			exportSbom: ["GET /repos/{owner}/{repo}/dependency-graph/sbom"]
+		},
+		emojis: { get: ["GET /emojis"] },
+		gists: {
+			checkIsStarred: ["GET /gists/{gist_id}/star"],
+			create: ["POST /gists"],
+			createComment: ["POST /gists/{gist_id}/comments"],
+			delete: ["DELETE /gists/{gist_id}"],
+			deleteComment: ["DELETE /gists/{gist_id}/comments/{comment_id}"],
+			fork: ["POST /gists/{gist_id}/forks"],
+			get: ["GET /gists/{gist_id}"],
+			getComment: ["GET /gists/{gist_id}/comments/{comment_id}"],
+			getRevision: ["GET /gists/{gist_id}/{sha}"],
+			list: ["GET /gists"],
+			listComments: ["GET /gists/{gist_id}/comments"],
+			listCommits: ["GET /gists/{gist_id}/commits"],
+			listForUser: ["GET /users/{username}/gists"],
+			listForks: ["GET /gists/{gist_id}/forks"],
+			listPublic: ["GET /gists/public"],
+			listStarred: ["GET /gists/starred"],
+			star: ["PUT /gists/{gist_id}/star"],
+			unstar: ["DELETE /gists/{gist_id}/star"],
+			update: ["PATCH /gists/{gist_id}"],
+			updateComment: ["PATCH /gists/{gist_id}/comments/{comment_id}"]
+		},
+		git: {
+			createBlob: ["POST /repos/{owner}/{repo}/git/blobs"],
+			createCommit: ["POST /repos/{owner}/{repo}/git/commits"],
+			createRef: ["POST /repos/{owner}/{repo}/git/refs"],
+			createTag: ["POST /repos/{owner}/{repo}/git/tags"],
+			createTree: ["POST /repos/{owner}/{repo}/git/trees"],
+			deleteRef: ["DELETE /repos/{owner}/{repo}/git/refs/{ref}"],
+			getBlob: ["GET /repos/{owner}/{repo}/git/blobs/{file_sha}"],
+			getCommit: ["GET /repos/{owner}/{repo}/git/commits/{commit_sha}"],
+			getRef: ["GET /repos/{owner}/{repo}/git/ref/{ref}"],
+			getTag: ["GET /repos/{owner}/{repo}/git/tags/{tag_sha}"],
+			getTree: ["GET /repos/{owner}/{repo}/git/trees/{tree_sha}"],
+			listMatchingRefs: ["GET /repos/{owner}/{repo}/git/matching-refs/{ref}"],
+			updateRef: ["PATCH /repos/{owner}/{repo}/git/refs/{ref}"]
+		},
+		gitignore: {
+			getAllTemplates: ["GET /gitignore/templates"],
+			getTemplate: ["GET /gitignore/templates/{name}"]
+		},
+		interactions: {
+			getRestrictionsForAuthenticatedUser: ["GET /user/interaction-limits"],
+			getRestrictionsForOrg: ["GET /orgs/{org}/interaction-limits"],
+			getRestrictionsForRepo: ["GET /repos/{owner}/{repo}/interaction-limits"],
+			getRestrictionsForYourPublicRepos: [
+				"GET /user/interaction-limits",
+				{},
+				{ renamed: ["interactions", "getRestrictionsForAuthenticatedUser"] }
+			],
+			removeRestrictionsForAuthenticatedUser: ["DELETE /user/interaction-limits"],
+			removeRestrictionsForOrg: ["DELETE /orgs/{org}/interaction-limits"],
+			removeRestrictionsForRepo: ["DELETE /repos/{owner}/{repo}/interaction-limits"],
+			removeRestrictionsForYourPublicRepos: [
+				"DELETE /user/interaction-limits",
+				{},
+				{ renamed: ["interactions", "removeRestrictionsForAuthenticatedUser"] }
+			],
+			setRestrictionsForAuthenticatedUser: ["PUT /user/interaction-limits"],
+			setRestrictionsForOrg: ["PUT /orgs/{org}/interaction-limits"],
+			setRestrictionsForRepo: ["PUT /repos/{owner}/{repo}/interaction-limits"],
+			setRestrictionsForYourPublicRepos: [
+				"PUT /user/interaction-limits",
+				{},
+				{ renamed: ["interactions", "setRestrictionsForAuthenticatedUser"] }
+			]
+		},
+		issues: {
+			addAssignees: ["POST /repos/{owner}/{repo}/issues/{issue_number}/assignees"],
+			addLabels: ["POST /repos/{owner}/{repo}/issues/{issue_number}/labels"],
+			checkUserCanBeAssigned: ["GET /repos/{owner}/{repo}/assignees/{assignee}"],
+			checkUserCanBeAssignedToIssue: ["GET /repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}"],
+			create: ["POST /repos/{owner}/{repo}/issues"],
+			createComment: ["POST /repos/{owner}/{repo}/issues/{issue_number}/comments"],
+			createLabel: ["POST /repos/{owner}/{repo}/labels"],
+			createMilestone: ["POST /repos/{owner}/{repo}/milestones"],
+			deleteComment: ["DELETE /repos/{owner}/{repo}/issues/comments/{comment_id}"],
+			deleteLabel: ["DELETE /repos/{owner}/{repo}/labels/{name}"],
+			deleteMilestone: ["DELETE /repos/{owner}/{repo}/milestones/{milestone_number}"],
+			get: ["GET /repos/{owner}/{repo}/issues/{issue_number}"],
+			getComment: ["GET /repos/{owner}/{repo}/issues/comments/{comment_id}"],
+			getEvent: ["GET /repos/{owner}/{repo}/issues/events/{event_id}"],
+			getLabel: ["GET /repos/{owner}/{repo}/labels/{name}"],
+			getMilestone: ["GET /repos/{owner}/{repo}/milestones/{milestone_number}"],
+			list: ["GET /issues"],
+			listAssignees: ["GET /repos/{owner}/{repo}/assignees"],
+			listComments: ["GET /repos/{owner}/{repo}/issues/{issue_number}/comments"],
+			listCommentsForRepo: ["GET /repos/{owner}/{repo}/issues/comments"],
+			listEvents: ["GET /repos/{owner}/{repo}/issues/{issue_number}/events"],
+			listEventsForRepo: ["GET /repos/{owner}/{repo}/issues/events"],
+			listEventsForTimeline: ["GET /repos/{owner}/{repo}/issues/{issue_number}/timeline"],
+			listForAuthenticatedUser: ["GET /user/issues"],
+			listForOrg: ["GET /orgs/{org}/issues"],
+			listForRepo: ["GET /repos/{owner}/{repo}/issues"],
+			listLabelsForMilestone: ["GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels"],
+			listLabelsForRepo: ["GET /repos/{owner}/{repo}/labels"],
+			listLabelsOnIssue: ["GET /repos/{owner}/{repo}/issues/{issue_number}/labels"],
+			listMilestones: ["GET /repos/{owner}/{repo}/milestones"],
+			lock: ["PUT /repos/{owner}/{repo}/issues/{issue_number}/lock"],
+			removeAllLabels: ["DELETE /repos/{owner}/{repo}/issues/{issue_number}/labels"],
+			removeAssignees: ["DELETE /repos/{owner}/{repo}/issues/{issue_number}/assignees"],
+			removeLabel: ["DELETE /repos/{owner}/{repo}/issues/{issue_number}/labels/{name}"],
+			setLabels: ["PUT /repos/{owner}/{repo}/issues/{issue_number}/labels"],
+			unlock: ["DELETE /repos/{owner}/{repo}/issues/{issue_number}/lock"],
+			update: ["PATCH /repos/{owner}/{repo}/issues/{issue_number}"],
+			updateComment: ["PATCH /repos/{owner}/{repo}/issues/comments/{comment_id}"],
+			updateLabel: ["PATCH /repos/{owner}/{repo}/labels/{name}"],
+			updateMilestone: ["PATCH /repos/{owner}/{repo}/milestones/{milestone_number}"]
+		},
+		licenses: {
+			get: ["GET /licenses/{license}"],
+			getAllCommonlyUsed: ["GET /licenses"],
+			getForRepo: ["GET /repos/{owner}/{repo}/license"]
+		},
+		markdown: {
+			render: ["POST /markdown"],
+			renderRaw: ["POST /markdown/raw", { headers: { "content-type": "text/plain; charset=utf-8" } }]
+		},
+		meta: {
+			get: ["GET /meta"],
+			getAllVersions: ["GET /versions"],
+			getOctocat: ["GET /octocat"],
+			getZen: ["GET /zen"],
+			root: ["GET /"]
+		},
+		migrations: {
+			cancelImport: [
+				"DELETE /repos/{owner}/{repo}/import",
+				{},
+				{ deprecated: "octokit.rest.migrations.cancelImport() is deprecated, see https://docs.github.com/rest/migrations/source-imports#cancel-an-import" }
+			],
+			deleteArchiveForAuthenticatedUser: ["DELETE /user/migrations/{migration_id}/archive"],
+			deleteArchiveForOrg: ["DELETE /orgs/{org}/migrations/{migration_id}/archive"],
+			downloadArchiveForOrg: ["GET /orgs/{org}/migrations/{migration_id}/archive"],
+			getArchiveForAuthenticatedUser: ["GET /user/migrations/{migration_id}/archive"],
+			getCommitAuthors: [
+				"GET /repos/{owner}/{repo}/import/authors",
+				{},
+				{ deprecated: "octokit.rest.migrations.getCommitAuthors() is deprecated, see https://docs.github.com/rest/migrations/source-imports#get-commit-authors" }
+			],
+			getImportStatus: [
+				"GET /repos/{owner}/{repo}/import",
+				{},
+				{ deprecated: "octokit.rest.migrations.getImportStatus() is deprecated, see https://docs.github.com/rest/migrations/source-imports#get-an-import-status" }
+			],
+			getLargeFiles: [
+				"GET /repos/{owner}/{repo}/import/large_files",
+				{},
+				{ deprecated: "octokit.rest.migrations.getLargeFiles() is deprecated, see https://docs.github.com/rest/migrations/source-imports#get-large-files" }
+			],
+			getStatusForAuthenticatedUser: ["GET /user/migrations/{migration_id}"],
+			getStatusForOrg: ["GET /orgs/{org}/migrations/{migration_id}"],
+			listForAuthenticatedUser: ["GET /user/migrations"],
+			listForOrg: ["GET /orgs/{org}/migrations"],
+			listReposForAuthenticatedUser: ["GET /user/migrations/{migration_id}/repositories"],
+			listReposForOrg: ["GET /orgs/{org}/migrations/{migration_id}/repositories"],
+			listReposForUser: [
+				"GET /user/migrations/{migration_id}/repositories",
+				{},
+				{ renamed: ["migrations", "listReposForAuthenticatedUser"] }
+			],
+			mapCommitAuthor: [
+				"PATCH /repos/{owner}/{repo}/import/authors/{author_id}",
+				{},
+				{ deprecated: "octokit.rest.migrations.mapCommitAuthor() is deprecated, see https://docs.github.com/rest/migrations/source-imports#map-a-commit-author" }
+			],
+			setLfsPreference: [
+				"PATCH /repos/{owner}/{repo}/import/lfs",
+				{},
+				{ deprecated: "octokit.rest.migrations.setLfsPreference() is deprecated, see https://docs.github.com/rest/migrations/source-imports#update-git-lfs-preference" }
+			],
+			startForAuthenticatedUser: ["POST /user/migrations"],
+			startForOrg: ["POST /orgs/{org}/migrations"],
+			startImport: [
+				"PUT /repos/{owner}/{repo}/import",
+				{},
+				{ deprecated: "octokit.rest.migrations.startImport() is deprecated, see https://docs.github.com/rest/migrations/source-imports#start-an-import" }
+			],
+			unlockRepoForAuthenticatedUser: ["DELETE /user/migrations/{migration_id}/repos/{repo_name}/lock"],
+			unlockRepoForOrg: ["DELETE /orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock"],
+			updateImport: [
+				"PATCH /repos/{owner}/{repo}/import",
+				{},
+				{ deprecated: "octokit.rest.migrations.updateImport() is deprecated, see https://docs.github.com/rest/migrations/source-imports#update-an-import" }
+			]
+		},
+		oidc: {
+			getOidcCustomSubTemplateForOrg: ["GET /orgs/{org}/actions/oidc/customization/sub"],
+			updateOidcCustomSubTemplateForOrg: ["PUT /orgs/{org}/actions/oidc/customization/sub"]
+		},
+		orgs: {
+			addSecurityManagerTeam: ["PUT /orgs/{org}/security-managers/teams/{team_slug}"],
+			assignTeamToOrgRole: ["PUT /orgs/{org}/organization-roles/teams/{team_slug}/{role_id}"],
+			assignUserToOrgRole: ["PUT /orgs/{org}/organization-roles/users/{username}/{role_id}"],
+			blockUser: ["PUT /orgs/{org}/blocks/{username}"],
+			cancelInvitation: ["DELETE /orgs/{org}/invitations/{invitation_id}"],
+			checkBlockedUser: ["GET /orgs/{org}/blocks/{username}"],
+			checkMembershipForUser: ["GET /orgs/{org}/members/{username}"],
+			checkPublicMembershipForUser: ["GET /orgs/{org}/public_members/{username}"],
+			convertMemberToOutsideCollaborator: ["PUT /orgs/{org}/outside_collaborators/{username}"],
+			createCustomOrganizationRole: ["POST /orgs/{org}/organization-roles"],
+			createInvitation: ["POST /orgs/{org}/invitations"],
+			createOrUpdateCustomProperties: ["PATCH /orgs/{org}/properties/schema"],
+			createOrUpdateCustomPropertiesValuesForRepos: ["PATCH /orgs/{org}/properties/values"],
+			createOrUpdateCustomProperty: ["PUT /orgs/{org}/properties/schema/{custom_property_name}"],
+			createWebhook: ["POST /orgs/{org}/hooks"],
+			delete: ["DELETE /orgs/{org}"],
+			deleteCustomOrganizationRole: ["DELETE /orgs/{org}/organization-roles/{role_id}"],
+			deleteWebhook: ["DELETE /orgs/{org}/hooks/{hook_id}"],
+			enableOrDisableSecurityProductOnAllOrgRepos: ["POST /orgs/{org}/{security_product}/{enablement}"],
+			get: ["GET /orgs/{org}"],
+			getAllCustomProperties: ["GET /orgs/{org}/properties/schema"],
+			getCustomProperty: ["GET /orgs/{org}/properties/schema/{custom_property_name}"],
+			getMembershipForAuthenticatedUser: ["GET /user/memberships/orgs/{org}"],
+			getMembershipForUser: ["GET /orgs/{org}/memberships/{username}"],
+			getOrgRole: ["GET /orgs/{org}/organization-roles/{role_id}"],
+			getWebhook: ["GET /orgs/{org}/hooks/{hook_id}"],
+			getWebhookConfigForOrg: ["GET /orgs/{org}/hooks/{hook_id}/config"],
+			getWebhookDelivery: ["GET /orgs/{org}/hooks/{hook_id}/deliveries/{delivery_id}"],
+			list: ["GET /organizations"],
+			listAppInstallations: ["GET /orgs/{org}/installations"],
+			listBlockedUsers: ["GET /orgs/{org}/blocks"],
+			listCustomPropertiesValuesForRepos: ["GET /orgs/{org}/properties/values"],
+			listFailedInvitations: ["GET /orgs/{org}/failed_invitations"],
+			listForAuthenticatedUser: ["GET /user/orgs"],
+			listForUser: ["GET /users/{username}/orgs"],
+			listInvitationTeams: ["GET /orgs/{org}/invitations/{invitation_id}/teams"],
+			listMembers: ["GET /orgs/{org}/members"],
+			listMembershipsForAuthenticatedUser: ["GET /user/memberships/orgs"],
+			listOrgRoleTeams: ["GET /orgs/{org}/organization-roles/{role_id}/teams"],
+			listOrgRoleUsers: ["GET /orgs/{org}/organization-roles/{role_id}/users"],
+			listOrgRoles: ["GET /orgs/{org}/organization-roles"],
+			listOrganizationFineGrainedPermissions: ["GET /orgs/{org}/organization-fine-grained-permissions"],
+			listOutsideCollaborators: ["GET /orgs/{org}/outside_collaborators"],
+			listPatGrantRepositories: ["GET /orgs/{org}/personal-access-tokens/{pat_id}/repositories"],
+			listPatGrantRequestRepositories: ["GET /orgs/{org}/personal-access-token-requests/{pat_request_id}/repositories"],
+			listPatGrantRequests: ["GET /orgs/{org}/personal-access-token-requests"],
+			listPatGrants: ["GET /orgs/{org}/personal-access-tokens"],
+			listPendingInvitations: ["GET /orgs/{org}/invitations"],
+			listPublicMembers: ["GET /orgs/{org}/public_members"],
+			listSecurityManagerTeams: ["GET /orgs/{org}/security-managers"],
+			listWebhookDeliveries: ["GET /orgs/{org}/hooks/{hook_id}/deliveries"],
+			listWebhooks: ["GET /orgs/{org}/hooks"],
+			patchCustomOrganizationRole: ["PATCH /orgs/{org}/organization-roles/{role_id}"],
+			pingWebhook: ["POST /orgs/{org}/hooks/{hook_id}/pings"],
+			redeliverWebhookDelivery: ["POST /orgs/{org}/hooks/{hook_id}/deliveries/{delivery_id}/attempts"],
+			removeCustomProperty: ["DELETE /orgs/{org}/properties/schema/{custom_property_name}"],
+			removeMember: ["DELETE /orgs/{org}/members/{username}"],
+			removeMembershipForUser: ["DELETE /orgs/{org}/memberships/{username}"],
+			removeOutsideCollaborator: ["DELETE /orgs/{org}/outside_collaborators/{username}"],
+			removePublicMembershipForAuthenticatedUser: ["DELETE /orgs/{org}/public_members/{username}"],
+			removeSecurityManagerTeam: ["DELETE /orgs/{org}/security-managers/teams/{team_slug}"],
+			reviewPatGrantRequest: ["POST /orgs/{org}/personal-access-token-requests/{pat_request_id}"],
+			reviewPatGrantRequestsInBulk: ["POST /orgs/{org}/personal-access-token-requests"],
+			revokeAllOrgRolesTeam: ["DELETE /orgs/{org}/organization-roles/teams/{team_slug}"],
+			revokeAllOrgRolesUser: ["DELETE /orgs/{org}/organization-roles/users/{username}"],
+			revokeOrgRoleTeam: ["DELETE /orgs/{org}/organization-roles/teams/{team_slug}/{role_id}"],
+			revokeOrgRoleUser: ["DELETE /orgs/{org}/organization-roles/users/{username}/{role_id}"],
+			setMembershipForUser: ["PUT /orgs/{org}/memberships/{username}"],
+			setPublicMembershipForAuthenticatedUser: ["PUT /orgs/{org}/public_members/{username}"],
+			unblockUser: ["DELETE /orgs/{org}/blocks/{username}"],
+			update: ["PATCH /orgs/{org}"],
+			updateMembershipForAuthenticatedUser: ["PATCH /user/memberships/orgs/{org}"],
+			updatePatAccess: ["POST /orgs/{org}/personal-access-tokens/{pat_id}"],
+			updatePatAccesses: ["POST /orgs/{org}/personal-access-tokens"],
+			updateWebhook: ["PATCH /orgs/{org}/hooks/{hook_id}"],
+			updateWebhookConfigForOrg: ["PATCH /orgs/{org}/hooks/{hook_id}/config"]
+		},
+		packages: {
+			deletePackageForAuthenticatedUser: ["DELETE /user/packages/{package_type}/{package_name}"],
+			deletePackageForOrg: ["DELETE /orgs/{org}/packages/{package_type}/{package_name}"],
+			deletePackageForUser: ["DELETE /users/{username}/packages/{package_type}/{package_name}"],
+			deletePackageVersionForAuthenticatedUser: ["DELETE /user/packages/{package_type}/{package_name}/versions/{package_version_id}"],
+			deletePackageVersionForOrg: ["DELETE /orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}"],
+			deletePackageVersionForUser: ["DELETE /users/{username}/packages/{package_type}/{package_name}/versions/{package_version_id}"],
+			getAllPackageVersionsForAPackageOwnedByAnOrg: [
+				"GET /orgs/{org}/packages/{package_type}/{package_name}/versions",
+				{},
+				{ renamed: ["packages", "getAllPackageVersionsForPackageOwnedByOrg"] }
+			],
+			getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser: [
+				"GET /user/packages/{package_type}/{package_name}/versions",
+				{},
+				{ renamed: ["packages", "getAllPackageVersionsForPackageOwnedByAuthenticatedUser"] }
+			],
+			getAllPackageVersionsForPackageOwnedByAuthenticatedUser: ["GET /user/packages/{package_type}/{package_name}/versions"],
+			getAllPackageVersionsForPackageOwnedByOrg: ["GET /orgs/{org}/packages/{package_type}/{package_name}/versions"],
+			getAllPackageVersionsForPackageOwnedByUser: ["GET /users/{username}/packages/{package_type}/{package_name}/versions"],
+			getPackageForAuthenticatedUser: ["GET /user/packages/{package_type}/{package_name}"],
+			getPackageForOrganization: ["GET /orgs/{org}/packages/{package_type}/{package_name}"],
+			getPackageForUser: ["GET /users/{username}/packages/{package_type}/{package_name}"],
+			getPackageVersionForAuthenticatedUser: ["GET /user/packages/{package_type}/{package_name}/versions/{package_version_id}"],
+			getPackageVersionForOrganization: ["GET /orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}"],
+			getPackageVersionForUser: ["GET /users/{username}/packages/{package_type}/{package_name}/versions/{package_version_id}"],
+			listDockerMigrationConflictingPackagesForAuthenticatedUser: ["GET /user/docker/conflicts"],
+			listDockerMigrationConflictingPackagesForOrganization: ["GET /orgs/{org}/docker/conflicts"],
+			listDockerMigrationConflictingPackagesForUser: ["GET /users/{username}/docker/conflicts"],
+			listPackagesForAuthenticatedUser: ["GET /user/packages"],
+			listPackagesForOrganization: ["GET /orgs/{org}/packages"],
+			listPackagesForUser: ["GET /users/{username}/packages"],
+			restorePackageForAuthenticatedUser: ["POST /user/packages/{package_type}/{package_name}/restore{?token}"],
+			restorePackageForOrg: ["POST /orgs/{org}/packages/{package_type}/{package_name}/restore{?token}"],
+			restorePackageForUser: ["POST /users/{username}/packages/{package_type}/{package_name}/restore{?token}"],
+			restorePackageVersionForAuthenticatedUser: ["POST /user/packages/{package_type}/{package_name}/versions/{package_version_id}/restore"],
+			restorePackageVersionForOrg: ["POST /orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}/restore"],
+			restorePackageVersionForUser: ["POST /users/{username}/packages/{package_type}/{package_name}/versions/{package_version_id}/restore"]
+		},
+		projects: {
+			addCollaborator: ["PUT /projects/{project_id}/collaborators/{username}"],
+			createCard: ["POST /projects/columns/{column_id}/cards"],
+			createColumn: ["POST /projects/{project_id}/columns"],
+			createForAuthenticatedUser: ["POST /user/projects"],
+			createForOrg: ["POST /orgs/{org}/projects"],
+			createForRepo: ["POST /repos/{owner}/{repo}/projects"],
+			delete: ["DELETE /projects/{project_id}"],
+			deleteCard: ["DELETE /projects/columns/cards/{card_id}"],
+			deleteColumn: ["DELETE /projects/columns/{column_id}"],
+			get: ["GET /projects/{project_id}"],
+			getCard: ["GET /projects/columns/cards/{card_id}"],
+			getColumn: ["GET /projects/columns/{column_id}"],
+			getPermissionForUser: ["GET /projects/{project_id}/collaborators/{username}/permission"],
+			listCards: ["GET /projects/columns/{column_id}/cards"],
+			listCollaborators: ["GET /projects/{project_id}/collaborators"],
+			listColumns: ["GET /projects/{project_id}/columns"],
+			listForOrg: ["GET /orgs/{org}/projects"],
+			listForRepo: ["GET /repos/{owner}/{repo}/projects"],
+			listForUser: ["GET /users/{username}/projects"],
+			moveCard: ["POST /projects/columns/cards/{card_id}/moves"],
+			moveColumn: ["POST /projects/columns/{column_id}/moves"],
+			removeCollaborator: ["DELETE /projects/{project_id}/collaborators/{username}"],
+			update: ["PATCH /projects/{project_id}"],
+			updateCard: ["PATCH /projects/columns/cards/{card_id}"],
+			updateColumn: ["PATCH /projects/columns/{column_id}"]
+		},
+		pulls: {
+			checkIfMerged: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/merge"],
+			create: ["POST /repos/{owner}/{repo}/pulls"],
+			createReplyForReviewComment: ["POST /repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies"],
+			createReview: ["POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews"],
+			createReviewComment: ["POST /repos/{owner}/{repo}/pulls/{pull_number}/comments"],
+			deletePendingReview: ["DELETE /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}"],
+			deleteReviewComment: ["DELETE /repos/{owner}/{repo}/pulls/comments/{comment_id}"],
+			dismissReview: ["PUT /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/dismissals"],
+			get: ["GET /repos/{owner}/{repo}/pulls/{pull_number}"],
+			getReview: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}"],
+			getReviewComment: ["GET /repos/{owner}/{repo}/pulls/comments/{comment_id}"],
+			list: ["GET /repos/{owner}/{repo}/pulls"],
+			listCommentsForReview: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments"],
+			listCommits: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/commits"],
+			listFiles: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/files"],
+			listRequestedReviewers: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers"],
+			listReviewComments: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/comments"],
+			listReviewCommentsForRepo: ["GET /repos/{owner}/{repo}/pulls/comments"],
+			listReviews: ["GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews"],
+			merge: ["PUT /repos/{owner}/{repo}/pulls/{pull_number}/merge"],
+			removeRequestedReviewers: ["DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers"],
+			requestReviewers: ["POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers"],
+			submitReview: ["POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events"],
+			update: ["PATCH /repos/{owner}/{repo}/pulls/{pull_number}"],
+			updateBranch: ["PUT /repos/{owner}/{repo}/pulls/{pull_number}/update-branch"],
+			updateReview: ["PUT /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}"],
+			updateReviewComment: ["PATCH /repos/{owner}/{repo}/pulls/comments/{comment_id}"]
+		},
+		rateLimit: { get: ["GET /rate_limit"] },
+		reactions: {
+			createForCommitComment: ["POST /repos/{owner}/{repo}/comments/{comment_id}/reactions"],
+			createForIssue: ["POST /repos/{owner}/{repo}/issues/{issue_number}/reactions"],
+			createForIssueComment: ["POST /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions"],
+			createForPullRequestReviewComment: ["POST /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions"],
+			createForRelease: ["POST /repos/{owner}/{repo}/releases/{release_id}/reactions"],
+			createForTeamDiscussionCommentInOrg: ["POST /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions"],
+			createForTeamDiscussionInOrg: ["POST /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions"],
+			deleteForCommitComment: ["DELETE /repos/{owner}/{repo}/comments/{comment_id}/reactions/{reaction_id}"],
+			deleteForIssue: ["DELETE /repos/{owner}/{repo}/issues/{issue_number}/reactions/{reaction_id}"],
+			deleteForIssueComment: ["DELETE /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions/{reaction_id}"],
+			deleteForPullRequestComment: ["DELETE /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions/{reaction_id}"],
+			deleteForRelease: ["DELETE /repos/{owner}/{repo}/releases/{release_id}/reactions/{reaction_id}"],
+			deleteForTeamDiscussion: ["DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions/{reaction_id}"],
+			deleteForTeamDiscussionComment: ["DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions/{reaction_id}"],
+			listForCommitComment: ["GET /repos/{owner}/{repo}/comments/{comment_id}/reactions"],
+			listForIssue: ["GET /repos/{owner}/{repo}/issues/{issue_number}/reactions"],
+			listForIssueComment: ["GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions"],
+			listForPullRequestReviewComment: ["GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions"],
+			listForRelease: ["GET /repos/{owner}/{repo}/releases/{release_id}/reactions"],
+			listForTeamDiscussionCommentInOrg: ["GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions"],
+			listForTeamDiscussionInOrg: ["GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions"]
+		},
+		repos: {
+			acceptInvitation: [
+				"PATCH /user/repository_invitations/{invitation_id}",
+				{},
+				{ renamed: ["repos", "acceptInvitationForAuthenticatedUser"] }
+			],
+			acceptInvitationForAuthenticatedUser: ["PATCH /user/repository_invitations/{invitation_id}"],
+			addAppAccessRestrictions: [
+				"POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+				{},
+				{ mapToData: "apps" }
+			],
+			addCollaborator: ["PUT /repos/{owner}/{repo}/collaborators/{username}"],
+			addStatusCheckContexts: [
+				"POST /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+				{},
+				{ mapToData: "contexts" }
+			],
+			addTeamAccessRestrictions: [
+				"POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+				{},
+				{ mapToData: "teams" }
+			],
+			addUserAccessRestrictions: [
+				"POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+				{},
+				{ mapToData: "users" }
+			],
+			cancelPagesDeployment: ["POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel"],
+			checkAutomatedSecurityFixes: ["GET /repos/{owner}/{repo}/automated-security-fixes"],
+			checkCollaborator: ["GET /repos/{owner}/{repo}/collaborators/{username}"],
+			checkVulnerabilityAlerts: ["GET /repos/{owner}/{repo}/vulnerability-alerts"],
+			codeownersErrors: ["GET /repos/{owner}/{repo}/codeowners/errors"],
+			compareCommits: ["GET /repos/{owner}/{repo}/compare/{base}...{head}"],
+			compareCommitsWithBasehead: ["GET /repos/{owner}/{repo}/compare/{basehead}"],
+			createAutolink: ["POST /repos/{owner}/{repo}/autolinks"],
+			createCommitComment: ["POST /repos/{owner}/{repo}/commits/{commit_sha}/comments"],
+			createCommitSignatureProtection: ["POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures"],
+			createCommitStatus: ["POST /repos/{owner}/{repo}/statuses/{sha}"],
+			createDeployKey: ["POST /repos/{owner}/{repo}/keys"],
+			createDeployment: ["POST /repos/{owner}/{repo}/deployments"],
+			createDeploymentBranchPolicy: ["POST /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies"],
+			createDeploymentProtectionRule: ["POST /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules"],
+			createDeploymentStatus: ["POST /repos/{owner}/{repo}/deployments/{deployment_id}/statuses"],
+			createDispatchEvent: ["POST /repos/{owner}/{repo}/dispatches"],
+			createForAuthenticatedUser: ["POST /user/repos"],
+			createFork: ["POST /repos/{owner}/{repo}/forks"],
+			createInOrg: ["POST /orgs/{org}/repos"],
+			createOrUpdateCustomPropertiesValues: ["PATCH /repos/{owner}/{repo}/properties/values"],
+			createOrUpdateEnvironment: ["PUT /repos/{owner}/{repo}/environments/{environment_name}"],
+			createOrUpdateFileContents: ["PUT /repos/{owner}/{repo}/contents/{path}"],
+			createOrgRuleset: ["POST /orgs/{org}/rulesets"],
+			createPagesDeployment: ["POST /repos/{owner}/{repo}/pages/deployments"],
+			createPagesSite: ["POST /repos/{owner}/{repo}/pages"],
+			createRelease: ["POST /repos/{owner}/{repo}/releases"],
+			createRepoRuleset: ["POST /repos/{owner}/{repo}/rulesets"],
+			createTagProtection: ["POST /repos/{owner}/{repo}/tags/protection"],
+			createUsingTemplate: ["POST /repos/{template_owner}/{template_repo}/generate"],
+			createWebhook: ["POST /repos/{owner}/{repo}/hooks"],
+			declineInvitation: [
+				"DELETE /user/repository_invitations/{invitation_id}",
+				{},
+				{ renamed: ["repos", "declineInvitationForAuthenticatedUser"] }
+			],
+			declineInvitationForAuthenticatedUser: ["DELETE /user/repository_invitations/{invitation_id}"],
+			delete: ["DELETE /repos/{owner}/{repo}"],
+			deleteAccessRestrictions: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions"],
+			deleteAdminBranchProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"],
+			deleteAnEnvironment: ["DELETE /repos/{owner}/{repo}/environments/{environment_name}"],
+			deleteAutolink: ["DELETE /repos/{owner}/{repo}/autolinks/{autolink_id}"],
+			deleteBranchProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection"],
+			deleteCommitComment: ["DELETE /repos/{owner}/{repo}/comments/{comment_id}"],
+			deleteCommitSignatureProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures"],
+			deleteDeployKey: ["DELETE /repos/{owner}/{repo}/keys/{key_id}"],
+			deleteDeployment: ["DELETE /repos/{owner}/{repo}/deployments/{deployment_id}"],
+			deleteDeploymentBranchPolicy: ["DELETE /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}"],
+			deleteFile: ["DELETE /repos/{owner}/{repo}/contents/{path}"],
+			deleteInvitation: ["DELETE /repos/{owner}/{repo}/invitations/{invitation_id}"],
+			deleteOrgRuleset: ["DELETE /orgs/{org}/rulesets/{ruleset_id}"],
+			deletePagesSite: ["DELETE /repos/{owner}/{repo}/pages"],
+			deletePullRequestReviewProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"],
+			deleteRelease: ["DELETE /repos/{owner}/{repo}/releases/{release_id}"],
+			deleteReleaseAsset: ["DELETE /repos/{owner}/{repo}/releases/assets/{asset_id}"],
+			deleteRepoRuleset: ["DELETE /repos/{owner}/{repo}/rulesets/{ruleset_id}"],
+			deleteTagProtection: ["DELETE /repos/{owner}/{repo}/tags/protection/{tag_protection_id}"],
+			deleteWebhook: ["DELETE /repos/{owner}/{repo}/hooks/{hook_id}"],
+			disableAutomatedSecurityFixes: ["DELETE /repos/{owner}/{repo}/automated-security-fixes"],
+			disableDeploymentProtectionRule: ["DELETE /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}"],
+			disablePrivateVulnerabilityReporting: ["DELETE /repos/{owner}/{repo}/private-vulnerability-reporting"],
+			disableVulnerabilityAlerts: ["DELETE /repos/{owner}/{repo}/vulnerability-alerts"],
+			downloadArchive: [
+				"GET /repos/{owner}/{repo}/zipball/{ref}",
+				{},
+				{ renamed: ["repos", "downloadZipballArchive"] }
+			],
+			downloadTarballArchive: ["GET /repos/{owner}/{repo}/tarball/{ref}"],
+			downloadZipballArchive: ["GET /repos/{owner}/{repo}/zipball/{ref}"],
+			enableAutomatedSecurityFixes: ["PUT /repos/{owner}/{repo}/automated-security-fixes"],
+			enablePrivateVulnerabilityReporting: ["PUT /repos/{owner}/{repo}/private-vulnerability-reporting"],
+			enableVulnerabilityAlerts: ["PUT /repos/{owner}/{repo}/vulnerability-alerts"],
+			generateReleaseNotes: ["POST /repos/{owner}/{repo}/releases/generate-notes"],
+			get: ["GET /repos/{owner}/{repo}"],
+			getAccessRestrictions: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions"],
+			getAdminBranchProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"],
+			getAllDeploymentProtectionRules: ["GET /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules"],
+			getAllEnvironments: ["GET /repos/{owner}/{repo}/environments"],
+			getAllStatusCheckContexts: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts"],
+			getAllTopics: ["GET /repos/{owner}/{repo}/topics"],
+			getAppsWithAccessToProtectedBranch: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps"],
+			getAutolink: ["GET /repos/{owner}/{repo}/autolinks/{autolink_id}"],
+			getBranch: ["GET /repos/{owner}/{repo}/branches/{branch}"],
+			getBranchProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection"],
+			getBranchRules: ["GET /repos/{owner}/{repo}/rules/branches/{branch}"],
+			getClones: ["GET /repos/{owner}/{repo}/traffic/clones"],
+			getCodeFrequencyStats: ["GET /repos/{owner}/{repo}/stats/code_frequency"],
+			getCollaboratorPermissionLevel: ["GET /repos/{owner}/{repo}/collaborators/{username}/permission"],
+			getCombinedStatusForRef: ["GET /repos/{owner}/{repo}/commits/{ref}/status"],
+			getCommit: ["GET /repos/{owner}/{repo}/commits/{ref}"],
+			getCommitActivityStats: ["GET /repos/{owner}/{repo}/stats/commit_activity"],
+			getCommitComment: ["GET /repos/{owner}/{repo}/comments/{comment_id}"],
+			getCommitSignatureProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures"],
+			getCommunityProfileMetrics: ["GET /repos/{owner}/{repo}/community/profile"],
+			getContent: ["GET /repos/{owner}/{repo}/contents/{path}"],
+			getContributorsStats: ["GET /repos/{owner}/{repo}/stats/contributors"],
+			getCustomDeploymentProtectionRule: ["GET /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}"],
+			getCustomPropertiesValues: ["GET /repos/{owner}/{repo}/properties/values"],
+			getDeployKey: ["GET /repos/{owner}/{repo}/keys/{key_id}"],
+			getDeployment: ["GET /repos/{owner}/{repo}/deployments/{deployment_id}"],
+			getDeploymentBranchPolicy: ["GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}"],
+			getDeploymentStatus: ["GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses/{status_id}"],
+			getEnvironment: ["GET /repos/{owner}/{repo}/environments/{environment_name}"],
+			getLatestPagesBuild: ["GET /repos/{owner}/{repo}/pages/builds/latest"],
+			getLatestRelease: ["GET /repos/{owner}/{repo}/releases/latest"],
+			getOrgRuleSuite: ["GET /orgs/{org}/rulesets/rule-suites/{rule_suite_id}"],
+			getOrgRuleSuites: ["GET /orgs/{org}/rulesets/rule-suites"],
+			getOrgRuleset: ["GET /orgs/{org}/rulesets/{ruleset_id}"],
+			getOrgRulesets: ["GET /orgs/{org}/rulesets"],
+			getPages: ["GET /repos/{owner}/{repo}/pages"],
+			getPagesBuild: ["GET /repos/{owner}/{repo}/pages/builds/{build_id}"],
+			getPagesDeployment: ["GET /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}"],
+			getPagesHealthCheck: ["GET /repos/{owner}/{repo}/pages/health"],
+			getParticipationStats: ["GET /repos/{owner}/{repo}/stats/participation"],
+			getPullRequestReviewProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"],
+			getPunchCardStats: ["GET /repos/{owner}/{repo}/stats/punch_card"],
+			getReadme: ["GET /repos/{owner}/{repo}/readme"],
+			getReadmeInDirectory: ["GET /repos/{owner}/{repo}/readme/{dir}"],
+			getRelease: ["GET /repos/{owner}/{repo}/releases/{release_id}"],
+			getReleaseAsset: ["GET /repos/{owner}/{repo}/releases/assets/{asset_id}"],
+			getReleaseByTag: ["GET /repos/{owner}/{repo}/releases/tags/{tag}"],
+			getRepoRuleSuite: ["GET /repos/{owner}/{repo}/rulesets/rule-suites/{rule_suite_id}"],
+			getRepoRuleSuites: ["GET /repos/{owner}/{repo}/rulesets/rule-suites"],
+			getRepoRuleset: ["GET /repos/{owner}/{repo}/rulesets/{ruleset_id}"],
+			getRepoRulesets: ["GET /repos/{owner}/{repo}/rulesets"],
+			getStatusChecksProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks"],
+			getTeamsWithAccessToProtectedBranch: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams"],
+			getTopPaths: ["GET /repos/{owner}/{repo}/traffic/popular/paths"],
+			getTopReferrers: ["GET /repos/{owner}/{repo}/traffic/popular/referrers"],
+			getUsersWithAccessToProtectedBranch: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users"],
+			getViews: ["GET /repos/{owner}/{repo}/traffic/views"],
+			getWebhook: ["GET /repos/{owner}/{repo}/hooks/{hook_id}"],
+			getWebhookConfigForRepo: ["GET /repos/{owner}/{repo}/hooks/{hook_id}/config"],
+			getWebhookDelivery: ["GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}"],
+			listActivities: ["GET /repos/{owner}/{repo}/activity"],
+			listAutolinks: ["GET /repos/{owner}/{repo}/autolinks"],
+			listBranches: ["GET /repos/{owner}/{repo}/branches"],
+			listBranchesForHeadCommit: ["GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head"],
+			listCollaborators: ["GET /repos/{owner}/{repo}/collaborators"],
+			listCommentsForCommit: ["GET /repos/{owner}/{repo}/commits/{commit_sha}/comments"],
+			listCommitCommentsForRepo: ["GET /repos/{owner}/{repo}/comments"],
+			listCommitStatusesForRef: ["GET /repos/{owner}/{repo}/commits/{ref}/statuses"],
+			listCommits: ["GET /repos/{owner}/{repo}/commits"],
+			listContributors: ["GET /repos/{owner}/{repo}/contributors"],
+			listCustomDeploymentRuleIntegrations: ["GET /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps"],
+			listDeployKeys: ["GET /repos/{owner}/{repo}/keys"],
+			listDeploymentBranchPolicies: ["GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies"],
+			listDeploymentStatuses: ["GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses"],
+			listDeployments: ["GET /repos/{owner}/{repo}/deployments"],
+			listForAuthenticatedUser: ["GET /user/repos"],
+			listForOrg: ["GET /orgs/{org}/repos"],
+			listForUser: ["GET /users/{username}/repos"],
+			listForks: ["GET /repos/{owner}/{repo}/forks"],
+			listInvitations: ["GET /repos/{owner}/{repo}/invitations"],
+			listInvitationsForAuthenticatedUser: ["GET /user/repository_invitations"],
+			listLanguages: ["GET /repos/{owner}/{repo}/languages"],
+			listPagesBuilds: ["GET /repos/{owner}/{repo}/pages/builds"],
+			listPublic: ["GET /repositories"],
+			listPullRequestsAssociatedWithCommit: ["GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls"],
+			listReleaseAssets: ["GET /repos/{owner}/{repo}/releases/{release_id}/assets"],
+			listReleases: ["GET /repos/{owner}/{repo}/releases"],
+			listTagProtection: ["GET /repos/{owner}/{repo}/tags/protection"],
+			listTags: ["GET /repos/{owner}/{repo}/tags"],
+			listTeams: ["GET /repos/{owner}/{repo}/teams"],
+			listWebhookDeliveries: ["GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries"],
+			listWebhooks: ["GET /repos/{owner}/{repo}/hooks"],
+			merge: ["POST /repos/{owner}/{repo}/merges"],
+			mergeUpstream: ["POST /repos/{owner}/{repo}/merge-upstream"],
+			pingWebhook: ["POST /repos/{owner}/{repo}/hooks/{hook_id}/pings"],
+			redeliverWebhookDelivery: ["POST /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts"],
+			removeAppAccessRestrictions: [
+				"DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+				{},
+				{ mapToData: "apps" }
+			],
+			removeCollaborator: ["DELETE /repos/{owner}/{repo}/collaborators/{username}"],
+			removeStatusCheckContexts: [
+				"DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+				{},
+				{ mapToData: "contexts" }
+			],
+			removeStatusCheckProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks"],
+			removeTeamAccessRestrictions: [
+				"DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+				{},
+				{ mapToData: "teams" }
+			],
+			removeUserAccessRestrictions: [
+				"DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+				{},
+				{ mapToData: "users" }
+			],
+			renameBranch: ["POST /repos/{owner}/{repo}/branches/{branch}/rename"],
+			replaceAllTopics: ["PUT /repos/{owner}/{repo}/topics"],
+			requestPagesBuild: ["POST /repos/{owner}/{repo}/pages/builds"],
+			setAdminBranchProtection: ["POST /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"],
+			setAppAccessRestrictions: [
+				"PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+				{},
+				{ mapToData: "apps" }
+			],
+			setStatusCheckContexts: [
+				"PUT /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+				{},
+				{ mapToData: "contexts" }
+			],
+			setTeamAccessRestrictions: [
+				"PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+				{},
+				{ mapToData: "teams" }
+			],
+			setUserAccessRestrictions: [
+				"PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+				{},
+				{ mapToData: "users" }
+			],
+			testPushWebhook: ["POST /repos/{owner}/{repo}/hooks/{hook_id}/tests"],
+			transfer: ["POST /repos/{owner}/{repo}/transfer"],
+			update: ["PATCH /repos/{owner}/{repo}"],
+			updateBranchProtection: ["PUT /repos/{owner}/{repo}/branches/{branch}/protection"],
+			updateCommitComment: ["PATCH /repos/{owner}/{repo}/comments/{comment_id}"],
+			updateDeploymentBranchPolicy: ["PUT /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}"],
+			updateInformationAboutPagesSite: ["PUT /repos/{owner}/{repo}/pages"],
+			updateInvitation: ["PATCH /repos/{owner}/{repo}/invitations/{invitation_id}"],
+			updateOrgRuleset: ["PUT /orgs/{org}/rulesets/{ruleset_id}"],
+			updatePullRequestReviewProtection: ["PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"],
+			updateRelease: ["PATCH /repos/{owner}/{repo}/releases/{release_id}"],
+			updateReleaseAsset: ["PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}"],
+			updateRepoRuleset: ["PUT /repos/{owner}/{repo}/rulesets/{ruleset_id}"],
+			updateStatusCheckPotection: [
+				"PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+				{},
+				{ renamed: ["repos", "updateStatusCheckProtection"] }
+			],
+			updateStatusCheckProtection: ["PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks"],
+			updateWebhook: ["PATCH /repos/{owner}/{repo}/hooks/{hook_id}"],
+			updateWebhookConfigForRepo: ["PATCH /repos/{owner}/{repo}/hooks/{hook_id}/config"],
+			uploadReleaseAsset: ["POST /repos/{owner}/{repo}/releases/{release_id}/assets{?name,label}", { baseUrl: "https://uploads.github.com" }]
+		},
+		search: {
+			code: ["GET /search/code"],
+			commits: ["GET /search/commits"],
+			issuesAndPullRequests: ["GET /search/issues"],
+			labels: ["GET /search/labels"],
+			repos: ["GET /search/repositories"],
+			topics: ["GET /search/topics"],
+			users: ["GET /search/users"]
+		},
+		secretScanning: {
+			getAlert: ["GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}"],
+			listAlertsForEnterprise: ["GET /enterprises/{enterprise}/secret-scanning/alerts"],
+			listAlertsForOrg: ["GET /orgs/{org}/secret-scanning/alerts"],
+			listAlertsForRepo: ["GET /repos/{owner}/{repo}/secret-scanning/alerts"],
+			listLocationsForAlert: ["GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations"],
+			updateAlert: ["PATCH /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}"]
+		},
+		securityAdvisories: {
+			createFork: ["POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/forks"],
+			createPrivateVulnerabilityReport: ["POST /repos/{owner}/{repo}/security-advisories/reports"],
+			createRepositoryAdvisory: ["POST /repos/{owner}/{repo}/security-advisories"],
+			createRepositoryAdvisoryCveRequest: ["POST /repos/{owner}/{repo}/security-advisories/{ghsa_id}/cve"],
+			getGlobalAdvisory: ["GET /advisories/{ghsa_id}"],
+			getRepositoryAdvisory: ["GET /repos/{owner}/{repo}/security-advisories/{ghsa_id}"],
+			listGlobalAdvisories: ["GET /advisories"],
+			listOrgRepositoryAdvisories: ["GET /orgs/{org}/security-advisories"],
+			listRepositoryAdvisories: ["GET /repos/{owner}/{repo}/security-advisories"],
+			updateRepositoryAdvisory: ["PATCH /repos/{owner}/{repo}/security-advisories/{ghsa_id}"]
+		},
+		teams: {
+			addOrUpdateMembershipForUserInOrg: ["PUT /orgs/{org}/teams/{team_slug}/memberships/{username}"],
+			addOrUpdateProjectPermissionsInOrg: ["PUT /orgs/{org}/teams/{team_slug}/projects/{project_id}"],
+			addOrUpdateRepoPermissionsInOrg: ["PUT /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}"],
+			checkPermissionsForProjectInOrg: ["GET /orgs/{org}/teams/{team_slug}/projects/{project_id}"],
+			checkPermissionsForRepoInOrg: ["GET /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}"],
+			create: ["POST /orgs/{org}/teams"],
+			createDiscussionCommentInOrg: ["POST /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments"],
+			createDiscussionInOrg: ["POST /orgs/{org}/teams/{team_slug}/discussions"],
+			deleteDiscussionCommentInOrg: ["DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}"],
+			deleteDiscussionInOrg: ["DELETE /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}"],
+			deleteInOrg: ["DELETE /orgs/{org}/teams/{team_slug}"],
+			getByName: ["GET /orgs/{org}/teams/{team_slug}"],
+			getDiscussionCommentInOrg: ["GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}"],
+			getDiscussionInOrg: ["GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}"],
+			getMembershipForUserInOrg: ["GET /orgs/{org}/teams/{team_slug}/memberships/{username}"],
+			list: ["GET /orgs/{org}/teams"],
+			listChildInOrg: ["GET /orgs/{org}/teams/{team_slug}/teams"],
+			listDiscussionCommentsInOrg: ["GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments"],
+			listDiscussionsInOrg: ["GET /orgs/{org}/teams/{team_slug}/discussions"],
+			listForAuthenticatedUser: ["GET /user/teams"],
+			listMembersInOrg: ["GET /orgs/{org}/teams/{team_slug}/members"],
+			listPendingInvitationsInOrg: ["GET /orgs/{org}/teams/{team_slug}/invitations"],
+			listProjectsInOrg: ["GET /orgs/{org}/teams/{team_slug}/projects"],
+			listReposInOrg: ["GET /orgs/{org}/teams/{team_slug}/repos"],
+			removeMembershipForUserInOrg: ["DELETE /orgs/{org}/teams/{team_slug}/memberships/{username}"],
+			removeProjectInOrg: ["DELETE /orgs/{org}/teams/{team_slug}/projects/{project_id}"],
+			removeRepoInOrg: ["DELETE /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}"],
+			updateDiscussionCommentInOrg: ["PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}"],
+			updateDiscussionInOrg: ["PATCH /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}"],
+			updateInOrg: ["PATCH /orgs/{org}/teams/{team_slug}"]
+		},
+		users: {
+			addEmailForAuthenticated: [
+				"POST /user/emails",
+				{},
+				{ renamed: ["users", "addEmailForAuthenticatedUser"] }
+			],
+			addEmailForAuthenticatedUser: ["POST /user/emails"],
+			addSocialAccountForAuthenticatedUser: ["POST /user/social_accounts"],
+			block: ["PUT /user/blocks/{username}"],
+			checkBlocked: ["GET /user/blocks/{username}"],
+			checkFollowingForUser: ["GET /users/{username}/following/{target_user}"],
+			checkPersonIsFollowedByAuthenticated: ["GET /user/following/{username}"],
+			createGpgKeyForAuthenticated: [
+				"POST /user/gpg_keys",
+				{},
+				{ renamed: ["users", "createGpgKeyForAuthenticatedUser"] }
+			],
+			createGpgKeyForAuthenticatedUser: ["POST /user/gpg_keys"],
+			createPublicSshKeyForAuthenticated: [
+				"POST /user/keys",
+				{},
+				{ renamed: ["users", "createPublicSshKeyForAuthenticatedUser"] }
+			],
+			createPublicSshKeyForAuthenticatedUser: ["POST /user/keys"],
+			createSshSigningKeyForAuthenticatedUser: ["POST /user/ssh_signing_keys"],
+			deleteEmailForAuthenticated: [
+				"DELETE /user/emails",
+				{},
+				{ renamed: ["users", "deleteEmailForAuthenticatedUser"] }
+			],
+			deleteEmailForAuthenticatedUser: ["DELETE /user/emails"],
+			deleteGpgKeyForAuthenticated: [
+				"DELETE /user/gpg_keys/{gpg_key_id}",
+				{},
+				{ renamed: ["users", "deleteGpgKeyForAuthenticatedUser"] }
+			],
+			deleteGpgKeyForAuthenticatedUser: ["DELETE /user/gpg_keys/{gpg_key_id}"],
+			deletePublicSshKeyForAuthenticated: [
+				"DELETE /user/keys/{key_id}",
+				{},
+				{ renamed: ["users", "deletePublicSshKeyForAuthenticatedUser"] }
+			],
+			deletePublicSshKeyForAuthenticatedUser: ["DELETE /user/keys/{key_id}"],
+			deleteSocialAccountForAuthenticatedUser: ["DELETE /user/social_accounts"],
+			deleteSshSigningKeyForAuthenticatedUser: ["DELETE /user/ssh_signing_keys/{ssh_signing_key_id}"],
+			follow: ["PUT /user/following/{username}"],
+			getAuthenticated: ["GET /user"],
+			getByUsername: ["GET /users/{username}"],
+			getContextForUser: ["GET /users/{username}/hovercard"],
+			getGpgKeyForAuthenticated: [
+				"GET /user/gpg_keys/{gpg_key_id}",
+				{},
+				{ renamed: ["users", "getGpgKeyForAuthenticatedUser"] }
+			],
+			getGpgKeyForAuthenticatedUser: ["GET /user/gpg_keys/{gpg_key_id}"],
+			getPublicSshKeyForAuthenticated: [
+				"GET /user/keys/{key_id}",
+				{},
+				{ renamed: ["users", "getPublicSshKeyForAuthenticatedUser"] }
+			],
+			getPublicSshKeyForAuthenticatedUser: ["GET /user/keys/{key_id}"],
+			getSshSigningKeyForAuthenticatedUser: ["GET /user/ssh_signing_keys/{ssh_signing_key_id}"],
+			list: ["GET /users"],
+			listBlockedByAuthenticated: [
+				"GET /user/blocks",
+				{},
+				{ renamed: ["users", "listBlockedByAuthenticatedUser"] }
+			],
+			listBlockedByAuthenticatedUser: ["GET /user/blocks"],
+			listEmailsForAuthenticated: [
+				"GET /user/emails",
+				{},
+				{ renamed: ["users", "listEmailsForAuthenticatedUser"] }
+			],
+			listEmailsForAuthenticatedUser: ["GET /user/emails"],
+			listFollowedByAuthenticated: [
+				"GET /user/following",
+				{},
+				{ renamed: ["users", "listFollowedByAuthenticatedUser"] }
+			],
+			listFollowedByAuthenticatedUser: ["GET /user/following"],
+			listFollowersForAuthenticatedUser: ["GET /user/followers"],
+			listFollowersForUser: ["GET /users/{username}/followers"],
+			listFollowingForUser: ["GET /users/{username}/following"],
+			listGpgKeysForAuthenticated: [
+				"GET /user/gpg_keys",
+				{},
+				{ renamed: ["users", "listGpgKeysForAuthenticatedUser"] }
+			],
+			listGpgKeysForAuthenticatedUser: ["GET /user/gpg_keys"],
+			listGpgKeysForUser: ["GET /users/{username}/gpg_keys"],
+			listPublicEmailsForAuthenticated: [
+				"GET /user/public_emails",
+				{},
+				{ renamed: ["users", "listPublicEmailsForAuthenticatedUser"] }
+			],
+			listPublicEmailsForAuthenticatedUser: ["GET /user/public_emails"],
+			listPublicKeysForUser: ["GET /users/{username}/keys"],
+			listPublicSshKeysForAuthenticated: [
+				"GET /user/keys",
+				{},
+				{ renamed: ["users", "listPublicSshKeysForAuthenticatedUser"] }
+			],
+			listPublicSshKeysForAuthenticatedUser: ["GET /user/keys"],
+			listSocialAccountsForAuthenticatedUser: ["GET /user/social_accounts"],
+			listSocialAccountsForUser: ["GET /users/{username}/social_accounts"],
+			listSshSigningKeysForAuthenticatedUser: ["GET /user/ssh_signing_keys"],
+			listSshSigningKeysForUser: ["GET /users/{username}/ssh_signing_keys"],
+			setPrimaryEmailVisibilityForAuthenticated: [
+				"PATCH /user/email/visibility",
+				{},
+				{ renamed: ["users", "setPrimaryEmailVisibilityForAuthenticatedUser"] }
+			],
+			setPrimaryEmailVisibilityForAuthenticatedUser: ["PATCH /user/email/visibility"],
+			unblock: ["DELETE /user/blocks/{username}"],
+			unfollow: ["DELETE /user/following/{username}"],
+			updateAuthenticated: ["PATCH /user"]
+		}
+	};
+	var endpointMethodsMap = /* @__PURE__ */ new Map();
+	for (const [scope, endpoints] of Object.entries(endpoints_default)) for (const [methodName, endpoint$1] of Object.entries(endpoints)) {
+		const [route, defaults, decorations] = endpoint$1;
+		const [method, url] = route.split(/ /);
+		const endpointDefaults = Object.assign({
+			method,
+			url
+		}, defaults);
+		if (!endpointMethodsMap.has(scope)) endpointMethodsMap.set(scope, /* @__PURE__ */ new Map());
+		endpointMethodsMap.get(scope).set(methodName, {
+			scope,
+			methodName,
+			endpointDefaults,
+			decorations
+		});
+	}
+	var handler = {
+		has({ scope }, methodName) {
+			return endpointMethodsMap.get(scope).has(methodName);
+		},
+		getOwnPropertyDescriptor(target, methodName) {
+			return {
+				value: this.get(target, methodName),
+				configurable: true,
+				writable: true,
+				enumerable: true
+			};
+		},
+		defineProperty(target, methodName, descriptor) {
+			Object.defineProperty(target.cache, methodName, descriptor);
+			return true;
+		},
+		deleteProperty(target, methodName) {
+			delete target.cache[methodName];
+			return true;
+		},
+		ownKeys({ scope }) {
+			return [...endpointMethodsMap.get(scope).keys()];
+		},
+		set(target, methodName, value) {
+			return target.cache[methodName] = value;
+		},
+		get({ octokit, scope, cache }, methodName) {
+			if (cache[methodName]) return cache[methodName];
+			const method = endpointMethodsMap.get(scope).get(methodName);
+			if (!method) return;
+			const { endpointDefaults, decorations } = method;
+			if (decorations) cache[methodName] = decorate(octokit, scope, methodName, endpointDefaults, decorations);
+			else cache[methodName] = octokit.request.defaults(endpointDefaults);
+			return cache[methodName];
+		}
+	};
+	function endpointsToMethods(octokit) {
+		const newMethods = {};
+		for (const scope of endpointMethodsMap.keys()) newMethods[scope] = new Proxy({
+			octokit,
+			scope,
+			cache: {}
+		}, handler);
+		return newMethods;
+	}
+	function decorate(octokit, scope, methodName, defaults, decorations) {
+		const requestWithDefaults = octokit.request.defaults(defaults);
+		function withDecorations(...args) {
+			let options = requestWithDefaults.endpoint.merge(...args);
+			if (decorations.mapToData) {
+				options = Object.assign({}, options, {
+					data: options[decorations.mapToData],
+					[decorations.mapToData]: void 0
+				});
+				return requestWithDefaults(options);
+			}
+			if (decorations.renamed) {
+				const [newScope, newMethodName] = decorations.renamed;
+				octokit.log.warn(`octokit.${scope}.${methodName}() has been renamed to octokit.${newScope}.${newMethodName}()`);
+			}
+			if (decorations.deprecated) octokit.log.warn(decorations.deprecated);
+			if (decorations.renamedParameters) {
+				const options2 = requestWithDefaults.endpoint.merge(...args);
+				for (const [name, alias] of Object.entries(decorations.renamedParameters)) if (name in options2) {
+					octokit.log.warn(`"${name}" parameter is deprecated for "octokit.${scope}.${methodName}()". Use "${alias}" instead`);
+					if (!(alias in options2)) options2[alias] = options2[name];
+					delete options2[name];
+				}
+				return requestWithDefaults(options2);
+			}
+			return requestWithDefaults(...args);
+		}
+		return Object.assign(withDecorations, requestWithDefaults);
+	}
+	function restEndpointMethods(octokit) {
+		return { rest: endpointsToMethods(octokit) };
+	}
+	restEndpointMethods.VERSION = VERSION$1;
+	function legacyRestEndpointMethods(octokit) {
+		const api$1 = endpointsToMethods(octokit);
+		return {
+			...api$1,
+			rest: api$1
+		};
+	}
+	legacyRestEndpointMethods.VERSION = VERSION$1;
+}) });
+
+//#endregion
+//#region node_modules/.deno/@octokit+plugin-paginate-rest@9.2.2/node_modules/@octokit/plugin-paginate-rest/dist-node/index.js
+var require_dist_node = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@octokit+plugin-paginate-rest@9.2.2/node_modules/@octokit/plugin-paginate-rest/dist-node/index.js": ((exports, module) => {
+	var __defProp = Object.defineProperty;
+	var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+	var __getOwnPropNames = Object.getOwnPropertyNames;
+	var __hasOwnProp = Object.prototype.hasOwnProperty;
+	var __export = (target, all) => {
+		for (var name in all) __defProp(target, name, {
+			get: all[name],
+			enumerable: true
+		});
+	};
+	var __copyProps = (to, from, except, desc) => {
+		if (from && typeof from === "object" || typeof from === "function") {
+			for (let key of __getOwnPropNames(from)) if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+				get: () => from[key],
+				enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+			});
+		}
+		return to;
+	};
+	var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+	var dist_src_exports = {};
+	__export(dist_src_exports, {
+		composePaginateRest: () => composePaginateRest,
+		isPaginatingEndpoint: () => isPaginatingEndpoint,
+		paginateRest: () => paginateRest,
+		paginatingEndpoints: () => paginatingEndpoints
+	});
+	module.exports = __toCommonJS(dist_src_exports);
+	var VERSION = "9.2.2";
+	function normalizePaginatedListResponse(response) {
+		if (!response.data) return {
+			...response,
+			data: []
+		};
+		if (!("total_count" in response.data && !("url" in response.data))) return response;
+		const incompleteResults = response.data.incomplete_results;
+		const repositorySelection = response.data.repository_selection;
+		const totalCount = response.data.total_count;
+		delete response.data.incomplete_results;
+		delete response.data.repository_selection;
+		delete response.data.total_count;
+		const namespaceKey = Object.keys(response.data)[0];
+		response.data = response.data[namespaceKey];
+		if (typeof incompleteResults !== "undefined") response.data.incomplete_results = incompleteResults;
+		if (typeof repositorySelection !== "undefined") response.data.repository_selection = repositorySelection;
+		response.data.total_count = totalCount;
+		return response;
+	}
+	function iterator(octokit, route, parameters) {
+		const options = typeof route === "function" ? route.endpoint(parameters) : octokit.request.endpoint(route, parameters);
+		const requestMethod = typeof route === "function" ? route : octokit.request;
+		const method = options.method;
+		const headers = options.headers;
+		let url = options.url;
+		return { [Symbol.asyncIterator]: () => ({ async next() {
+			if (!url) return { done: true };
+			try {
+				const response = await requestMethod({
+					method,
+					url,
+					headers
+				});
+				const normalizedResponse = normalizePaginatedListResponse(response);
+				url = ((normalizedResponse.headers.link || "").match(/<([^<>]+)>;\s*rel="next"/) || [])[1];
+				return { value: normalizedResponse };
+			} catch (error$1) {
+				if (error$1.status !== 409) throw error$1;
+				url = "";
+				return { value: {
+					status: 200,
+					headers: {},
+					data: []
+				} };
+			}
+		} }) };
+	}
+	function paginate(octokit, route, parameters, mapFn) {
+		if (typeof parameters === "function") {
+			mapFn = parameters;
+			parameters = void 0;
+		}
+		return gather(octokit, [], iterator(octokit, route, parameters)[Symbol.asyncIterator](), mapFn);
+	}
+	function gather(octokit, results, iterator2, mapFn) {
+		return iterator2.next().then((result) => {
+			if (result.done) return results;
+			let earlyExit = false;
+			function done() {
+				earlyExit = true;
+			}
+			results = results.concat(mapFn ? mapFn(result.value, done) : result.value.data);
+			if (earlyExit) return results;
+			return gather(octokit, results, iterator2, mapFn);
+		});
+	}
+	var composePaginateRest = Object.assign(paginate, { iterator });
+	var paginatingEndpoints = [
+		"GET /advisories",
+		"GET /app/hook/deliveries",
+		"GET /app/installation-requests",
+		"GET /app/installations",
+		"GET /assignments/{assignment_id}/accepted_assignments",
+		"GET /classrooms",
+		"GET /classrooms/{classroom_id}/assignments",
+		"GET /enterprises/{enterprise}/dependabot/alerts",
+		"GET /enterprises/{enterprise}/secret-scanning/alerts",
+		"GET /events",
+		"GET /gists",
+		"GET /gists/public",
+		"GET /gists/starred",
+		"GET /gists/{gist_id}/comments",
+		"GET /gists/{gist_id}/commits",
+		"GET /gists/{gist_id}/forks",
+		"GET /installation/repositories",
+		"GET /issues",
+		"GET /licenses",
+		"GET /marketplace_listing/plans",
+		"GET /marketplace_listing/plans/{plan_id}/accounts",
+		"GET /marketplace_listing/stubbed/plans",
+		"GET /marketplace_listing/stubbed/plans/{plan_id}/accounts",
+		"GET /networks/{owner}/{repo}/events",
+		"GET /notifications",
+		"GET /organizations",
+		"GET /orgs/{org}/actions/cache/usage-by-repository",
+		"GET /orgs/{org}/actions/permissions/repositories",
+		"GET /orgs/{org}/actions/runners",
+		"GET /orgs/{org}/actions/secrets",
+		"GET /orgs/{org}/actions/secrets/{secret_name}/repositories",
+		"GET /orgs/{org}/actions/variables",
+		"GET /orgs/{org}/actions/variables/{name}/repositories",
+		"GET /orgs/{org}/blocks",
+		"GET /orgs/{org}/code-scanning/alerts",
+		"GET /orgs/{org}/codespaces",
+		"GET /orgs/{org}/codespaces/secrets",
+		"GET /orgs/{org}/codespaces/secrets/{secret_name}/repositories",
+		"GET /orgs/{org}/copilot/billing/seats",
+		"GET /orgs/{org}/dependabot/alerts",
+		"GET /orgs/{org}/dependabot/secrets",
+		"GET /orgs/{org}/dependabot/secrets/{secret_name}/repositories",
+		"GET /orgs/{org}/events",
+		"GET /orgs/{org}/failed_invitations",
+		"GET /orgs/{org}/hooks",
+		"GET /orgs/{org}/hooks/{hook_id}/deliveries",
+		"GET /orgs/{org}/installations",
+		"GET /orgs/{org}/invitations",
+		"GET /orgs/{org}/invitations/{invitation_id}/teams",
+		"GET /orgs/{org}/issues",
+		"GET /orgs/{org}/members",
+		"GET /orgs/{org}/members/{username}/codespaces",
+		"GET /orgs/{org}/migrations",
+		"GET /orgs/{org}/migrations/{migration_id}/repositories",
+		"GET /orgs/{org}/organization-roles/{role_id}/teams",
+		"GET /orgs/{org}/organization-roles/{role_id}/users",
+		"GET /orgs/{org}/outside_collaborators",
+		"GET /orgs/{org}/packages",
+		"GET /orgs/{org}/packages/{package_type}/{package_name}/versions",
+		"GET /orgs/{org}/personal-access-token-requests",
+		"GET /orgs/{org}/personal-access-token-requests/{pat_request_id}/repositories",
+		"GET /orgs/{org}/personal-access-tokens",
+		"GET /orgs/{org}/personal-access-tokens/{pat_id}/repositories",
+		"GET /orgs/{org}/projects",
+		"GET /orgs/{org}/properties/values",
+		"GET /orgs/{org}/public_members",
+		"GET /orgs/{org}/repos",
+		"GET /orgs/{org}/rulesets",
+		"GET /orgs/{org}/rulesets/rule-suites",
+		"GET /orgs/{org}/secret-scanning/alerts",
+		"GET /orgs/{org}/security-advisories",
+		"GET /orgs/{org}/teams",
+		"GET /orgs/{org}/teams/{team_slug}/discussions",
+		"GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments",
+		"GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions",
+		"GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions",
+		"GET /orgs/{org}/teams/{team_slug}/invitations",
+		"GET /orgs/{org}/teams/{team_slug}/members",
+		"GET /orgs/{org}/teams/{team_slug}/projects",
+		"GET /orgs/{org}/teams/{team_slug}/repos",
+		"GET /orgs/{org}/teams/{team_slug}/teams",
+		"GET /projects/columns/{column_id}/cards",
+		"GET /projects/{project_id}/collaborators",
+		"GET /projects/{project_id}/columns",
+		"GET /repos/{owner}/{repo}/actions/artifacts",
+		"GET /repos/{owner}/{repo}/actions/caches",
+		"GET /repos/{owner}/{repo}/actions/organization-secrets",
+		"GET /repos/{owner}/{repo}/actions/organization-variables",
+		"GET /repos/{owner}/{repo}/actions/runners",
+		"GET /repos/{owner}/{repo}/actions/runs",
+		"GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts",
+		"GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs",
+		"GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs",
+		"GET /repos/{owner}/{repo}/actions/secrets",
+		"GET /repos/{owner}/{repo}/actions/variables",
+		"GET /repos/{owner}/{repo}/actions/workflows",
+		"GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
+		"GET /repos/{owner}/{repo}/activity",
+		"GET /repos/{owner}/{repo}/assignees",
+		"GET /repos/{owner}/{repo}/branches",
+		"GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations",
+		"GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs",
+		"GET /repos/{owner}/{repo}/code-scanning/alerts",
+		"GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances",
+		"GET /repos/{owner}/{repo}/code-scanning/analyses",
+		"GET /repos/{owner}/{repo}/codespaces",
+		"GET /repos/{owner}/{repo}/codespaces/devcontainers",
+		"GET /repos/{owner}/{repo}/codespaces/secrets",
+		"GET /repos/{owner}/{repo}/collaborators",
+		"GET /repos/{owner}/{repo}/comments",
+		"GET /repos/{owner}/{repo}/comments/{comment_id}/reactions",
+		"GET /repos/{owner}/{repo}/commits",
+		"GET /repos/{owner}/{repo}/commits/{commit_sha}/comments",
+		"GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls",
+		"GET /repos/{owner}/{repo}/commits/{ref}/check-runs",
+		"GET /repos/{owner}/{repo}/commits/{ref}/check-suites",
+		"GET /repos/{owner}/{repo}/commits/{ref}/status",
+		"GET /repos/{owner}/{repo}/commits/{ref}/statuses",
+		"GET /repos/{owner}/{repo}/contributors",
+		"GET /repos/{owner}/{repo}/dependabot/alerts",
+		"GET /repos/{owner}/{repo}/dependabot/secrets",
+		"GET /repos/{owner}/{repo}/deployments",
+		"GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses",
+		"GET /repos/{owner}/{repo}/environments",
+		"GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies",
+		"GET /repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps",
+		"GET /repos/{owner}/{repo}/events",
+		"GET /repos/{owner}/{repo}/forks",
+		"GET /repos/{owner}/{repo}/hooks",
+		"GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries",
+		"GET /repos/{owner}/{repo}/invitations",
+		"GET /repos/{owner}/{repo}/issues",
+		"GET /repos/{owner}/{repo}/issues/comments",
+		"GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions",
+		"GET /repos/{owner}/{repo}/issues/events",
+		"GET /repos/{owner}/{repo}/issues/{issue_number}/comments",
+		"GET /repos/{owner}/{repo}/issues/{issue_number}/events",
+		"GET /repos/{owner}/{repo}/issues/{issue_number}/labels",
+		"GET /repos/{owner}/{repo}/issues/{issue_number}/reactions",
+		"GET /repos/{owner}/{repo}/issues/{issue_number}/timeline",
+		"GET /repos/{owner}/{repo}/keys",
+		"GET /repos/{owner}/{repo}/labels",
+		"GET /repos/{owner}/{repo}/milestones",
+		"GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels",
+		"GET /repos/{owner}/{repo}/notifications",
+		"GET /repos/{owner}/{repo}/pages/builds",
+		"GET /repos/{owner}/{repo}/projects",
+		"GET /repos/{owner}/{repo}/pulls",
+		"GET /repos/{owner}/{repo}/pulls/comments",
+		"GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions",
+		"GET /repos/{owner}/{repo}/pulls/{pull_number}/comments",
+		"GET /repos/{owner}/{repo}/pulls/{pull_number}/commits",
+		"GET /repos/{owner}/{repo}/pulls/{pull_number}/files",
+		"GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews",
+		"GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments",
+		"GET /repos/{owner}/{repo}/releases",
+		"GET /repos/{owner}/{repo}/releases/{release_id}/assets",
+		"GET /repos/{owner}/{repo}/releases/{release_id}/reactions",
+		"GET /repos/{owner}/{repo}/rules/branches/{branch}",
+		"GET /repos/{owner}/{repo}/rulesets",
+		"GET /repos/{owner}/{repo}/rulesets/rule-suites",
+		"GET /repos/{owner}/{repo}/secret-scanning/alerts",
+		"GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations",
+		"GET /repos/{owner}/{repo}/security-advisories",
+		"GET /repos/{owner}/{repo}/stargazers",
+		"GET /repos/{owner}/{repo}/subscribers",
+		"GET /repos/{owner}/{repo}/tags",
+		"GET /repos/{owner}/{repo}/teams",
+		"GET /repos/{owner}/{repo}/topics",
+		"GET /repositories",
+		"GET /repositories/{repository_id}/environments/{environment_name}/secrets",
+		"GET /repositories/{repository_id}/environments/{environment_name}/variables",
+		"GET /search/code",
+		"GET /search/commits",
+		"GET /search/issues",
+		"GET /search/labels",
+		"GET /search/repositories",
+		"GET /search/topics",
+		"GET /search/users",
+		"GET /teams/{team_id}/discussions",
+		"GET /teams/{team_id}/discussions/{discussion_number}/comments",
+		"GET /teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions",
+		"GET /teams/{team_id}/discussions/{discussion_number}/reactions",
+		"GET /teams/{team_id}/invitations",
+		"GET /teams/{team_id}/members",
+		"GET /teams/{team_id}/projects",
+		"GET /teams/{team_id}/repos",
+		"GET /teams/{team_id}/teams",
+		"GET /user/blocks",
+		"GET /user/codespaces",
+		"GET /user/codespaces/secrets",
+		"GET /user/emails",
+		"GET /user/followers",
+		"GET /user/following",
+		"GET /user/gpg_keys",
+		"GET /user/installations",
+		"GET /user/installations/{installation_id}/repositories",
+		"GET /user/issues",
+		"GET /user/keys",
+		"GET /user/marketplace_purchases",
+		"GET /user/marketplace_purchases/stubbed",
+		"GET /user/memberships/orgs",
+		"GET /user/migrations",
+		"GET /user/migrations/{migration_id}/repositories",
+		"GET /user/orgs",
+		"GET /user/packages",
+		"GET /user/packages/{package_type}/{package_name}/versions",
+		"GET /user/public_emails",
+		"GET /user/repos",
+		"GET /user/repository_invitations",
+		"GET /user/social_accounts",
+		"GET /user/ssh_signing_keys",
+		"GET /user/starred",
+		"GET /user/subscriptions",
+		"GET /user/teams",
+		"GET /users",
+		"GET /users/{username}/events",
+		"GET /users/{username}/events/orgs/{org}",
+		"GET /users/{username}/events/public",
+		"GET /users/{username}/followers",
+		"GET /users/{username}/following",
+		"GET /users/{username}/gists",
+		"GET /users/{username}/gpg_keys",
+		"GET /users/{username}/keys",
+		"GET /users/{username}/orgs",
+		"GET /users/{username}/packages",
+		"GET /users/{username}/projects",
+		"GET /users/{username}/received_events",
+		"GET /users/{username}/received_events/public",
+		"GET /users/{username}/repos",
+		"GET /users/{username}/social_accounts",
+		"GET /users/{username}/ssh_signing_keys",
+		"GET /users/{username}/starred",
+		"GET /users/{username}/subscriptions"
+	];
+	function isPaginatingEndpoint(arg) {
+		if (typeof arg === "string") return paginatingEndpoints.includes(arg);
+		else return false;
+	}
+	function paginateRest(octokit) {
+		return { paginate: Object.assign(paginate.bind(null, octokit), { iterator: iterator.bind(null, octokit) }) };
+	}
+	paginateRest.VERSION = VERSION;
+}) });
+
+//#endregion
+//#region node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/utils.js
+var require_utils = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/utils.js": ((exports) => {
+	var __createBinding$1 = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+		if (k2 === void 0) k2 = k;
+		var desc = Object.getOwnPropertyDescriptor(m, k);
+		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
+			enumerable: true,
+			get: function() {
+				return m[k];
+			}
+		};
+		Object.defineProperty(o, k2, desc);
+	}) : (function(o, m, k, k2) {
+		if (k2 === void 0) k2 = k;
+		o[k2] = m[k];
+	}));
+	var __setModuleDefault$1 = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+		Object.defineProperty(o, "default", {
+			enumerable: true,
+			value: v
+		});
+	}) : function(o, v) {
+		o["default"] = v;
+	});
+	var __importStar$1 = exports && exports.__importStar || function(mod) {
+		if (mod && mod.__esModule) return mod;
+		var result = {};
+		if (mod != null) {
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding$1(result, mod, k);
+		}
+		__setModuleDefault$1(result, mod);
+		return result;
+	};
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.getOctokitOptions = exports.GitHub = exports.defaults = exports.context = void 0;
+	const Context$1 = __importStar$1(require_context());
+	const Utils = __importStar$1(require_utils$1());
+	const core_1 = require_dist_node$2();
+	const plugin_rest_endpoint_methods_1 = require_dist_node$1();
+	const plugin_paginate_rest_1 = require_dist_node();
+	exports.context = new Context$1.Context();
+	const baseUrl = Utils.getApiBaseUrl();
+	exports.defaults = {
+		baseUrl,
+		request: {
+			agent: Utils.getProxyAgent(baseUrl),
+			fetch: Utils.getProxyFetch(baseUrl)
+		}
+	};
+	exports.GitHub = core_1.Octokit.plugin(plugin_rest_endpoint_methods_1.restEndpointMethods, plugin_paginate_rest_1.paginateRest).defaults(exports.defaults);
+	/**
+	* Convience function to correctly format Octokit Options to pass into the constructor.
+	*
+	* @param     token    the repo PAT or GITHUB_TOKEN
+	* @param     options  other options to set
+	*/
+	function getOctokitOptions(token, options) {
+		const opts = Object.assign({}, options || {});
+		const auth$1 = Utils.getAuthString(token, opts);
+		if (auth$1) opts.auth = auth$1;
+		return opts;
+	}
+	exports.getOctokitOptions = getOctokitOptions;
+}) });
+
+//#endregion
+//#region node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/github.js
+var require_github = /* @__PURE__ */ __commonJS({ "node_modules/.deno/@actions+github@6.0.1/node_modules/@actions/github/lib/github.js": ((exports) => {
+	var __createBinding = exports && exports.__createBinding || (Object.create ? (function(o, m, k, k2) {
+		if (k2 === void 0) k2 = k;
+		var desc = Object.getOwnPropertyDescriptor(m, k);
+		if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
+			enumerable: true,
+			get: function() {
+				return m[k];
+			}
+		};
+		Object.defineProperty(o, k2, desc);
+	}) : (function(o, m, k, k2) {
+		if (k2 === void 0) k2 = k;
+		o[k2] = m[k];
+	}));
+	var __setModuleDefault = exports && exports.__setModuleDefault || (Object.create ? (function(o, v) {
+		Object.defineProperty(o, "default", {
+			enumerable: true,
+			value: v
+		});
+	}) : function(o, v) {
+		o["default"] = v;
+	});
+	var __importStar = exports && exports.__importStar || function(mod) {
+		if (mod && mod.__esModule) return mod;
+		var result = {};
+		if (mod != null) {
+			for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+		}
+		__setModuleDefault(result, mod);
+		return result;
+	};
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const Context = __importStar(require_context());
+	const utils_1 = require_utils();
+	exports.context = new Context.Context();
+	/**
+	* Returns a hydrated octokit ready to use for GitHub Actions
+	*
+	* @param     token    the repo PAT or GITHUB_TOKEN
+	* @param     options  other options to set
+	*/
+	function getOctokit(token, options, ...additionalPlugins) {
+		return new (utils_1.GitHub.plugin(...additionalPlugins))((0, utils_1.getOctokitOptions)(token, options));
+	}
+	exports.getOctokit = getOctokit;
 }) });
 
 //#endregion
 //#region src/main.ts
-var import_core = /* @__PURE__ */ __toESM(require_core());
-function main() {
+var import_core = /* @__PURE__ */ __toESM$1(require_core());
+var import_github = /* @__PURE__ */ __toESM$1(require_github());
+async function main() {
 	try {
-		const token = import_core.getInput("token");
-		import_core.getInput("name", { required: true });
-		import_core.info("token: " + (token ?? process$1.env.GITHUB_TOKEN));
+		const token = import_core.getInput("token") || process$1.env.GITHUB_TOKEN;
+		const name = import_core.getInput("name", { required: true });
+		if (!token) {
+			import_core.setFailed("❌ No GitHub token provided.");
+			return;
+		}
+		const octokit = import_github.getOctokit(token);
+		const { owner, repo } = import_github.context.repo;
+		import_core.info(`👤 Using name: ${name}`);
+		import_core.info(`🏷️ Repo: ${owner}/${repo}`);
+		const branchName = `test/pr-${Date.now()}`;
+		const { data: mainRef } = await octokit.rest.git.getRef({
+			owner,
+			repo,
+			ref: "heads/main"
+		});
+		const mainSha = mainRef.object.sha;
+		import_core.info(`🌿 main@${mainSha}`);
+		await octokit.rest.git.createRef({
+			owner,
+			repo,
+			ref: `refs/heads/${branchName}`,
+			sha: mainSha
+		});
+		import_core.info(`✅ Created branch ${branchName}`);
+		const { data: pr } = await octokit.rest.pulls.create({
+			owner,
+			repo,
+			head: branchName,
+			base: "main",
+			title: `Test PR from ${name}`,
+			body: `This is a permission test PR created by GitHub Action at ${(/* @__PURE__ */ new Date()).toISOString()}.`
+		});
+		import_core.info(`🎉 Created PR #${pr.number}: ${pr.html_url}`);
 	} catch (error$1) {
-		import_core.setFailed("❌ An unexpected error occurred:\n" + error$1);
+		if (error$1 instanceof Error) import_core.setFailed("❌ " + error$1.message);
+		else import_core.setFailed("❌ Unknown error");
 	}
 }
 main();
