@@ -5,7 +5,7 @@ import process from "node:process";
 
 async function main() {
   try {
-    const token = core.getInput("token") || process.env.GITHUB_TOKEN;
+    const token = core.getInput("token");
     const name = core.getInput("name", { required: true });
 
     if (!token) {
