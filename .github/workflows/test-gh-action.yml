@@ -1,0 +1,15 @@
+name: Test GH Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run 
+        uses: PTPhongKMF/test-gh-action@main
+        with:
+          name: test hehe
