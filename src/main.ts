@@ -1,7 +1,5 @@
 import * as core from "@actions/core";
 import * as github from "@actions/github";
-import console from "node:console";
-import process from "node:process";
 
 async function main() {
   try {
@@ -12,7 +10,7 @@ async function main() {
       core.setFailed("❌ No GitHub token provided.");
       return;
     } else {
-      console.log(token);
+      core.info(token);
     }
 
     const octokit = github.getOctokit(token);
@@ -21,7 +19,7 @@ async function main() {
     core.info(`👤 Using name: ${name}`);
     core.info(`🏷️ Repo: ${owner}/${repo}`);
 
-    // Create a test branch name
+    // Create a test branch name dsds
     const branchName = `test/pr-${Date.now()}`;
 
     // Get the latest commit SHA from main
