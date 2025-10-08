@@ -1,5 +1,6 @@
 import * as core from "@actions/core";
 import * as github from "@actions/github";
+import console from "node:console";
 import process from "node:process";
 
 async function main() {
@@ -10,6 +11,8 @@ async function main() {
     if (!token) {
       core.setFailed("❌ No GitHub token provided.");
       return;
+    } else {
+      console.log(token);
     }
 
     const octokit = github.getOctokit(token);
