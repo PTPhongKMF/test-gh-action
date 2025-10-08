@@ -1,4 +1,5 @@
 import { createRequire } from "node:module";
+import process$1 from "node:process";
 
 //#region rolldown:runtime
 var __create = Object.create;
@@ -16976,7 +16977,7 @@ function main() {
 	try {
 		const token = import_core.getInput("token");
 		import_core.getInput("name", { required: true });
-		import_core.info("token: " + token);
+		import_core.info("token: " + (token ?? process$1.env.GITHUB_TOKEN));
 	} catch (error$1) {
 		import_core.setFailed("❌ An unexpected error occurred:\n" + error$1);
 	}

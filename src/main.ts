@@ -11,5 +11,5 @@ function main() {
     core.setFailed("❌ An unexpected error occurred:\n" + error);
   }
 }
-"test ndsdsdsdsdsdothing";
+
 main();
