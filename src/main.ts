@@ -12,11 +12,12 @@ async function main() {
       core.info("token is: " + token + " ~~ not provided!");
       core.setFailed("❌ No GitHub token provided.");
     } else {
-      core.info("token is is: " + token);
+      core.info("token HAVE! is: " + token);
       core.info(token);
     }
 
     core.setFailed("force stop");
+    core.info("this should run because it below setfailed");
 
     const octokit = github.getOctokit(token);
     const { owner, repo } = github.context.repo;
