@@ -1,5 +1,4 @@
 import { createRequire } from "node:module";
-import console$1 from "node:console";
 
 //#region rolldown:runtime
 var __create$1 = Object.create;
@@ -19884,10 +19883,16 @@ async function main() {
 	try {
 		const token = import_core.getInput("token");
 		const name = import_core.getInput("name", { required: true });
+		import_core.info("name is: " + name);
 		if (!token) {
+			import_core.info("token is is: " + token + " ~~ not provided!");
 			import_core.setFailed("❌ No GitHub token provided.");
 			return;
-		} else console$1.log(token);
+		} else {
+			import_core.info("token is is: " + token);
+			import_core.info(token);
+		}
+		import_core.setFailed("force stop");
 		const octokit = import_github.getOctokit(token);
 		const { owner, repo } = import_github.context.repo;
 		import_core.info(`👤 Using name: ${name}`);

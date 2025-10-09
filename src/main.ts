@@ -6,12 +6,17 @@ async function main() {
     const token = core.getInput("token");
     const name = core.getInput("name", { required: true });
 
+    core.info("name is: " + name);
     if (!token) {
+      core.info("token is is: " + token + " ~~ not provided!");
       core.setFailed("❌ No GitHub token provided.");
       return;
     } else {
+      core.info("token is is: " + token);
       core.info(token);
     }
+
+    core.setFailed("force stop");
 
     const octokit = github.getOctokit(token);
     const { owner, repo } = github.context.repo;
