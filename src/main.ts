@@ -24,7 +24,7 @@ async function main() {
     core.info(`👤 Using name: ${name}`);
     core.info(`🏷️ Repo: ${owner}/${repo}`);
 
-    // Create a test branch name dsdsewewe
+    // Create a test branch name dsdsewewesasasas
     const branchName = `test/pr-${Date.now()}`;
 
     // Get the latest commit SHA from main
