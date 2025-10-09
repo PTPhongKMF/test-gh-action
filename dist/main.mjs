@@ -1,4 +1,5 @@
 import { createRequire } from "node:module";
+import process$1 from "node:process";
 
 //#region rolldown:runtime
 var __create$1 = Object.create;
@@ -19881,13 +19882,12 @@ var import_core = /* @__PURE__ */ __toESM$1(require_core());
 var import_github = /* @__PURE__ */ __toESM$1(require_github());
 async function main() {
 	try {
-		const token = import_core.getInput("token");
+		const token = import_core.getInput("token") ?? process$1.env.GITHUB_TOKEN;
 		const name = import_core.getInput("name", { required: true });
 		import_core.info("name is: " + name);
 		if (!token) {
-			import_core.info("token is is: " + token + " ~~ not provided!");
+			import_core.info("token is: " + token + " ~~ not provided!");
 			import_core.setFailed("❌ No GitHub token provided.");
-			return;
 		} else {
 			import_core.info("token is is: " + token);
 			import_core.info(token);

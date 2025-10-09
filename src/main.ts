@@ -1,16 +1,16 @@
 import * as core from "@actions/core";
 import * as github from "@actions/github";
+import process from "node:process";
 
 async function main() {
   try {
-    const token = core.getInput("token");
+    const token = core.getInput("token") ?? process.env.GITHUB_TOKEN;
     const name = core.getInput("name", { required: true });
 
     core.info("name is: " + name);
     if (!token) {
-      core.info("token is is: " + token + " ~~ not provided!");
+      core.info("token is: " + token + " ~~ not provided!");
       core.setFailed("❌ No GitHub token provided.");
-      return;
     } else {
       core.info("token is is: " + token);
       core.info(token);
