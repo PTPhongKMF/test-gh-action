@@ -1,53 +1,53 @@
-# .github/workflows/release-please.yml
-name: Release Please Action
+# # .github/workflows/release-please.yml
+# name: Release Please Action
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+# permissions:
+#   contents: write
+#   issues: write
+#   pull-requests: write
 
-jobs:
-  release-please:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Release Please
-        id: release
-        uses: googleapis/release-please-action@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          config-file: release-please-config.json
-          manifest-file: .release-please-manifest.json
+# jobs:
+#   release-please:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Run Release Please
+#         id: release
+#         uses: googleapis/release-please-action@v4
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           config-file: release-please-config.json
+#           manifest-file: .release-please-manifest.json
       
-      - name: 'Log Outputs'
-        # This condition ensures the logging step only runs if a release was made.
-        # if: steps.release.outputs.releases_created == 'true'
-        run: |
-          echo "-------------------------------------------"
-          echo "  Release Please Action Outputs"
-          echo "-------------------------------------------"
+#       - name: 'Log Outputs'
+#         # This condition ensures the logging step only runs if a release was made.
+#         # if: steps.release.outputs.releases_created == 'true'
+#         run: |
+#           echo "-------------------------------------------"
+#           echo "  Release Please Action Outputs"
+#           echo "-------------------------------------------"
           
-          echo "Generic Outputs:"
-          echo "  releases_created: ${{ steps.release.outputs.releases_created }}"
-          echo "  paths_released: ${{ steps.release.outputs.paths_released }}"
-          echo "  prs_created: ${{ steps.release.outputs.prs_created }}"
-          echo '  pr: ${{ steps.release.outputs.pr }}'
-          echo '  prs: ${{ steps.release.outputs.prs }}'
+#           echo "Generic Outputs:"
+#           echo "  releases_created: ${{ steps.release.outputs.releases_created }}"
+#           echo "  paths_released: ${{ steps.release.outputs.paths_released }}"
+#           echo "  prs_created: ${{ steps.release.outputs.prs_created }}"
+#           echo '  pr: ${{ steps.release.outputs.pr }}'
+#           echo '  prs: ${{ steps.release.outputs.prs }}'
           
-          echo ""
-          echo "Root Component Outputs:"
-          echo "  release_created: ${{ steps.release.outputs.release_created }}"
-          echo "  upload_url: ${{ steps.release.outputs.upload_url }}"
-          echo "  html_url: ${{ steps.release.outputs.html_url }}"
-          echo "  tag_name: ${{ steps.release.outputs.tag_name }}"
-          echo "  version: ${{ steps.release.outputs.version }}"
-          echo "  major: ${{ steps.release.outputs.major }}"
-          echo "  minor: ${{ steps.release.outputs.minor }}"
-          echo "  patch: ${{ steps.release.outputs.patch }}"
-          echo "  sha: ${{ steps.release.outputs.sha }}"
+#           echo ""
+#           echo "Root Component Outputs:"
+#           echo "  release_created: ${{ steps.release.outputs.release_created }}"
+#           echo "  upload_url: ${{ steps.release.outputs.upload_url }}"
+#           echo "  html_url: ${{ steps.release.outputs.html_url }}"
+#           echo "  tag_name: ${{ steps.release.outputs.tag_name }}"
+#           echo "  version: ${{ steps.release.outputs.version }}"
+#           echo "  major: ${{ steps.release.outputs.major }}"
+#           echo "  minor: ${{ steps.release.outputs.minor }}"
+#           echo "  patch: ${{ steps.release.outputs.patch }}"
+#           echo "  sha: ${{ steps.release.outputs.sha }}"
           
-          echo "-------------------------------------------"
+#           echo "-------------------------------------------"
