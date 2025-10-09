@@ -10,8 +10,8 @@ inputs:
   token:
     description: Token.
     required: false
-    default: ""
-    # default: ${{ github.token }}
+    # default: ""
+    default: ${{ github.token }}
   name:
     description: Your name.
     required: false
