@@ -19884,15 +19884,17 @@ async function main() {
 	try {
 		const token = import_core.getInput("token") ?? process$1.env.GITHUB_TOKEN;
 		const name = import_core.getInput("name", { required: true });
+		import_core.info("env is: " + process$1.env.GITHUB_TOKEN);
 		import_core.info("name is: " + name);
 		if (!token) {
 			import_core.info("token is: " + token + " ~~ not provided!");
 			import_core.setFailed("❌ No GitHub token provided.");
 		} else {
-			import_core.info("token is is: " + token);
+			import_core.info("token HAVE! is: " + token);
 			import_core.info(token);
 		}
 		import_core.setFailed("force stop");
+		import_core.info("this should run because it below setfailed");
 		const octokit = import_github.getOctokit(token);
 		const { owner, repo } = import_github.context.repo;
 		import_core.info(`👤 Using name: ${name}`);

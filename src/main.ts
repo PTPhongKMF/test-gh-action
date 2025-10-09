@@ -7,6 +7,7 @@ async function main() {
     const token = core.getInput("token") ?? process.env.GITHUB_TOKEN;
     const name = core.getInput("name", { required: true });
 
+    core.info("env is: " + process.env.GITHUB_TOKEN);
     core.info("name is: " + name);
     if (!token) {
       core.info("token is: " + token + " ~~ not provided!");
