@@ -39,7 +39,7 @@ async function main() {
     const mainSha = mainRef.object.sha;
     core.info(`🌿 main@${mainSha}`);
 
-    // Create new branch from main
+    // Create new branch from main sdsdsd
     await octokit.rest.git.createRef({
       owner,
       repo,
