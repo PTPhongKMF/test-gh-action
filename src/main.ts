@@ -26,7 +26,7 @@ async function main() {
     core.info(`👤 Using name: ${name}`);
     core.info(`🏷️ Repo: ${owner}/${repo}`);
 
-    // Create a test branch name dsdsewewesasasaswewewewewesdsdssdsddsdsdsdsdsdsdsdsddsddsdsdsdsddsdsds
+    // Create a test branch name dsdsewewesasasaswewewewewesdsdssdsdasasdsdsdsdsdsdsdsdsddsddsdsdsdsddsdsds
     const branchName = `test/pr-${Date.now()}`;
 
     // Get the latest commit SHA from main sdsdsdsdsdsdsdsd
@@ -39,7 +39,7 @@ async function main() {
     const mainSha = mainRef.object.sha;
     core.info(`🌿 main@${mainSha}`);
 
-    // Create new branch from main sdsdsd
+    // Create new branch from main sdsdsdasa
     await octokit.rest.git.createRef({
       owner,
       repo,
