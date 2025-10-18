@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.0 (2025-10-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* test
+
+### Features
+
+* hey ([b4bcaa1](https://github.com/PTPhongKMF/test-gh-action/commit/b4bcaa19edddeea225742366da6c03c0ecd7ac6a))
+* test ([dbe9b2c](https://github.com/PTPhongKMF/test-gh-action/commit/dbe9b2c2959c8370adc989b4f6a0dacdc9932143))
+* test ([ee24c91](https://github.com/PTPhongKMF/test-gh-action/commit/ee24c91897ec9fa1399070fac5180e4bf1a79586))
+
+
+### Bug Fixes
+
+* fix ([732ab7f](https://github.com/PTPhongKMF/test-gh-action/commit/732ab7fea5f249ed4ffe5383c94a69d10aed76d6))
+
 ## [1.1.1](https://github.com/PTPhongKMF/test-action/compare/v1.1.0...v1.1.1) (2025-10-02)
 
 
