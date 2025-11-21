@@ -18,13 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Group test
-        run: |
-          echo "::group::Quick test:"
-          echo "inside group"
-          echo "::endgroup::"
-
-      - name: Group test 2
-        run: |
-          echo "::group::Quick tests"
-          echo "inside group"
-          echo "::endgroup::"
+        uses: Pandoriux/zephyr-release@test
+        with:
+          config-path: ./zephyr-release-config.json
+          config-override: |
+            {
+              "name": "override"
+            }
