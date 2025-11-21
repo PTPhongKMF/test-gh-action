@@ -17,7 +17,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Run 
-        uses: PTPhongKMF/test-gh-action@main
-        with:
-          name: test hehe
+      - name: Group test
+      run: |
+        echo "::group::Quick test:"
+        echo "inside group"
+        echo "::endgroup::"
+
+      - name: Group test 2
+      run: |
+        echo "::group::Quick tests"
+        echo "inside group"
+        echo "::endgroup::"
