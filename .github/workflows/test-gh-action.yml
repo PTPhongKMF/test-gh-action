@@ -17,6 +17,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v5
+
       - name: Group test
         uses: Pandoriux/zephyr-release@test
         with:
