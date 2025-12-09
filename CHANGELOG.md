@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v2.0.0...v3.0.0) (2025-12-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* test breaking
+
+### asasasdasasad
+
+* test breaking ([2dbfd6a](https://github.com/PTPhongKMF/test-gh-action/commit/2dbfd6a55b4b6e3bcd4ffa7ad3abacb042f7078b))
+
+
+### Features
+
+* erer ([76d6122](https://github.com/PTPhongKMF/test-gh-action/commit/76d61227426e3df7411b50dc37606484a04858c8))
+
+
+### Bug Fixes
+
+* 12313 ([6df3430](https://github.com/PTPhongKMF/test-gh-action/commit/6df343037ca4662504624faf9f4c93a006e9d06e))
+
 ## [2.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v1.0.0...v2.0.0) (2025-10-18)
 
 
