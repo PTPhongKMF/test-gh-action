@@ -1,0 +1,121 @@
+# "$schema" = "../../schemas/config-v1.json"
+# name = "project name"
+# time-zone = "UTC"
+# initial-version = "0.1.0"
+# files-to-commit = ["base", "docs/**/*.md", "dist/**"]
+
+# [commands]
+# pre = ["npm run build", "npm test"]
+# post = ["npm run deploy"]
+
+# [[version-files]]
+# path = "deno.json"
+# resolver = "json"
+# selector = "version"
+# primary = true
+
+# [[version-files]]
+# path = "package.json"
+# selector = "version"
+
+# [[version-files]]
+# path = "version.txt"
+# resolver = "regex"
+# selector = '^v?(\d+\.\d+\.\d+)$'
+
+# [[commit-types]]
+# type = "feat"
+# section = "✨ Features"
+# changelog-hidden = false
+
+# [[commit-types]]
+# type = "fix"
+# section = "🐛 Bug Fixes"
+# changelog-hidden = false
+
+# [[commit-types]]
+# type = "custom"
+# section = "🛠 Custom"
+# changelog-hidden = true
+
+# [bump-strategy]
+# bump-minor-for-major-pre-stable = true
+# bump-patch-for-minor-pre-stable = false
+
+# [bump-strategy.major]
+# types = []
+# count-breaking-as-commit = false
+# count-breaking-as-bump = true
+# commits-per-bump = "Infinity"
+
+# [bump-strategy.minor]
+# types = ["feat"]
+# count-breaking-as-commit = false
+# count-breaking-as-bump = false
+# commits-per-bump = 10
+
+# [bump-strategy.patch]
+# types = ["fix", "perf"]
+# count-breaking-as-commit = true
+# count-breaking-as-bump = false
+# commits-per-bump = 10
+
+# [bump-strategy.prerelease]
+# types = []
+# count-breaking-as-commit = false
+# count-breaking-as-bump = false
+# commits-per-bump = "Infinity"
+
+# [bump-strategy.build]
+# types = []
+# count-breaking-as-commit = false
+# count-breaking-as-bump = false
+# commits-per-bump = 1
+
+# [changelog]
+# enabled = true
+# content-override = ""
+# file-path = "CHANGELOG.md"
+# heading-pattern = "${version} (${yyyy-mm-dd}) "
+# body-pattern = "${changelog}"
+# body-pattern-path = ""
+
+# [changelog.commands]
+# pre = ["npm run format:changelog"]
+# post = []
+
+# [pull-request]
+# enabled = true
+# branch-name-pattern = "release/zephyr-release"
+# title-pattern = "chore: release v${version}"
+# header-pattern = "🤖 New release created. Stand by for approval"
+# body-pattern = "${changelog}"
+# body-pattern-path = ""
+# footer-pattern = "Generated with [Zephyr Release](https://github.com/Pandoriux/zephyr-release)"
+
+# [pull-request.commands]
+# pre = []
+# post = ["npm run notify:pr"]
+
+# [pull-request.labels-on-create]
+# name = "zp-release: pending"
+# description = "Indicates that the pull request is pending release"
+# color = "FBCA04"
+
+# [pull-request.labels-on-close]
+# name = "zp-release: released"
+# description = "Indicates that the pull request is closed and released"
+# color = "0E8A16"
+
+# [release]
+# enabled = true
+# skip-release = false
+# draft = false
+# prerelease = false
+# tag-name-pattern = "v${version}"
+# title-pattern = "${tagName}"
+# body-pattern = "${changelog}"
+
+# [release.commands]
+# pre = ["npm run pre-release"]
+# post = ["npm run post-release", "npm run publish"]
