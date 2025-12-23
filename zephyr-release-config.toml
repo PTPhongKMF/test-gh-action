@@ -1,4 +1,3 @@
-"$schema" = "../../schemas/config-v1.json"
 name = "this is toml"
 time-zone = "UTC"
 initial-version = "0.1.0"
