@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.1](https://github.com/PTPhongKMF/test-gh-action/compare/v3.1.0...v3.1.1) (2025-12-24)
+
+
+### Bug Fixes
+
+* Test ([#5](https://github.com/PTPhongKMF/test-gh-action/issues/5)) ([cf7738a](https://github.com/PTPhongKMF/test-gh-action/commit/cf7738a5760b4d7dcbe6b8bf833850d567b9e6cf))
+
 ## [3.1.0](https://github.com/PTPhongKMF/test-gh-action/compare/v3.0.0...v3.1.0) (2025-12-24)
 
 
