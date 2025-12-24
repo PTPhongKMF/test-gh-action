@@ -23,7 +23,7 @@ jobs:
       - name: Group test
         uses: Pandoriux/zephyr-release@test
         with:
-          config-path: ./zephyr-release-config.toml
+          config-path: ./zephyr-release-config.keke
           config-override: |
             {
               "name": "override",
