@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/PTPhongKMF/test-gh-action/compare/v3.0.0...v3.1.0) (2025-12-24)
+
+
+### Features
+
+* **enable-rp:** test ([77bd89b](https://github.com/PTPhongKMF/test-gh-action/commit/77bd89b366829bebfd2585e11b4913f40df0f689))
+
 ## [3.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v2.0.0...v3.0.0) (2025-12-09)
 
 
