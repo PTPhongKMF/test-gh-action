@@ -1,5 +1,19 @@
 # Changelog
 
+## [4.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v3.3.0...v4.0.0) (2026-01-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **new:** break 3
+
+### Features
+
+* A this is middle ([0e5795f](https://github.com/PTPhongKMF/test-gh-action/commit/0e5795f9080f825ab74123f00966b2ea4c9b14b6))
+* B this is oldest ([b81e1bc](https://github.com/PTPhongKMF/test-gh-action/commit/b81e1bc0813f838fa421e1a65cddf846cdfd4d29))
+* C this is altest ([823d73e](https://github.com/PTPhongKMF/test-gh-action/commit/823d73e85f1d6c0b8e352e7a9cd38e2e71e202f6))
+* **new:** new ([0f37454](https://github.com/PTPhongKMF/test-gh-action/commit/0f3745410b4430cfbaf6506b3311d9621ef6cf58))
+
 ## [3.3.0](https://github.com/PTPhongKMF/test-gh-action/compare/v3.2.0...v3.3.0) (2026-01-10)
 
 
