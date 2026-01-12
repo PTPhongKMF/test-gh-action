@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v4.0.0...v5.0.0) (2026-01-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **scp:** scope this! b81e1bc
+
+### Bug Fixes
+
+* **scp:** scope this! b81e1bc ([aed03fe](https://github.com/PTPhongKMF/test-gh-action/commit/aed03fed357162bca504fae98eaef8d88006e102))
+
 ## [4.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v3.3.0...v4.0.0) (2026-01-11)
 
 
