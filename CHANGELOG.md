@@ -9,6 +9,21 @@ daa
 dsa
 da
 
+## [5.1.0](https://github.com/PTPhongKMF/test-gh-action/compare/v5.0.0...v5.1.0) (2026-01-25)
+
+
+### Features
+
+* sai ([0e81360](https://github.com/PTPhongKMF/test-gh-action/commit/0e81360adb4b2df7c120b54f00f21a1f451b99d9))
+* test weird changelog ([342f084](https://github.com/PTPhongKMF/test-gh-action/commit/342f0849bf36cc016a0f144600bde31b6d1d8ff6))
+
+
+### Bug Fixes
+
+* weird `ass` thing **bold** ([9230a54](https://github.com/PTPhongKMF/test-gh-action/commit/9230a54e0d9502c72f0ba79c19fc5fb46ca2c885))
+* zzzz `zxz ([67ef68a](https://github.com/PTPhongKMF/test-gh-action/commit/67ef68a9fc89e74489830db21c9600a39a7ad2cc))
+* zzzzzzzzzz `zxz ([2fd4b97](https://github.com/PTPhongKMF/test-gh-action/commit/2fd4b97ecef7469758ee878e959403da1c546310))
+
 ## [5.0.0](https://github.com/PTPhongKMF/test-gh-action/compare/v4.0.0...v5.0.0) (2026-01-12)
 
 ### ⚠ BREAKING CHANGES
