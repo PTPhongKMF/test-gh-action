@@ -9,6 +9,19 @@ daa
 dsa
 da
 
+## [5.2.0](https://github.com/PTPhongKMF/test-gh-action/compare/v5.1.0...v5.2.0) (2026-02-06)
+
+
+### Features
+
+* see ([e88ea93](https://github.com/PTPhongKMF/test-gh-action/commit/e88ea93026869f493242d3ef25545ea62e6b501e))
+* test new ([d972401](https://github.com/PTPhongKMF/test-gh-action/commit/d972401d499b0adc0e57dae7965a67cd6068d501))
+
+
+### Bug Fixes
+
+* force 1 or 2 ([53c4958](https://github.com/PTPhongKMF/test-gh-action/commit/53c49581e57ca603d47f5815b7bb1c94e3979a67))
+
 ## [5.1.0](https://github.com/PTPhongKMF/test-gh-action/compare/v5.0.0...v5.1.0) (2026-01-25)
 
 
