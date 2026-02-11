@@ -9,6 +9,15 @@ daa
 dsa
 da
 
+## [5.3.0](https://github.com/PTPhongKMF/test-gh-action/compare/v5.2.0...v5.3.0) (2026-02-11)
+
+
+### Features
+
+* **core.fs:** add fs ([ece5090](https://github.com/PTPhongKMF/test-gh-action/commit/ece5090c1f43cff6e67e3792722f5f4662e594b3))
+* **core/opener:** add opener ([26fd010](https://github.com/PTPhongKMF/test-gh-action/commit/26fd01000f9e7e37d2f9fbbc979ed782db872009))
+* hi ([5d07ab3](https://github.com/PTPhongKMF/test-gh-action/commit/5d07ab35d14cafc1a3f4f51cb8fdb59cb8a19418))
+
 ## [5.2.0](https://github.com/PTPhongKMF/test-gh-action/compare/v5.1.0...v5.2.0) (2026-02-06)
 
 
